@@ -14,7 +14,6 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -22,9 +21,11 @@ export default function Navbar() {
     const element = document.getElementById(sectionId);
 
     if (element) {
-      const navbarHeight = 80;
+      const navbarHeight = window.innerWidth < 768 ? 65 : 80;
+
       const elementPosition =
         element.getBoundingClientRect().top + window.pageYOffset;
+
       const offsetPosition = elementPosition - navbarHeight;
 
       window.scrollTo({
@@ -52,11 +53,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        
+        {/* Navbar container */}
+        <div className="flex justify-between items-center h-16 md:h-20">
 
-          {/* Logo */}
+          {/* Logo Section */}
           <div
-            className="flex items-center gap-3 cursor-pointer"
+            className="flex items-center gap-2 md:gap-3 cursor-pointer min-w-0"
             onClick={() =>
               window.scrollTo({
                 top: 0,
@@ -70,11 +73,13 @@ export default function Navbar() {
               width={45}
               height={45}
               priority
-              className="object-contain"
+              className="object-contain w-10 h-10 md:w-12 md:h-12 flex-shrink-0"
             />
 
-            <div className="text-white font-semibold text-lg md:text-xl tracking-wide">
-              Rapidnest Software Solutions
+            <div className="min-w-0">
+              <div className="text-white font-semibold text-sm sm:text-base md:text-xl tracking-wide leading-tight truncate max-w-[180px] sm:max-w-[220px] md:max-w-none">
+                Rapidnest Software Solutions
+              </div>
             </div>
           </div>
 
@@ -102,13 +107,13 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-1 flex-shrink-0"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-7 h-7" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-7 h-7" />
             )}
           </button>
         </div>
@@ -117,7 +122,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#0b1220]/98 backdrop-blur-xl border-t border-white/10">
-          <div className="px-4 py-6 space-y-4">
+          <div className="px-4 py-5 space-y-3">
             {["services", "clients", "why-us", "about", "contact"].map(
               (item) => (
                 <button
