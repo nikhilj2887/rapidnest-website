@@ -13,15 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Web Development Company | Rapidnest",
-  description: "Rapidnest offers web development, mobile app development services, and custom software solutions globally.",
+  title: "Rapidnest Software Solutions | Web, App & Custom Software Development Company",
+  description: "Rapidnest Software Solutions builds websites, mobile apps, ecommerce platforms, AI solutions, and custom software for startups and businesses worldwide. Trusted by clients across USA, UAE, and India.",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+children,
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Rapidnest Software Solutions",
+    url: "https://www.therapidnest.com",
+    logo: "https://www.therapidnest.com/logo.png",
+  };
   return (
     <html
       lang="en"

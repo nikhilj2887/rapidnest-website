@@ -76,17 +76,54 @@ export default function Hero() {
         </motion.div>
 
         {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-6"
-        >
-          Build Faster.
-          <span className="block bg-gradient-to-r from-orange-400 via-amber-400 to-cyan-400 bg-clip-text text-transparent">
-            Launch Smarter.
-          </span>
-        </motion.h1>
+        {/* SEO Optimized Main H1 */}
+<motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="
+    text-2xl
+    sm:text-3xl
+    md:text-5xl
+    font-bold
+    text-white
+    leading-tight
+    mb-4
+  "
+>
+  Custom Software Development Company
+
+  <span className="block text-gray-300 text-xl sm:text-2xl md:text-4xl mt-2">
+    for Startups & Businesses
+  </span>
+</motion.h1>
+
+{/* Branding Headline */}
+<motion.h2
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2 }}
+  className="
+    text-4xl
+    sm:text-5xl
+    md:text-7xl
+    font-bold
+    leading-tight
+    mb-6
+    bg-gradient-to-r
+    from-orange-400
+    via-amber-400
+    to-cyan-400
+    bg-clip-text
+    text-transparent
+  "
+>
+  Build Faster.
+  
+  <span className="block">
+    Launch Smarter.
+  </span>
+</motion.h2>
 
         {/* Subtext */}
         <motion.p
