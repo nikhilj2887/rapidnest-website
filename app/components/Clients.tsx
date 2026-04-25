@@ -36,7 +36,7 @@ const clients = [
   name: "Clarion Talent Forge",
   category: "Accounting Training Institute / Staffing Firm",
   url: "https://www.clariontf.com/",
-  logo: "/clients/clarion.png",
+  logo: "/clients/Clarion.png",
   showWebsite: true,
   largeLogo: true,
 },
