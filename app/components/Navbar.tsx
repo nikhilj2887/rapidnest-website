@@ -18,24 +18,18 @@ export default function Navbar() {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
+  const element = document.getElementById(sectionId);
 
-    if (element) {
-      const navbarHeight = window.innerWidth < 768 ? 65 : 80;
+  if (element) {
+    window.history.replaceState(null, "", `#${sectionId}`);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
 
-      const elementPosition =
-        element.getBoundingClientRect().top + window.pageYOffset;
-
-      const offsetPosition = elementPosition - navbarHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
-      setIsMobileMenuOpen(false);
-    }
-  };
+    setIsMobileMenuOpen(false);
+  }
+};
 
   const openWhatsApp = () => {
     window.open(
@@ -85,7 +79,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {["services", "clients", "why-us", "about", "contact"].map(
+            {["services", "clients", "why-us", "about", "founder","contact"].map(
               (item) => (
                 <button
                   key={item}
@@ -123,7 +117,7 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#0b1220]/98 backdrop-blur-xl border-t border-white/10">
           <div className="px-4 py-5 space-y-3">
-            {["services", "clients", "why-us", "about", "contact"].map(
+            {["services", "clients", "why-us", "about", "founder", "contact"].map(
               (item) => (
                 <button
                   key={item}

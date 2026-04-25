@@ -7,6 +7,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Contact from "./components/Contact";
 import Clients from "./components/Clients";
+import FounderSection from "./components/FounderSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Clients />
       <WhyChooseUs />
       <About />
+      <FounderSection />
       <Contact />
       <Footer />
       <WhatsAppButton />
