@@ -9,42 +9,36 @@ const clients = [
     category: "Ecommerce / Retail",
     url: "https://swadeshi.co.za/",
     logo: "/clients/swadeshi.png",
-    showWebsite: true,
   },
   {
     name: "The Lyft",
     category: "HR Staffing",
     url: "https://thelyft.in/",
     logo: "/clients/thelyft.png",
-    showWebsite: true,
   },
   {
     name: "Mango Mist",
     category: "Hospitality / Resort",
     url: "https://www.mangomist.com/",
     logo: "/clients/mangomist.png",
-    showWebsite: true,
   },
   {
     name: "Lamara",
     category: "Luxury Desserts / Bakery",
     url: "https://lamara.in/",
     logo: "/clients/lamara.png",
-    showWebsite: true,
   },
   {
     name: "Clarion Talent Forge",
     category: "Accounting Training Institute / Staffing Firm",
     url: "https://www.clariontf.com/",
     logo: "/clients/Clarion.png",
-    showWebsite: true,
-    largeLogo: true,
   },
   {
     name: "Baseline Retention Solution",
     category: "Consulting Firm",
+    url: "#",
     logo: "/clients/Baseline_logo_Hexcode_ADBABC.png",
-    showWebsite: false,
   },
 ];
 
@@ -81,92 +75,58 @@ export default function Clients() {
           </p>
         </div>
 
-        {/* Client Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 mb-24">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="
-                group
-                bg-white
-                border
-                border-gray-200
-                rounded-2xl
-                p-5 md:p-6
-                min-h-[180px] md:min-h-[220px]
-                hover:shadow-lg
-                hover:-translate-y-1
-                transition-all
-                duration-300
-                flex
-                flex-col
-                items-center
-                text-center
-              "
-            >
-              {/* Logo */}
-              <div className="flex items-center justify-center mb-3 w-full h-[80px]">
+        {/* CLIENT MARQUEE */}
+        <div className="relative overflow-hidden py-10">
+          <div className="flex animate-marquee gap-8 w-max">
+
+            {[...clients, ...clients].map((client, index) => (
+              <a
+                key={index}
+                href={client.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  min-w-[240px]
+                  h-[180px]
+                  bg-white
+                  border
+                  border-gray-200
+                  rounded-2xl
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  shadow-sm
+                  hover:shadow-lg
+                  transition-all
+                  duration-300
+                  px-6
+                "
+              >
                 <Image
                   src={client.logo}
                   alt={client.name}
                   width={140}
                   height={70}
-                  className={`
-                    w-auto
-                    h-auto
-                    object-contain
-                    transition-transform
-                    duration-300
-                    group-hover:scale-105
-                    ${
-                      client.largeLogo
-                        ? "max-h-[70px] md:max-h-[90px]"
-                        : "max-h-[50px] md:max-h-[65px]"
-                    }
-                  `}
+                  className="object-contain w-auto h-auto max-h-[60px]"
                 />
-              </div>
 
-              {/* Category */}
-              <p className="text-gray-600 text-sm md:text-base mb-3">
-                {client.category}
-              </p>
+                <p className="text-sm text-gray-600 mt-4 text-center">
+                  {client.category}
+                </p>
 
-              {/* CTA */}
-              <div className="mt-auto">
-                {client.showWebsite && (
-                  <a
-                    href={client.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      inline-flex
-                      items-center
-                      gap-2
-                      px-3
-                      py-2
-                      rounded-lg
-                      bg-orange-50
-                      text-orange-600
-                      font-semibold
-                      text-sm
-                      hover:bg-orange-600
-                      hover:text-white
-                      transition-all
-                      duration-300
-                    "
-                  >
-                    Visit Website
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
+                <div className="mt-3 inline-flex items-center gap-2 text-orange-600 text-sm font-semibold">
+                  Visit Website
+                  <ExternalLink className="w-4 h-4" />
+                </div>
+              </a>
+            ))}
+
+          </div>
         </div>
 
         {/* SECTION 2 */}
-        <div className="text-center mb-10">
+        <div className="text-center mt-16 mb-10">
           <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Official Digital Partnerships
           </h3>
@@ -178,7 +138,7 @@ export default function Clients() {
           </p>
         </div>
 
-        {/* Partnership Cards */}
+        {/* PARTNERS */}
         <div className="flex flex-wrap justify-center gap-6">
           {partners.map((partner, index) => (
             <a
@@ -192,9 +152,9 @@ export default function Clients() {
                 border
                 border-gray-200
                 rounded-2xl
-                p-5 md:p-6
+                p-6
                 w-full
-                sm:w-[320px]
+                sm:w-[280px]
                 min-h-[220px]
                 hover:shadow-lg
                 hover:-translate-y-1
@@ -206,7 +166,6 @@ export default function Clients() {
                 text-center
               "
             >
-              {/* Logo */}
               <div className="flex items-center justify-center mb-4 w-full h-[90px]">
                 <Image
                   src={partner.logo}
@@ -225,36 +184,15 @@ export default function Clients() {
                 />
               </div>
 
-              {/* Badge */}
               <span className="px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-semibold mb-4">
                 Official Digital Partner
               </span>
 
-              {/* Name */}
               <h4 className="text-lg font-bold text-gray-900 mb-4">
                 {partner.name}
               </h4>
 
-              {/* CTA */}
-              <div
-                className="
-                  mt-auto
-                  inline-flex
-                  items-center
-                  gap-2
-                  px-3
-                  py-2
-                  rounded-lg
-                  bg-orange-50
-                  text-orange-600
-                  font-semibold
-                  text-sm
-                  group-hover:bg-orange-600
-                  group-hover:text-white
-                  transition-all
-                  duration-300
-                "
-              >
+              <div className="mt-auto inline-flex items-center gap-2 text-orange-600 text-sm font-semibold">
                 Visit Website
                 <ExternalLink className="w-4 h-4" />
               </div>
