@@ -36,7 +36,7 @@ export default function Footer() {
 
               {/* Email */}
               <a
-                href="mailto:nikhil@therapidnest.com"
+                href="mailto:contact@therapidnest.com"
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 <Mail size={18} />
