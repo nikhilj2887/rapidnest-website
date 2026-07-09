@@ -86,7 +86,7 @@ export default function Contact() {
           <div className="space-y-6">
 
             <a
-              href="mailto:nikhil@therapidnest.com"
+              href="mailto:contact@therapidnest.com"
               className="group flex items-start gap-4 p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300"
             >
               <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
@@ -99,7 +99,7 @@ export default function Contact() {
                 </h3>
 
                 <p className="text-gray-300">
-                  nikhil@therapidnest.com
+                 contact@therapidnest.com
                 </p>
               </div>
             </a>
