@@ -801,3 +801,14 @@ details p { margin: 15px 0 0; font-size: 14px; }
   html { scroll-behavior: auto; }
   .button:hover svg, .button:focus-visible svg { transform: none; }
 }
+
+/* Contrast corrections measured in the rendered axe review. */
+.app-chrome, .app-tabs, .table-label, .automation-step div > span,
+.service-number, .index, .technology-label, .tech-badge, .status-pill.slate { color: #526174; }
+.approach-signature > span:last-child { color: #5c6978; }
+.founder-copy .founder-intro { color: #546578; }
+@media (max-width: 600px) {
+  .hero-composition { padding-top: 48px; }
+  .composition-heading { display: none; }
+  .governance-note { top: 6px; }
+}

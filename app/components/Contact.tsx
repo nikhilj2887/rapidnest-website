@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState, type FormEvent } from "react";
 import { services } from "../data/services";
 export default function Contact() {
-    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error" | "invalid" | "cooldown">("idle");
     const busy = useRef(false);
     const lastSent = useRef(0);
     async function sendEmail(e: FormEvent<HTMLFormElement>) {
@@ -15,10 +15,11 @@ export default function Contact() {
         if (data.get("website"))
             return;
         const name = String(data.get("name") ?? "").trim(), email = String(data.get("email") ?? "").trim(), message = String(data.get("message") ?? "").trim();
-        if (!name || !email || !message || !form.reportValidity() || Date.now() - lastSent.current < 30000) {
-            setStatus("error");
+        if (!name || !email || !message || !form.reportValidity()) {
+            setStatus("invalid");
             return;
         }
+        if (Date.now() - lastSent.current < 30000) { setStatus("cooldown"); return; }
         busy.current = true;
         setStatus("sending");
         const details = ["company", "phone", "service", "budget", "timeline"].map(k => [k, String(data.get(k) ?? "").trim()]).filter(([, v]) => v).map(([k, v]) => `${k}: ${v}`).join("\n");
@@ -48,11 +49,13 @@ export default function Contact() {
  <label htmlFor="service" className="full-width">Service required<select id="service" name="service" defaultValue=""><option value="">Select a service (optional)</option>{services.map(s => <option key={s.slug} value={s.title}>{s.title}</option>)}</select></label>
  <label htmlFor="budget">Estimated budget<input id="budget" name="budget" placeholder="Amount and currency" maxLength={80}/></label>
  <label htmlFor="timeline">Expected timeline<input id="timeline" name="timeline" placeholder="Your target date" maxLength={80}/></label>
- <label htmlFor="message" className="full-width">Project details *<textarea id="message" name="message" rows={4} required maxLength={5000}/></label>
+ <label htmlFor="message" className="full-width">Project details *<textarea aria-describedby="contact-privacy" id="message" name="message" rows={4} required maxLength={5000}/></label>
  </div><div className="honeypot" aria-hidden="true"><label htmlFor="website">Leave this field empty</label><input id="website" name="website" tabIndex={-1} autoComplete="off"/></div>
- <p className="privacy-note">Your details are sent through EmailJS to respond to your inquiry. Please avoid sensitive or confidential information. For privacy questions, email contact@therapidnest.com.</p>
- <button className="button primary" type="submit" disabled={status === "sending"}>{status === "sending" ? "Sending…" : "Request a Consultation ↗"}</button>
+ <p id="contact-privacy" className="privacy-note">Your details are sent through EmailJS to respond to your inquiry. Please avoid sensitive or confidential information. For privacy questions, email contact@therapidnest.com.</p>
+ <button className="button primary" type="submit" disabled={status === "sending"}>{status === "sending" && <span className="loading-indicator" aria-hidden="true" />}{status === "sending" ? "Sending…" : "Request a Consultation ↗"}</button>
  <div role="status" aria-live="polite">{status === "success" && <p className="form-feedback">Your message was sent. Thank you for contacting RapidNest.</p>}</div>
- {status === "error" && <p role="alert" className="form-feedback">We couldn’t send your message. Check the required fields, wait 30 seconds if you recently sent an inquiry, and try again. You can also email us directly.</p>}
+ {status === "invalid" && <p role="alert" className="form-feedback">Please enter your name, a valid email address, and a project description.</p>}
+ {status === "cooldown" && <p role="alert" className="form-feedback">Your previous inquiry was sent. Please wait 30 seconds before sending another.</p>}
+ {status === "error" && <p role="alert" className="form-feedback">We couldn’t send your message. Your details are still here. Please try again, or email contact@therapidnest.com.</p>}
  </form></div></section>;
 }

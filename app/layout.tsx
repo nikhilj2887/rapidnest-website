@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Navbar from "./components/Navbar";
+import MotionEnhancements from "./components/MotionEnhancements";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({ children, }: {
       <body className="min-h-full flex flex-col">
         <a href="#main-content" className="skip-link">Skip to content</a>
         <Navbar />
+        <MotionEnhancements />
         <main id="main-content">{children}</main>
         <Footer />
         <WhatsAppButton />
