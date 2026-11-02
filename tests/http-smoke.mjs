@@ -20,10 +20,15 @@ for (const route of routes) {
   assert.ok(html.includes('name="twitter:card"'),`${route}: Twitter card`);
   assert.ok(html.includes('property="og:title"'),`${route}: Open Graph`);
   if(route==='/') {
-    for(const id of ['services','clients','work','why-us','methodology','technology','about','founder','partnerships','contact']) assert.ok(html.includes(`id="${id}"`),id);
+    for(const id of ['services','clients','work','why-us','methodology','technology','about','founder','contact']) assert.ok(html.includes(`id="${id}"`),id);
     assert.equal((html.match(/name="service"/g)||[]).length,1);
     assert.ok(!html.includes('Baseline Retention Solution'));
     assert.ok(!html.includes('Happy Customers'));
+    assert.ok(!html.includes('id="partnerships"'));
+    assert.ok(!html.includes('Selected during technical discovery.'));
+    assert.ok(!html.includes('publication permissions are confirmed'));
+    assert.ok(html.includes('Concept interface'));
+    assert.ok(!html.includes('orbit-one'));
     assert.ok(html.includes('google-analytics') && html.includes('G-HX5DG2E97J'));
   }
   console.log(`PASS ${route}: HTTP 200, heading, canonical, navigation and social metadata`);

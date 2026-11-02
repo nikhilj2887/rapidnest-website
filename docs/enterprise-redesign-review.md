@@ -1,5 +1,7 @@
 # RapidNest enterprise redesign review
 
+This is the historical first-pass report. See [the subsequent premium UI correction](premium-ui-review.md) for the current design, browser verification and screenshots.
+
 Date: 2 November 2026. Local implementation only; no push, merge, or deployment.
 
 ## Repository audit
