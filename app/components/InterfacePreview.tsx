@@ -17,7 +17,7 @@ export default function InterfacePreview({ kind = "overview" }: { kind?: Preview
     <div className={`interface-preview preview-${kind}`}>
       <div className="app-chrome" aria-hidden="true">
         <div className="window-dots"><i /><i /><i /></div>
-        <span>workspace / {kind === "overview" ? "overview" : kind}</span>
+        <span>{kind === "overview" ? "Business workspace" : labels[kind]}</span>
         <LockKeyhole size={11} />
       </div>
       <div className="app-shell" aria-hidden="true">
@@ -55,7 +55,7 @@ function OperationsPanel({ overview }: { overview: boolean }) {
         { title: "Review", task: "Stakeholder feedback", detail: "Acceptance review", initials: "QA" },
       ].map(column => <div className="pipeline-column" key={column.title}>
         <span className="column-label"><i />{column.title}</span>
-        <div className="task-card"><span className="task-tag">{column.detail}</span><strong>{column.task}</strong><div className="task-lines"><i /><i /></div><div className="task-footer"><span className="avatar">{column.initials}</span><CheckCheck size={12} /></div></div>
+        <div className="task-card"><strong>{column.task}</strong><div className="task-footer"><span className="avatar">{column.initials}</span><CheckCheck size={12} /></div></div>
       </div>)}
     </div>
     {overview && <div className="app-activity"><span className="activity-icon"><Check size={12} /></span><div><strong>A connected view of your business</strong><span>People, processes, and information in context.</span></div><ArrowRight size={15} /></div>}

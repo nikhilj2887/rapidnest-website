@@ -73,3 +73,7 @@ export const relationships: Relationship[] = [
         "kind": "partner"
     }
 ];
+
+export function getApprovedRelationships(kind: Relationship["kind"], records: readonly Relationship[] = relationships) {
+    return records.filter(record => record.kind === kind && record.verification === "verified" && record.publicationApproved);
+}
