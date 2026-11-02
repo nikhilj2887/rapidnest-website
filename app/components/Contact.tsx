@@ -46,7 +46,7 @@ export default function Contact() {
  <label htmlFor="email">Email address *<input id="email" name="email" type="email" autoComplete="email" required maxLength={254}/></label>
  <label htmlFor="company">Company<input id="company" name="company" autoComplete="organization" maxLength={150}/></label>
  <label htmlFor="phone">Phone<input id="phone" name="phone" type="tel" autoComplete="tel" maxLength={40}/></label>
- <label htmlFor="service" className="full-width">Service required<select id="service" name="service" defaultValue=""><option value="">Select a service (optional)</option>{services.map(s => <option key={s.slug} value={s.title}>{s.title}</option>)}</select></label>
+ <label htmlFor="service" className="full-width">Service of interest (optional)<select id="service" name="service" defaultValue=""><option value="">Select a service (optional)</option>{services.map(s => <option key={s.slug} value={s.title}>{s.title}</option>)}</select></label>
  <label htmlFor="budget">Estimated budget<input id="budget" name="budget" placeholder="Amount and currency" maxLength={80}/></label>
  <label htmlFor="timeline">Expected timeline<input id="timeline" name="timeline" placeholder="Your target date" maxLength={80}/></label>
  <label htmlFor="message" className="full-width">Project details *<textarea aria-describedby="contact-privacy" id="message" name="message" rows={4} required maxLength={5000}/></label>

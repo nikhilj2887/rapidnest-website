@@ -6,70 +6,79 @@ export interface Relationship {
     verification: "pending" | "verified";
     publicationApproved: boolean;
     kind: "client" | "partner";
+    publicationEvidence: string;
 }
 export const relationships: Relationship[] = [
     {
         "name": "Swadeshi",
         "url": "https://swadeshi.co.za/",
         "logo": "/clients/swadeshi.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "The Lyft",
         "url": "https://thelyft.in/",
         "logo": "/clients/thelyft.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "Mango Mist",
         "url": "https://www.mangomist.com/",
         "logo": "/clients/mangomist.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "Lamara",
         "url": "https://lamara.in/",
         "logo": "/clients/lamara.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "Clarion Talent Forge",
         "url": "https://www.clariontf.com/",
         "logo": "/clients/Clarion.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "Baseline Retention Solution",
         "url": null,
         "logo": "/clients/Baseline_logo_Hexcode_ADBABC.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; no project, outcome, or credential claims authorized.",
         "kind": "client"
     },
     {
         "name": "WICCI",
         "url": "https://wicci.au/",
         "logo": "/partners/wicci.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; exact connection designation remains unconfirmed and is not displayed.",
         "kind": "partner"
     },
     {
         "name": "G100",
         "url": "https://g100.in/",
         "logo": "/partners/g100.png",
-        "verification": "pending",
-        "publicationApproved": false,
+        "verification": "verified",
+        "publicationApproved": true,
+        "publicationEvidence": "Owner confirmed the eight named logos for publication during the content audit; exact connection designation remains unconfirmed and is not displayed.",
         "kind": "partner"
     }
 ];

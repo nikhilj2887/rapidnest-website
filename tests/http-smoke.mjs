@@ -22,15 +22,24 @@ for (const route of routes) {
   if(route==='/') {
     for(const id of ['services','work','why-us','methodology','technology','about','founder','contact']) assert.ok(html.includes(`id="${id}"`),id);
     assert.equal((html.match(/name="service"/g)||[]).length,1);
-    assert.ok(!html.includes('Baseline Retention Solution'));
+    assert.ok(html.includes('Baseline Retention Solution'));
+    assert.ok(html.includes("Organizations We&amp;#x27;ve Worked With") || html.includes("Organizations We&#x27;ve Worked With") || html.includes("Organizations We've Worked With"));
     assert.ok(!html.includes('Happy Customers'));
-    assert.ok(!html.includes('id="partnerships"'));
-    assert.ok(!html.includes('id="clients"'));
+    assert.ok(html.includes('id="partnerships"'));
+    assert.ok(html.includes('id="clients"'));
+    assert.ok(!html.includes('/partners/ALL.png'));
+    assert.ok(!html.includes('Official Digital Partner'));
     assert.ok(!html.includes('Selected during technical discovery.'));
     assert.ok(!html.includes('publication permissions are confirmed'));
     assert.ok(html.includes('Concept interface'));
     assert.ok(!html.includes('orbit-one'));
     assert.ok(html.includes('google-analytics') && html.includes('G-HX5DG2E97J'));
+  }
+  if(route.startsWith('/services/')) {
+    assert.ok(html.includes('Problems this service addresses'));
+    assert.ok(html.includes('What an engagement can include'));
+    assert.ok(html.includes('How we approach the work'));
+    assert.ok(!html.includes('guide our delivery approach with clear review points'));
   }
   console.log(`PASS ${route}: HTTP 200, heading, canonical, navigation and social metadata`);
 }

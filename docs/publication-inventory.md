@@ -1,43 +1,34 @@
 # Publication review inventory
 
-Compared the original local `main` branch with the feature branch on 2 November 2026. Existing publication in an earlier commit is not treated as evidence of current client relationship or permission. The review changes do not grant permission.
+Current state: the owner confirmed publication of the eight named client/connection logos during the complete content audit with **“yes these logos only”**, in reply to a question explicitly asking for relationship accuracy and logo publication authorization. This supersedes the earlier pending status in historical UI reports. See [the complete audit](complete-website-content-audit.md) for the organization-by-organization checklist.
 
-## Supported and approved for this implementation
+## Approved scope
 
-| Content | Evidence / scope |
-| --- | --- |
-| RapidNest identity and contact details | Existing website and current user instructions; domain and integrations preserved |
-| Nikhil Gupta identity and photograph | Existing `main` component and original `public/founder.png`; explicitly requested preservation |
-| Founder biography | User-supplied biography; describes his professional background separately from company history |
-| Seven service descriptions | Requested technical service positioning; no completed-product, certification or outcome claims |
-| React, Next.js, TypeScript | Installed dependencies and application source; only frontend category displayed |
-| Conceptual interface illustrations | Original UI composed for this redesign; visibly labelled illustrative examples, not client screenshots |
+Approved: display the six named client logos and WICCI/G100 connection logos with their organization names and retained website links. No approval is inferred for case studies, implementation details, testimonials, outcomes, certifications, endorsements, or official partnership titles.
 
-## Existing assets / relationships needing publication confirmation
-
-All records remain `verification: "pending"` and `publicationApproved: false`. They are not currently rendered. Confirm relationship scope, correct designation, and authorization to display the logo before changing those flags.
-
-| Organization | Original URL | Preserved asset | Pending |
+| Organization | Asset | Website | Status |
 | --- | --- | --- | --- |
-| Swadeshi | https://swadeshi.co.za/ | `/clients/swadeshi.png` | Relationship and logo publication permission |
-| The Lyft | https://thelyft.in/ | `/clients/thelyft.png` | Relationship and logo publication permission |
-| Mango Mist | https://www.mangomist.com/ | `/clients/mangomist.png` | Relationship and logo publication permission |
-| Lamara | https://lamara.in/ | `/clients/lamara.png` | Relationship and logo publication permission |
-| Clarion Talent Forge | https://www.clariontf.com/ | `/clients/Clarion.png` | Relationship and logo publication permission |
-| Baseline Retention Solution | `#` in original; now `null` | `/clients/Baseline_logo_Hexcode_ADBABC.png` | Valid website, relationship and permission; no confidential engagement details published |
-| WICCI | https://wicci.au/ | `/partners/wicci.png` | Exact affiliation designation and publication permission |
-| G100 | https://g100.in/ | `/partners/g100.png` | Exact affiliation designation and publication permission |
-| Unassigned asset | No original relationship entry | `/partners/ALL.png` | Identity, relationship and permission unknown; unused |
+| Swadeshi | `/clients/swadeshi.png` | https://swadeshi.co.za/ | Owner confirmed; logo published |
+| The Lyft | `/clients/thelyft.png` | https://thelyft.in/ | Owner confirmed; logo published |
+| Mango Mist | `/clients/mangomist.png` | https://www.mangomist.com/ | Owner confirmed; logo published |
+| Lamara | `/clients/lamara.png` | https://lamara.in/ | Owner confirmed; logo published |
+| Clarion Talent Forge | `/clients/Clarion.png` | https://www.clariontf.com/ | Owner confirmed; logo published |
+| Baseline Retention Solution | `/clients/Baseline_logo_Hexcode_ADBABC.png` | None verified | Owner confirmed; static logo/name, no website link |
+| WICCI | `/partners/wicci.png` | https://wicci.au/ | Owner confirmed; neutral connection display, exact designation pending |
+| G100 | `/partners/g100.png` | https://g100.in/ | Owner confirmed; neutral connection display, exact designation pending |
+| ALL / All Ladies League (text visible in asset) | `/partners/ALL.png` | None established | Not among approved names; no relationship record or authorization; unpublished |
 
-No approved client case studies, partner designations or logo permissions were established by the repository review. Empty partner sections and internal review notices have been removed from public pages. The review inventory remains in repository documentation only.
+Every asset is byte-identical to `main`. Recovering an asset or finding prior publication did not itself authorize use. Approval came from the current owner response. WICCI and G100 are displayed as names/logos without the former “Official Digital Partner” designation. Baseline is not associated publicly with a GDPR engagement or product.
 
-## Unverified or unsupported
+## Still awaiting evidence or approval
 
-- PRINCE2 Practitioner and Certified ScrumMaster (CSM): confirmation and permission for public use required. Not displayed.
-- Founder “15+ years”: dated career evidence and calculation required. Not displayed.
-- “50+ Happy Customers”, “100+ Projects Completed”, “98% Success Rate”, “5+ Years Experience”: supporting records required. Not displayed.
-- Completed client outcomes, project screenshots, testimonials and approval to publish: none established. No client stories fabricated.
-- Established delivery capability in Python, Node.js, .NET, PostgreSQL, AWS, Azure, Supabase and Power BI: insufficient project evidence. Backend, cloud, database, AI tool and analytics tool categories omitted. Service descriptions do not imply a verified history in those specific technologies.
-- Scheduling destination: none verified. Consultation CTAs use the existing contact section.
+- Baseline website URL; exact WICCI/G100 relationship designations.
+- ALL relationship, identity confirmation and logo permission.
+- PRINCE2 Practitioner and Certified ScrumMaster credentials and permission for public use.
+- Dated evidence for any founder experience total.
+- Company customer/project counts, success rates and years in operation.
+- Client-specific project examples, quotes, technologies, delivery status and measurable outcomes, each with explicit publication permission.
+- Broader technology delivery history beyond repository-supported React, Next.js and TypeScript frontend work.
+- A verified booking destination; the existing configuration remains unpublished.
 
-Original descriptive industry labels in `main` are historical context, not independent relationship verification. Founder employment projects are not represented as RapidNest engagements. No compliance certification or guaranteed GDPR outcome is claimed.
+Original assets are preserved. Founder professional experience is described separately from company achievements. No legal certification or guaranteed GDPR compliance is claimed. The rendering gate continues to require both `verification: "verified"` and `publicationApproved: true` for each record; no bypass was added.

@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="governance-note"><ShieldCheck size={17} /><span>Designed with control in mind</span></div>
         </div>
       </div>
-      <div className="hero-bottom"><div className="container"><span>STRATEGY MEETS ENGINEERING</span><span>Purposeful technology. Practical business value.</span><a href="#services" aria-label="Explore services">Explore <span aria-hidden="true">↓</span></a></div></div>
+      <div className="hero-bottom"><div className="container"><span>STRATEGY MEETS ENGINEERING</span><span>Custom applications. Connected processes. Governed data.</span><a href="#services" aria-label="Explore services">Explore <span aria-hidden="true">↓</span></a></div></div>
     </section>
   );
 }

@@ -36,8 +36,9 @@ test('relationships are preserved for review and no placeholder URL is published
   assert.equal(relationships.filter(r => r.kind === 'partner').length, 2);
   assert.equal(relationships.find(r => r.name === 'Baseline Retention Solution').url, null);
   for (const r of relationships) {
-    assert.equal(r.verification, 'pending');
-    assert.equal(r.publicationApproved, false);
+    assert.equal(r.verification, 'verified');
+    assert.equal(r.publicationApproved, true);
+    assert.ok(r.publicationEvidence.includes("Owner confirmed"));
     assert.ok(fs.existsSync(`public${r.logo}`));
     if (r.url) assert.equal(new URL(r.url).protocol, 'https:');
   }
@@ -124,6 +125,19 @@ test('client and partner eligibility requires both evidence and publication appr
     const eligible = getApprovedRelationships(kind, fixture);
     assert.equal(eligible.length, 1);
     assert.ok(eligible.every(record => record.kind === kind && record.verification === 'verified' && record.publicationApproved));
-    assert.equal(getApprovedRelationships(kind).length, 0);
+    assert.equal(getApprovedRelationships(kind).length, kind === 'client' ? 6 : 2);
+  }
+});
+
+
+test('each service has distinct, complete engagement content and aligned capability detail', () => {
+  assert.equal(new Set(services.map(service => service.detailedDescription)).size, services.length);
+  assert.equal(new Set(services.map(service => service.implementation)).size, services.length);
+  for(const service of services) {
+    assert.equal(service.capabilityDetails.length, service.capabilities.length);
+    assert.ok(service.challenges.length >= 3 && service.deliverables.length >= 3);
+    assert.ok(service.integrationConsiderations && service.faqs.length >= 2);
+    assert.ok(service.capabilityDetails.every(detail => !detail.includes('around agreed requirements, integration constraints, and acceptance criteria.')));
+    assert.ok(service.technologies.every(technology => ['React','Next.js','TypeScript'].includes(technology)));
   }
 });
