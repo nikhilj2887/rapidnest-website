@@ -24,8 +24,6 @@ Every asset is byte-identical to `main`. Recovering an asset or finding prior pu
 
 - Baseline website URL; exact WICCI/G100 relationship designations.
 - ALL relationship, identity confirmation and logo permission.
-- PRINCE2 Practitioner and Certified ScrumMaster credentials and permission for public use.
-- Dated evidence for any founder experience total.
 - Company customer/project counts, success rates and years in operation.
 - Client-specific project examples, quotes, technologies, delivery status and measurable outcomes, each with explicit publication permission.
 - Broader technology delivery history beyond repository-supported React, Next.js and TypeScript frontend work.
@@ -36,3 +34,7 @@ Original assets are preserved. Founder professional experience is described sepa
 ## Partnership presentation enhancement
 
 WICCI and G100 now appear once in **Our Global Partnerships**, after Solutions We Build, with neutral **Professional connection** badges. The supplied section description is general positioning, not evidence of an official designation. See [the enhancement review](partnership-enhancement-review.md) for implementation, responsive screenshots and verification.
+
+## Founder correction approval
+
+During the founder correction, the owner answered **“yes”** to the explicit question confirming verification and public-use approval for PRINCE2 Practitioner, Certified ScrumMaster (CSM), Senior Management Programme — Indian Institute of Management Visakhapatnam, and attribution of the proposed founder quotation. These items are now approved for the founder section. The owner also supplied `https://www.linkedin.com/in/nikhil-jogiparthy/` as the verified profile. The exact supplied biography attributes “over 14 years” to Nikhil Jogiparthy’s individual professional experience, not company history. These are owner-confirmed facts; certificate documents were not independently examined. See [the founder review](founder-profile-review.md).

@@ -38,7 +38,7 @@ async function capture(file, full = false) {
   if(full) await send('Emulation.setDeviceMetricsOverride',{...viewport,deviceScaleFactor:1,mobile:false});
  }
 }
-const out=process.cwd()+'/docs/partnership-review'; fs.mkdirSync(out,{recursive:true});
+const out=process.cwd()+(process.env.REVIEW_OUTPUT_DIR || '/docs/partnership-review'); fs.mkdirSync(out,{recursive:true});
 const results=[];
 const accessibility=[];
 const axeSource=fs.readFileSync(require.resolve('axe-core/axe.js'),'utf8');
@@ -129,7 +129,10 @@ try {
   await evaluate(`(()=>{const values={name:'Browser review',email:'review@example.org',company:'Example',phone:'123',service:'GDPR & Data Retention Solutions',budget:'Test only',timeline:'Test only',message:'Mocked request; no live email'};const f=document.querySelector('.contact-form');for(const [key,value]of Object.entries(values)){const input=f.elements.namedItem(key);const setter=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(input),'value').set;setter.call(input,value);input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));}f.requestSubmit();f.requestSubmit()})()`);
   await new Promise(r=>setTimeout(r,100));
   const loading=await evaluate(`document.querySelector('.contact-form').getAttribute('aria-busy')==='true' && document.querySelector('.contact-form button[type="submit"]').disabled`);
-  await new Promise(r=>setTimeout(r,900));
+  for(let attempt=0;attempt<100;attempt++){
+   if(await evaluate(`document.querySelector('.contact-form').getAttribute('aria-busy')!=='true'`))break;
+   await new Promise(r=>setTimeout(r,100));
+  }
   const state=await evaluate(`({calls:window.__mockCalls.length,keys:window.__mockCalls[0]?Object.keys(window.__mockCalls[0].template_params).sort():[],status:document.querySelector('[role="status"]').textContent,error:document.querySelector('[role="alert"]')?.textContent||'',retained:document.querySelector('#name').value,message:window.__mockCalls[0]?.template_params.message})`);
   if(!loading||state.calls!==1||state.keys.join(',')!=='email,message,name'||(outcome==='success'?!state.status.includes('Your message was sent'):!state.error.includes('couldn’t send')||state.retained!=='Browser review'))throw new Error('Mock contact '+outcome+' '+JSON.stringify(state));
   mockedContact.push({outcome,loading,...state});
