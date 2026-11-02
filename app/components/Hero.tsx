@@ -1,11 +1,30 @@
 import Link from "next/link";
+import { ArrowUpRight, Check, Layers3, ShieldCheck } from "lucide-react";
+import InterfacePreview from "./InterfacePreview";
+
 export default function Hero() {
-    return <section className="hero"><div className="container hero-grid"><div>
- <p className="eyebrow">CUSTOM SOFTWARE · AI AUTOMATION · ENTERPRISE SOLUTIONS</p>
- <h1>Engineering Digital Solutions.<br /><span>Accelerating Business Growth.</span></h1>
- <p className="lead">From AI automation and enterprise applications to custom CRM platforms and data retention solutions, RapidNest Software Solutions helps businesses modernize operations and build scalable technology.</p>
- <div className="actions"><Link href="/work" className="button primary">Explore Our Work <span aria-hidden="true">↗</span></Link><Link href="/#contact" className="button secondary">Discuss Your Project</Link></div>
- <p className="trust">Business understanding. Structured delivery. Maintainable technology.</p></div>
- <div className="system-visual" aria-hidden="true"><div className="visual-top"><span>CONNECTED BY DESIGN</span><span>RN / 01</span></div><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="core">RN<span>ENGINEERING<br />WITH PURPOSE</span></div><span className="node node-a">Intelligent workflows</span><span className="node node-b">Business applications</span><span className="node node-c">Connected data</span><div className="visual-bottom">STRATEGY → SYSTEMS → BUSINESS VALUE</div></div>
- </div></section>;
+  return (
+    <section className="hero">
+      <div className="hero-grid-texture" aria-hidden="true" />
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow"><span className="accent-line" />CUSTOM SOFTWARE · AI AUTOMATION · ENTERPRISE SOLUTIONS</p>
+          <h1>Engineering<br className="desktop-break" /> Digital Solutions.<br /><span>Accelerating<br className="desktop-break" /> Business Growth.</span></h1>
+          <p className="lead">From AI automation and enterprise applications to custom CRM platforms and data retention solutions, RapidNest Software Solutions helps businesses modernize operations and build scalable technology.</p>
+          <div className="actions">
+            <Link href="/work" className="button primary">Explore Our Work <ArrowUpRight size={17} /></Link>
+            <Link href="/#contact" className="button secondary">Discuss Your Project</Link>
+          </div>
+          <div className="hero-principles"><span><Check size={13} />Business-first thinking</span><span><Check size={13} />Structured delivery</span></div>
+        </div>
+        <div className="hero-composition">
+          <div className="composition-heading"><span>FROM COMPLEXITY TO CLARITY</span><span className="composition-line" /></div>
+          <InterfacePreview />
+          <div className="integration-note"><span className="note-icon"><Layers3 size={18} /></span><div><strong>Systems that work together</strong><span>Applications · Workflows · Data</span></div></div>
+          <div className="governance-note"><ShieldCheck size={17} /><span>Designed with control in mind</span></div>
+        </div>
+      </div>
+      <div className="hero-bottom"><div className="container"><span>STRATEGY MEETS ENGINEERING</span><span>Purposeful technology. Practical business value.</span><a href="#services" aria-label="Explore services">Explore <span aria-hidden="true">↓</span></a></div></div>
+    </section>
+  );
 }
