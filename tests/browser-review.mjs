@@ -38,7 +38,7 @@ async function capture(file, full = false) {
   if(full) await send('Emulation.setDeviceMetricsOverride',{...viewport,deviceScaleFactor:1,mobile:false});
  }
 }
-const out=process.cwd()+'/docs/final-visual-review'; fs.mkdirSync(out,{recursive:true});
+const out=process.cwd()+'/docs/content-audit-visual-review'; fs.mkdirSync(out,{recursive:true});
 const results=[];
 const accessibility=[];
 const axeSource=fs.readFileSync(require.resolve('axe-core/axe.js'),'utf8');
@@ -56,6 +56,8 @@ try {
   const layout=await evaluate(`(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:document.querySelector('.hero').getBoundingClientRect().toJSON(),brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),overflow:[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect();return !e.closest('.honeypot')&&r.width>0&&(r.right>innerWidth+1||r.left< -1)&&getComputedStyle(e).position!=='absolute'}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,width:e.getBoundingClientRect().width}))}))()`);
   if(width>=1024 && layout.hero.bottom>height-66) throw new Error('Desktop hero does not fit viewport: '+JSON.stringify(layout.hero));
   if(width>=1024){const copyTops=await evaluate(`[...document.querySelectorAll('.solution-copy')].map(e=>e.getBoundingClientRect().top)`);if(Math.max(...copyTops)-Math.min(...copyTops)>1)throw new Error('Solution preview rows misaligned');}
+  const logos=await evaluate(`({clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('#partnerships .logo-card').length,clientOrder:document.querySelector('.hero').nextElementSibling?.id,partnerOrder:document.querySelector('#founder').nextElementSibling?.id,baselineLinks:[...document.querySelectorAll('#clients a')].filter(a=>a.textContent.includes('Baseline')).length,unapproved:!!document.querySelector('img[src*="ALL.png"]'),fit:[...document.querySelectorAll('.logo-card img')].every(i=>getComputedStyle(i).objectFit==='contain')})`);
+  if(logos.clients!==6||logos.partners!==2||logos.clientOrder!=='clients'||logos.partnerOrder!=='partnerships'||logos.baselineLinks||logos.unapproved||!logos.fit)throw new Error('Approved logo rendering '+JSON.stringify(logos));
   if(layout.scrollWidth>width)throw new Error('Overflow '+JSON.stringify(layout));
   if(layout.brokenImages.length)throw new Error('Broken images '+JSON.stringify(layout));
   if([375,768,1440].includes(width)) await capture(`${out}/home-${width}.png`,true);
@@ -79,7 +81,7 @@ try {
   if(form.empty||form.invalidEmail||!form.valid)throw new Error('Validation '+JSON.stringify(form));
   const measurements=await evaluate(`({layoutShiftScore:window.__layoutShifts.reduce((a,b)=>a+b,0),paint:performance.getEntriesByType('paint').map(p=>({name:p.name,startTime:p.startTime})),revealTargets:document.querySelectorAll('.reveal-enter').length})`);
   if([375,1440].includes(width))await scanAccessibility('home-'+width);
-  results.push({width,layout,header,form,measurements,status:'pass'});
+  results.push({width,layout,header,form,logos,measurements,status:'pass'});
   console.log('PASS homepage viewport '+width+'px: no overflow/broken images, opaque sticky header, native form validation'+(width<851?', mobile navigation and anchor offset':''));
  }
 
@@ -94,7 +96,11 @@ try {
    serviceResults.push({slug,width,...layout});
    if(width===1440){await scanAccessibility(slug);if(slug==='gdpr-data-retention')await capture(`${out}/gdpr-1440.png`,true);}
   }
-  console.log('PASS all seven service pages at '+width+'px');
+  await navigate(baseUrl+'/work');
+  const work=await evaluate(`({overflow:document.documentElement.scrollWidth>innerWidth,h1:document.querySelectorAll('main h1').length,active:document.querySelector('header a[href="/work"]').getAttribute('aria-current')})`);
+  if(work.overflow||work.h1!==1||work.active!=='page')throw new Error('Work page '+width);
+  if(width===1440)await scanAccessibility('work');
+  console.log('PASS all seven service pages and Our Work at '+width+'px');
  }
  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});
  await navigate(baseUrl+'/services/gdpr-data-retention');
@@ -111,6 +117,8 @@ try {
  await send('Emulation.setScriptExecutionDisabled',{value:false});
  const noJs=await evaluate(`['.hero h1','#services','#contact'].every(s=>{const e=document.querySelector(s);return e&&getComputedStyle(e).visibility!=='hidden'&&Number(getComputedStyle(e).opacity)>0})`);
  if(!noJs)throw new Error('No-JavaScript content hidden');
+ const integrationLinks=await evaluate(`({whatsApp:[...document.querySelectorAll('a[href*="wa.me"]')].every(a=>new URL(a.href).pathname==='/916300675410'),email:[...document.querySelectorAll('a[href^="mailto:"]')].every(a=>a.getAttribute('href')==='mailto:contact@therapidnest.com')})`);
+ if(!integrationLinks.whatsApp||!integrationLinks.email)throw new Error('Contact destination mismatch');
  const mockedContact=[];
  for(const outcome of ['success','failure']){
   await navigate(baseUrl+'/');
@@ -123,7 +131,7 @@ try {
   if(!loading||state.calls!==1||state.keys.join(',')!=='email,message,name'||(outcome==='success'?!state.status.includes('Your message was sent'):!state.error.includes('couldn’t send')||state.retained!=='Browser review'))throw new Error('Mock contact '+outcome+' '+JSON.stringify(state));
   mockedContact.push({outcome,loading,...state});
  }
- fs.writeFileSync(`${out}/results.json`,JSON.stringify({results,serviceResults,accessibility,reducedMotion,noJs,mockedContact,consoleErrors,emailSubmission:'mocked in browser; external provider requests blocked'},null,2)+'\n');
+ fs.writeFileSync(`${out}/results.json`,JSON.stringify({results,serviceResults,accessibility,reducedMotion,noJs,integrationLinks,mockedContact,consoleErrors,emailSubmission:'mocked in browser; external provider requests blocked'},null,2)+'\n');
  if(accessibility.some(scan=>scan.violations.length))throw new Error('Accessibility violations recorded in results.json');
  if(consoleErrors.length)throw new Error('Uncaught page exceptions '+consoleErrors.join(','));
  console.log('PASS reduced motion, no-JavaScript content, mocked browser EmailJS success/failure and duplicate protection.');

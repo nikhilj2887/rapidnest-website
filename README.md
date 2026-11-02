@@ -12,8 +12,8 @@ npm run start -- --hostname 127.0.0.1 --port 3100
 npm run test:http
 ```
 
-Service content lives in `app/data/services.ts`. Client and partner records in `app/data/relationships.ts` require verified relationships and publication approval before rendering. Case studies in `app/data/case-studies.ts` render only with `publicationApproval: "approved"`; no studies are currently approved.
+Service content lives in `app/data/services.ts`. Client and partner records in `app/data/relationships.ts` require verified relationships and publication approval before rendering. Case studies in `app/data/case-studies.ts` render only with `publicationApproval: "approved"`; no studies are currently approved. The owner has approved the six client logos and WICCI/G100 connection logos; the unclassified ALL asset remains unpublished.
 
 The contact form preserves the existing EmailJS `name`, `email`, and `message` template contract. Optional details are appended to `message`. Public keys are public configuration; provider origin restrictions and abuse controls must be reviewed in the EmailJS dashboard. Tests mock submission and do not send live inquiries.
 
-See [the final premium UI report](docs/final-premium-ui-review.md), [the premium UI correction and screenshots](docs/premium-ui-review.md), [publication inventory](docs/publication-inventory.md), and [original implementation report](docs/enterprise-redesign-review.md) for audit findings, routes, pending facts, test limitations, and preview instructions. Do not deploy to production or push to a production-connected branch without approval.
+See [the complete website content audit](docs/complete-website-content-audit.md), [the final premium UI report](docs/final-premium-ui-review.md), [the premium UI correction and screenshots](docs/premium-ui-review.md), [publication inventory](docs/publication-inventory.md), and [original implementation report](docs/enterprise-redesign-review.md) for audit findings, routes, pending facts, test limitations, and preview instructions. Do not deploy to production or push to a production-connected branch without approval.
