@@ -9,6 +9,12 @@
   --night: #0c1a2e;
   --radius: 16px;
   --shadow: 0 10px 35px #172c4207;
+  --text-body: 15px;
+  --text-label: 12px;
+  --section-space: 72px;
+  --motion-duration: 450ms;
+  --motion-stagger: 80ms;
+  --motion-ease: cubic-bezier(.2, .65, .3, 1);
   --background: var(--paper);
   --foreground: var(--ink);
 }
