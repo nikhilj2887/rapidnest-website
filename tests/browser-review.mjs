@@ -29,6 +29,21 @@ async function capture(file, full = false) {
  try {
   if (full) {
    const layout = await send('Page.getLayoutMetrics');
+   // Keep individual captures below Chrome's texture limit on long mobile pages.
+   if(layout.cssContentSize.height>16000){
+    const sharp=require('sharp');
+    const tiles=[];
+    const railVisibility=await evaluate(`(()=>{const rail=document.querySelector('.whatsapp-rail');const previous=rail.style.visibility;rail.style.visibility='hidden';return previous})()`);
+    try {
+     for(let top=0;top<Math.ceil(layout.cssContentSize.height);top+=8000){
+      const height=Math.min(8000,Math.ceil(layout.cssContentSize.height)-top);
+      const {data}=await send('Page.captureScreenshot',{format:'png',clip:{x:0,y:top,width:viewport.width,height,scale:1},captureBeyondViewport:true});
+      tiles.push({input:Buffer.from(data,'base64'),top,left:0});
+     }
+     await sharp({create:{width:viewport.width,height:Math.ceil(layout.cssContentSize.height),channels:3,background:'#fff'}}).composite(tiles).png().toFile(file);
+    } finally {await evaluate(`document.querySelector('.whatsapp-rail').style.visibility=${JSON.stringify(railVisibility)}`);}
+    return;
+   }
    await send('Emulation.setDeviceMetricsOverride',{width:viewport.width,height:Math.ceil(layout.cssContentSize.height),deviceScaleFactor:1,mobile:false});
    await new Promise(resolve=>setTimeout(resolve,800));
   }
@@ -49,13 +64,13 @@ try {
  await send('Emulation.setEmulatedMedia',{features:[]});
  await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.__layoutShifts=[];new PerformanceObserver(list=>{for(const entry of list.getEntries())if(!entry.hadRecentInput)window.__layoutShifts.push(entry.value)}).observe({type:'layout-shift',buffered:true});`});
  await send('Network.setBlockedURLs',{urls:['*googletagmanager.com*','*google-analytics.com*','*emailjs.com*']});
- for(const width of [320,375,390,768,1024,1280,1440,1920]) {
+ for(const width of [320,375,390,430,768,1024,1280,1440,1920]) {
   const height = width === 1024 ? 768 : 900;
   await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
   await navigate(baseUrl+'/');
   const layout=await evaluate(`(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:document.querySelector('.hero').getBoundingClientRect().toJSON(),brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),overflow:[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect();return !e.closest('.honeypot')&&r.width>0&&(r.right>innerWidth+1||r.left< -1)&&getComputedStyle(e).position!=='absolute'}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,width:e.getBoundingClientRect().width}))}))()`);
   if(width>=1024 && layout.hero.bottom>height-66) throw new Error('Desktop hero does not fit viewport: '+JSON.stringify(layout.hero));
-  if(width>=1024){const copyTops=await evaluate(`[...document.querySelectorAll('.solution-copy')].map(e=>e.getBoundingClientRect().top)`);if(Math.max(...copyTops)-Math.min(...copyTops)>1)throw new Error('Solution preview rows misaligned');}
+  const stories=await evaluate(`[...document.querySelectorAll('.solution-stories .solution-card')].map(e=>({left:e.getBoundingClientRect().left,width:e.getBoundingClientRect().width,steps:e.querySelectorAll('.solution-flow li').length}))`);if(stories.length!==3||stories.some(s=>s.steps!==3||s.left!==stories[0].left||Math.abs(s.width-stories[0].width)>1))throw new Error('Illustrative solution stories layout');
   const logos=await evaluate(`({clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('#partnerships .partnership-card').length,clientOrder:document.querySelector('.hero').nextElementSibling?.id,partnerOrder:document.querySelector('#work').nextElementSibling?.id,baselineLinks:[...document.querySelectorAll('#clients a')].filter(a=>a.textContent.includes('Baseline')).length,unapproved:!!document.querySelector('img[src*="ALL.png"]'),fit:[...document.querySelectorAll('.logo-card img, .partnership-logo img')].every(i=>getComputedStyle(i).objectFit==='contain')})`);
   if(logos.clients!==6||logos.partners!==2||logos.clientOrder!=='clients'||logos.partnerOrder!=='partnerships'||logos.baselineLinks||logos.unapproved||!logos.fit)throw new Error('Approved logo rendering '+JSON.stringify(logos));
   const partnership=await evaluate(`(()=>{const cards=[...document.querySelectorAll('.partnership-card')];return {heights:cards.map(c=>c.getBoundingClientRect().height),lefts:cards.map(c=>c.getBoundingClientRect().left),tops:cards.map(c=>c.getBoundingClientRect().top),links:cards.map(c=>{const a=c.querySelector('a');return {url:a.href,rel:a.rel,target:a.target,height:a.getBoundingClientRect().height}}),count:document.querySelectorAll('#partnerships').length,badges:cards.map(c=>c.querySelector('.partnership-badge').textContent)}})()`);
@@ -63,7 +78,7 @@ try {
   if(width<=600 ? partnership.lefts[0]!==partnership.lefts[1] : Math.abs(partnership.tops[0]-partnership.tops[1])>1)throw new Error('Partnership card layout');
   if(layout.scrollWidth>width)throw new Error('Overflow '+JSON.stringify(layout));
   if(layout.brokenImages.length)throw new Error('Broken images '+JSON.stringify(layout));
-  if([375,768,1440].includes(width)) await capture(`${out}/home-${width}.png`,true);
+  await capture(`${out}/home-${width}.png`,true);
   await capture(`${out}/viewport-${width}.png`);
   const header=await evaluate(`(()=>{document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,850);const h=document.querySelector('.site-header');const r=h.getBoundingClientRect();return {top:r.top,bottom:r.bottom,background:getComputedStyle(h).backgroundColor,zIndex:getComputedStyle(h).zIndex};})()`);
   if(header.top!==0||header.background!=='rgb(255, 255, 255)')throw new Error('Header opacity/position '+JSON.stringify(header));
@@ -90,7 +105,7 @@ try {
 
  const serviceResults=[];
  const serviceSlugs=['custom-software-development','ai-intelligent-automation','crm-erp-solutions','gdpr-data-retention','cloud-application-modernization','web-mobile-development','technology-consulting-delivery'];
- for(const width of [320,375,390,768,1024,1280,1440,1920]){
+ for(const width of [320,375,390,430,768,1024,1280,1440,1920]){
   await send('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:false});
   for(const slug of serviceSlugs){
    await navigate(baseUrl+'/services/'+slug);

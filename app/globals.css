@@ -884,3 +884,53 @@ details p { margin: 15px 0 0; font-size: 14px; }
 @media (max-width: 1100px) { .founder-grid { grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 32px; } }
 @media (max-width: 850px) { .founder-grid { grid-template-columns: 1fr; gap: 32px; } }
 @media (max-width: 600px) { .founder-highlights { grid-template-columns: 1fr; gap: 18px; } .founder-actions { align-items: flex-start; flex-direction: column; } }
+
+/* Editorial refinement: capabilities, applications and delivery each have their own rhythm. */
+h2 { font-size: clamp(28px, 2.7vw, 40px); }
+.section-heading p { max-width: 48ch; }
+.hero-grid-texture { opacity: .07; }
+.hero-composition > .interface-preview { transform: none; box-shadow: 0 18px 40px #02091540; }
+.text-link:hover { gap: 11px; }
+.service-card { box-shadow: none; }
+.service-capabilities li { font-size: 14px; line-height: 1.65; }
+.service-card h3 { min-height: 0; }
+.solution-disclaimer { font-size: 13px; margin: 0 0 24px; color: #526174; }
+.solution-stories { border-top: 1px solid #ccd7e2; }
+.solution-stories .solution-card { display: grid; grid-template-columns: 36px minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: 28px; padding: 30px 0; background: transparent; border: 0; border-bottom: 1px solid #ccd7e2; border-radius: 0; box-shadow: none; overflow: visible; }
+.solution-index { color: #96502d; font-size: 14px; font-variant-numeric: tabular-nums; align-self: start; padding-top: 2px; }
+.solution-stories .solution-copy { padding: 0; }
+.solution-stories .solution-copy h3 { font-size: clamp(23px, 2vw, 28px); }
+.solution-stories .solution-copy > p:not(.eyebrow) { max-width: 54ch; margin-bottom: 12px; }
+.solution-flow { list-style: none; padding: 0 0 0 26px; margin: 0; border-left: 1px solid #ccd7e2; counter-reset: flow; }
+.solution-flow li { counter-increment: flow; font-size: 14px; color: #43566c; padding-block: 10px; display: flex; gap: 12px; align-items: baseline; }
+.solution-flow li::before { content: counter(flow, decimal-leading-zero); font-size: 11px; color: #96502d; }
+.technology-context { max-width: 50ch; border-left: 2px solid #c8764f; padding-left: 16px; margin-top: 24px; font-size: 14px !important; }
+.detail-list { list-style: disc; display: grid; gap: 12px; padding-left: 22px; line-height: 1.8; }
+.detail-list li::marker { color: #9b4a29; }
+.capability-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; margin-top: 28px; }
+.capability-item { border-top: 1px solid #cad5df; padding: 22px 0; min-width: 0; }
+.capability-item .index { color: #96502d; font-variant-numeric: tabular-nums; }
+.capability-item h3 { font-size: 21px; margin: 12px 0; }
+.capability-item p { font-size: 15px; margin: 0; line-height: 1.8; }
+.footer-grid > div > a { display: flex; width: fit-content; }
+.contact-form label { font-size: 14px; }
+.contact-form input, .contact-form select, .contact-form textarea { scroll-margin-block: 110px 90px; }
+@media (max-width: 850px) {
+  .solution-stories .solution-card { grid-template-columns: 28px minmax(0, 1.2fr) minmax(0, .8fr); gap: 18px; }
+  .solution-flow { padding-left: 18px; }
+  .capability-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .solution-stories .solution-card { grid-template-columns: 24px minmax(0, 1fr); gap: 12px; padding-block: 26px; }
+  .solution-flow { grid-column: 2; border-left: 0; border-top: 1px solid #d6dfe7; padding: 10px 0 0; }
+  .solution-flow li { padding-block: 5px; }
+  .capability-list { grid-template-columns: 1fr; }
+  .capability-item { display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: 14px; padding-block: 22px; }
+  .capability-item .index { grid-row: span 2; padding-top: 3px; }
+  .capability-item h3 { margin: 0 0 10px; }
+  .process { grid-template-columns: 1fr; gap: 0; margin-left: 4px; }
+  .process li, .process li:last-child { grid-column: auto; border-top: 0; border-left: 1px solid #61728b70; padding: 0 0 25px 25px; }
+  .process li::before { left: -4px; top: 7px; }
+  .process li:last-child { padding-bottom: 0; }
+  .process h3 { margin-block: 5px 8px; }
+}

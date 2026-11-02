@@ -43,7 +43,7 @@ export default async function ServicePage({ params }: Props) {
     </div></section>
     <section className="section muted"><div className="container">
       <p className="eyebrow">SERVICE CAPABILITIES</p><h2>{gdpr ? "A controlled information lifecycle" : "From requirements to implementation"}</h2>
-      <div className="grid three">{service.capabilities.map((capability, index) => <article className="card" key={capability}><span className="index">{String(index + 1).padStart(2, "0")}</span><h3>{capability}</h3><p>{service.capabilityDetails[index]}</p></article>)}</div>
+      <div className="capability-list">{service.capabilities.map((capability, index) => <article className="capability-item" key={capability}><span className="index">{String(index + 1).padStart(2, "0")}</span><h3>{capability}</h3><p>{service.capabilityDetails[index]}</p></article>)}</div>
     </div></section>
     {gdpr && <section className="section"><div className="container"><p className="eyebrow">RETENTION WORKFLOW</p><h2>From policy to accountable execution</h2><ol className="workflow">{["Data Catalogue", "Policy Configuration", "Job Setup", "Validation", "Authorized Execution", "Monitoring & Reporting"].map(item => <li key={item}>{item}<span aria-hidden="true"> →</span></li>)}</ol></div></section>}
     <section className="section"><div className="container grid two">
