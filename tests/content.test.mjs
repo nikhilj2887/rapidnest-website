@@ -10,7 +10,7 @@ function load(file) {
 }
 const { services } = load('app/data/services.ts');
 const { getApprovedCaseStudies } = load('app/data/case-studies.ts');
-const { relationships } = load('app/data/relationships.ts');
+const { relationships, getApprovedRelationships } = load('app/data/relationships.ts');
 test('seven complete services have unique URL-safe slugs', () => {
   assert.equal(services.length, 7);
   assert.equal(new Set(services.map(s => s.slug)).size, 7);
@@ -115,4 +115,15 @@ test('concurrent and rapid repeat inquiries do not duplicate provider requests',
   await pending;
   await h.submit(i.event);
   assert.equal(calls, 1);
+});
+
+
+test('client and partner eligibility requires both evidence and publication approval', () => {
+  const fixture = ['client', 'partner'].flatMap(kind => ['pending', 'verified'].flatMap(verification => [true, false].map(publicationApproved => ({kind, verification, publicationApproved}))));
+  for (const kind of ['client','partner']) {
+    const eligible = getApprovedRelationships(kind, fixture);
+    assert.equal(eligible.length, 1);
+    assert.ok(eligible.every(record => record.kind === kind && record.verification === 'verified' && record.publicationApproved));
+    assert.equal(getApprovedRelationships(kind).length, 0);
+  }
 });

@@ -812,3 +812,10 @@ details p { margin: 15px 0 0; font-size: 14px; }
   .composition-heading { display: none; }
   .governance-note { top: 6px; }
 }
+
+@media (min-width: 851px) {
+  .solutions-section .grid.three { grid-template-rows: auto auto; }
+  .solutions-section .solution-card { display: grid; grid-row: span 2; grid-template-rows: subgrid; gap: 0; }
+  .solutions-section .solution-stage { height: 100%; }
+  .solutions-section .solution-stage .interface-preview { height: auto; }
+}
