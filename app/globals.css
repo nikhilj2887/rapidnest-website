@@ -67,7 +67,7 @@ p { color: var(--muted); margin: 0 0 18px; }
 /* Hero: a conceptual workspace replaces decorative orbit geometry. */
 .hero { position: relative; background: radial-gradient(ellipse at 85% 40%, #1a354d 0, transparent 54%), linear-gradient(115deg, #0a172a, #11243a); color: white; isolation: isolate; }
 .hero-grid-texture { position: absolute; inset: 0; z-index: -1; opacity: .15; background-image: linear-gradient(#9fb2cc22 1px, transparent 1px), linear-gradient(90deg, #9fb2cc22 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to right, transparent, black); }
-.hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 58px; padding-block: 52px 62px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 58px; padding-block: 26px 28px; }
 .hero .eyebrow { color: #eead89; font-size: 9px; letter-spacing: .12em; }
 .accent-line { width: 22px; height: 2px; background: #eb8d59; flex-shrink: 0; }
 .hero h1 { line-height: 1.13; letter-spacing: -.045em; }
@@ -76,23 +76,23 @@ p { color: var(--muted); margin: 0 0 18px; }
 .hero-principles { display: flex; flex-wrap: wrap; gap: 20px; font-size: 10px; color: #bdcadb; }
 .hero-principles span { display: flex; align-items: center; gap: 6px; }
 .hero-principles svg { color: #e8ab85; }
-.hero-composition { position: relative; min-width: 0; padding-bottom: 40px; padding-top: 26px; }
+.hero-composition { position: relative; min-width: 0; padding-bottom: 70px; padding-top: 26px; }
 .composition-heading { display: flex; align-items: center; gap: 18px; font-size: 8px; letter-spacing: .17em; color: #aebcd0; margin-bottom: 18px; }
 .composition-line { height: 1px; flex: 1; background: #70839b55; }
 .hero-composition > .interface-preview { transform: perspective(1200px) rotateY(-5deg) rotateX(2deg); box-shadow: 0 35px 70px #02091565, 0 0 0 8px #ffffff04; border-color: #96a9c44d; }
-.integration-note { position: absolute; left: -20px; bottom: 5px; display: flex; align-items: center; gap: 11px; background: #fff; border: 1px solid #dfe5ed; box-shadow: 0 12px 35px #0003; padding: 13px 20px 13px 13px; border-radius: 10px; color: var(--ink); }
+.integration-note { position: absolute; left: -20px; bottom: 0; display: flex; align-items: center; gap: 11px; background: #fff; border: 1px solid #dfe5ed; box-shadow: 0 12px 35px #0003; padding: 13px 20px 13px 13px; border-radius: 10px; color: var(--ink); }
 .note-icon { background: #fff0e4; color: #b84b20; border-radius: 8px; padding: 9px; }
 .integration-note strong, .integration-note span:not(.note-icon) { display: block; }
 .integration-note strong { font-size: 11px; }
 .integration-note div > span { font-size: 9px; color: #607083; }
 .governance-note { position: absolute; right: -9px; top: 8px; display: flex; align-items: center; gap: 7px; padding: 8px 12px; border: 1px solid #53716f; border-radius: 6px; font-size: 9px; color: #cce7dd; background: #193c3c; box-shadow: 0 5px 18px #0002; }
 .hero-bottom { border-top: 1px solid #adbed21c; }
-.hero-bottom .container { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 55px; font-size: 10px; color: #aab9cd; }
+.hero-bottom .container { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 50px; font-size: 10px; color: #aab9cd; }
 .hero-bottom .container > span:first-child { font-size: 8px; letter-spacing: .16em; }
 .hero-bottom a { display: flex; gap: 30px; color: white; }
 
 /* Original illustrative application interfaces. All states are conceptual. */
-.interface-preview { width: 100%; min-width: 0; border: 1px solid #dce3ec; border-radius: 10px; overflow: hidden; background: #fff; color: #24364c; font-family: Arial, Helvetica, sans-serif; text-align: left; }
+.interface-preview { width: 100%; min-width: 0; border: 1px solid #dce3ec; border-radius: 10px; overflow: hidden; background: #fff; color: #24364c; font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 1.5; text-align: left; }
 .app-chrome { height: 31px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 13px; background: #f7f9fc; border-bottom: 1px solid #e7ebf1; color: #6e7c90; font-size: 8px; }
 .window-dots { display: flex; gap: 4px; }
 .window-dots i { width: 5px; height: 5px; border-radius: 50%; background: #c8d2df; }
@@ -137,7 +137,7 @@ p { color: var(--muted); margin: 0 0 18px; }
 .app-activity strong { font-size: 8px; display: block; }
 .app-activity div > span { display: block; font-size: 7px; color: #6f8095; }
 .app-activity > svg { color: #667f98; }
-.concept-caption { display: flex; align-items: center; gap: 5px; padding: 8px 13px; font-size: 7px !important; letter-spacing: .02em; color: #526479 !important; background: #f3f6fa; margin: 0 !important; border-top: 1px solid #e4e9f0; }
+.concept-caption { display: flex; align-items: center; gap: 5px; padding: 8px 13px; font-size: 9px !important; line-height: 1.5; letter-spacing: .02em; color: #526479 !important; background: #f3f6fa; margin: 0 !important; border-top: 1px solid #e4e9f0; }
 .concept-caption > span { width: 4px; height: 4px; background: #af7652; border-radius: 50%; }
 .policy-banner { display: flex; align-items: center; gap: 9px; border: 1px solid #d4e7e2; background: #edf6f3; border-radius: 5px; padding: 11px; margin-bottom: 16px; color: #286e60; }
 .policy-banner div { flex: 1; }
@@ -606,4 +606,24 @@ details p { margin: 15px 0 0; font-size: 14px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .primary:hover, .service-card:hover, .solution-card:hover .interface-preview { transform: none; }
+}
+
+/* Keep the illustrative workspace secondary to the headline and usable CTAs. */
+.primary { background: linear-gradient(135deg, #c04a1f, #af3e17); }
+.technology-row div > span { color: #637186; }
+.credibility .eyebrow { color: #637186; }
+.hero-composition { padding-top: 12px; padding-bottom: 56px; }
+.integration-note { padding: 10px 16px 10px 10px; }
+.note-icon { padding: 7px; }
+.preview-overview .app-activity, .preview-overview .task-lines { display: none; }
+.preview-overview .app-main { padding: 14px 16px; }
+.preview-overview .app-title { margin-bottom: 12px; }
+.preview-overview .app-tabs { margin-bottom: 12px; }
+.preview-overview .workspace-modules { margin-bottom: 14px; }
+.preview-overview .workspace-modules > div { padding: 8px; }
+.preview-overview .workspace-modules svg { margin-bottom: 5px; }
+.preview-overview .task-footer { margin-top: 10px; }
+@media (max-width: 600px) {
+  .preview-overview .app-main { padding: 14px 10px; }
+  .preview-overview .workspace-modules > div { padding: 8px 5px; }
 }

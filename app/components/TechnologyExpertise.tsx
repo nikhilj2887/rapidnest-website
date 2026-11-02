@@ -1,2 +1,12 @@
-const categories = [["Frontend", ["React", "Next.js", "TypeScript"]], ["Backend", []], ["Cloud & Infrastructure", []], ["Databases", []], ["AI & Automation", []], ["Analytics & Reporting", []]] as const;
-export default function TechnologyExpertise() { return <section id="technology" className="section"><div className="container"><p className="eyebrow">05 / TECHNOLOGY EXPERTISE</p><div className="section-heading"><h2>Technology Selected for the Problem, Not the Trend</h2><p>React, Next.js, and TypeScript are evidenced by this website. A project’s wider stack is agreed during discovery, based on requirements and validated delivery capability.</p></div><div className="grid three">{categories.map(([title, tech]) => <div key={title} className="tech-category"><h3>{title}</h3>{tech.length ? <div className="badges">{tech.map(t => <span key={t}>{t}</span>)}</div> : <p>Selected during technical discovery.</p>}</div>)}</div></div></section>; }
+import { Braces, Code2, Layers3 } from "lucide-react";
+const frontend = [
+  { name: "React", detail: "Component-based interfaces", icon: Layers3 },
+  { name: "Next.js", detail: "Modern web applications", icon: Code2 },
+  { name: "TypeScript", detail: "Typed application development", icon: Braces },
+];
+export default function TechnologyExpertise() {
+  return <section id="technology" className="section technology-section"><div className="container technology-layout">
+    <div><p className="eyebrow">05 / TECHNOLOGY</p><h2>Technology Selected for the Problem, Not the Trend</h2><p>A focused frontend stack for clear, responsive digital experiences.</p></div>
+    <div className="technology-panel"><div className="technology-label"><span>FRONTEND</span><span>ENGINEERING TOOLKIT</span></div>{frontend.map(({ name, detail, icon: Icon }) => <div className="technology-row" key={name}><span className="tech-mark"><Icon size={23} aria-hidden="true" /></span><div><strong>{name}</strong><span>{detail}</span></div><span className="tech-badge">Web</span></div>)}</div>
+  </div></section>;
+}
