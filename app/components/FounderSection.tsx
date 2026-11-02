@@ -17,7 +17,7 @@ export default function FounderSection() {
           <div className="portrait-caption"><strong>Nikhil Jogiparthy</strong><span>Founder | RapidNest Software Solutions</span></div>
         </div>
         <div className="founder-copy">
-          <p className="eyebrow">Meet the Founder</p>
+          <p className="eyebrow">MEET THE FOUNDER</p>
           <h2 id="founder-heading">Leadership Built on Delivery Excellence</h2>
           <p className="founder-intro">A business perspective. A delivery mindset.</p>
           <p>Nikhil Jogiparthy is a technology delivery and program management professional with over 14 years of experience across FinTech, payments, healthcare, education technology, and IT services.</p>

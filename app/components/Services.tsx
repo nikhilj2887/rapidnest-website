@@ -8,7 +8,7 @@ export default function Services() {
   return (
     <section id="services" className="section services-section">
       <div className="container">
-        <p className="eyebrow">01 / WHAT WE DO</p>
+        <p className="eyebrow">OUR SERVICES</p>
         <div className="section-heading"><h2>Built for your business.<br /><span className="subtle-heading">Engineered for what’s next.</span></h2><p>Modernize an operation. Connect your systems. Bring a new idea to life. We help turn the right technology decisions into working solutions.</p></div>
         <div className="service-grid">
           {services.map((service, index) => {
@@ -17,7 +17,7 @@ export default function Services() {
             return (
               <article className={`service-card service-${index}${visual ? " service-featured" : ""}`} key={service.slug}>
                 <div className="service-copy">
-                  <div className="card-top"><span className="service-icon"><Icon size={22} aria-hidden="true" /></span><span className="service-number">/ 0{index + 1}</span></div>
+                  <div className="card-top"><span className="service-icon"><Icon size={22} aria-hidden="true" /></span></div>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
                   <ul className="service-capabilities">{service.capabilities.slice(0, 3).map(capability => <li key={capability}><Check size={12} aria-hidden="true" />{capability}</li>)}</ul>
