@@ -38,7 +38,7 @@ async function capture(file, full = false) {
   if(full) await send('Emulation.setDeviceMetricsOverride',{...viewport,deviceScaleFactor:1,mobile:false});
  }
 }
-const out=process.cwd()+'/docs/content-audit-visual-review'; fs.mkdirSync(out,{recursive:true});
+const out=process.cwd()+'/docs/partnership-review'; fs.mkdirSync(out,{recursive:true});
 const results=[];
 const accessibility=[];
 const axeSource=fs.readFileSync(require.resolve('axe-core/axe.js'),'utf8');
@@ -56,8 +56,11 @@ try {
   const layout=await evaluate(`(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:document.querySelector('.hero').getBoundingClientRect().toJSON(),brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),overflow:[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect();return !e.closest('.honeypot')&&r.width>0&&(r.right>innerWidth+1||r.left< -1)&&getComputedStyle(e).position!=='absolute'}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,width:e.getBoundingClientRect().width}))}))()`);
   if(width>=1024 && layout.hero.bottom>height-66) throw new Error('Desktop hero does not fit viewport: '+JSON.stringify(layout.hero));
   if(width>=1024){const copyTops=await evaluate(`[...document.querySelectorAll('.solution-copy')].map(e=>e.getBoundingClientRect().top)`);if(Math.max(...copyTops)-Math.min(...copyTops)>1)throw new Error('Solution preview rows misaligned');}
-  const logos=await evaluate(`({clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('#partnerships .logo-card').length,clientOrder:document.querySelector('.hero').nextElementSibling?.id,partnerOrder:document.querySelector('#founder').nextElementSibling?.id,baselineLinks:[...document.querySelectorAll('#clients a')].filter(a=>a.textContent.includes('Baseline')).length,unapproved:!!document.querySelector('img[src*="ALL.png"]'),fit:[...document.querySelectorAll('.logo-card img')].every(i=>getComputedStyle(i).objectFit==='contain')})`);
+  const logos=await evaluate(`({clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('#partnerships .partnership-card').length,clientOrder:document.querySelector('.hero').nextElementSibling?.id,partnerOrder:document.querySelector('#work').nextElementSibling?.id,baselineLinks:[...document.querySelectorAll('#clients a')].filter(a=>a.textContent.includes('Baseline')).length,unapproved:!!document.querySelector('img[src*="ALL.png"]'),fit:[...document.querySelectorAll('.logo-card img, .partnership-logo img')].every(i=>getComputedStyle(i).objectFit==='contain')})`);
   if(logos.clients!==6||logos.partners!==2||logos.clientOrder!=='clients'||logos.partnerOrder!=='partnerships'||logos.baselineLinks||logos.unapproved||!logos.fit)throw new Error('Approved logo rendering '+JSON.stringify(logos));
+  const partnership=await evaluate(`(()=>{const cards=[...document.querySelectorAll('.partnership-card')];return {heights:cards.map(c=>c.getBoundingClientRect().height),lefts:cards.map(c=>c.getBoundingClientRect().left),tops:cards.map(c=>c.getBoundingClientRect().top),links:cards.map(c=>{const a=c.querySelector('a');return {url:a.href,rel:a.rel,target:a.target,height:a.getBoundingClientRect().height}}),count:document.querySelectorAll('#partnerships').length,badges:cards.map(c=>c.querySelector('.partnership-badge').textContent)}})()`);
+  if(partnership.count!==1||Math.abs(partnership.heights[0]-partnership.heights[1])>1||partnership.links[0].url!=='https://wicci.au/'||partnership.links[1].url!=='https://g100.in/'||partnership.links.some(a=>a.target!=='_blank'||!a.rel.includes('noopener')||!a.rel.includes('noreferrer')||a.height<44)||partnership.badges.some(b=>b!=='Professional connection'))throw new Error('Partnership cards '+JSON.stringify(partnership));
+  if(width<=600 ? partnership.lefts[0]!==partnership.lefts[1] : Math.abs(partnership.tops[0]-partnership.tops[1])>1)throw new Error('Partnership card layout');
   if(layout.scrollWidth>width)throw new Error('Overflow '+JSON.stringify(layout));
   if(layout.brokenImages.length)throw new Error('Broken images '+JSON.stringify(layout));
   if([375,768,1440].includes(width)) await capture(`${out}/home-${width}.png`,true);
@@ -81,7 +84,7 @@ try {
   if(form.empty||form.invalidEmail||!form.valid)throw new Error('Validation '+JSON.stringify(form));
   const measurements=await evaluate(`({layoutShiftScore:window.__layoutShifts.reduce((a,b)=>a+b,0),paint:performance.getEntriesByType('paint').map(p=>({name:p.name,startTime:p.startTime})),revealTargets:document.querySelectorAll('.reveal-enter').length})`);
   if([375,1440].includes(width))await scanAccessibility('home-'+width);
-  results.push({width,layout,header,form,logos,measurements,status:'pass'});
+  results.push({width,layout,header,form,logos,partnership,measurements,status:'pass'});
   console.log('PASS homepage viewport '+width+'px: no overflow/broken images, opaque sticky header, native form validation'+(width<851?', mobile navigation and anchor offset':''));
  }
 

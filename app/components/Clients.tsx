@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { getApprovedRelationships } from "../data/relationships";
 
-export default function Clients({ partnerships = false }: { partnerships?: boolean }) {
-  const approved = getApprovedRelationships(partnerships ? "partner" : "client");
+export default function Clients() {
+  const approved = getApprovedRelationships("client");
   if (!approved.length) return null;
 
   return (
-    <section id={partnerships ? "partnerships" : "clients"} className="section relationships-section">
+    <section id="clients" className="section relationships-section">
       <div className="container">
-        <p className="eyebrow">{partnerships ? "PROFESSIONAL CONNECTIONS" : "SHARED BUSINESS CONTEXT"}</p>
-        <h2>{partnerships ? "Strategic Partnerships & Professional Connections" : "Organizations We've Worked With"}</h2>
+        <p className="eyebrow">SHARED BUSINESS CONTEXT</p>
+        <h2>Organizations We&apos;ve Worked With</h2>
         <div className="logo-grid">
           {approved.map(organization => (
             <div className="logo-card" key={organization.name}>

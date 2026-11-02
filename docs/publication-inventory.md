@@ -32,3 +32,7 @@ Every asset is byte-identical to `main`. Recovering an asset or finding prior pu
 - A verified booking destination; the existing configuration remains unpublished.
 
 Original assets are preserved. Founder professional experience is described separately from company achievements. No legal certification or guaranteed GDPR compliance is claimed. The rendering gate continues to require both `verification: "verified"` and `publicationApproved: true` for each record; no bypass was added.
+
+## Partnership presentation enhancement
+
+WICCI and G100 now appear once in **Our Global Partnerships**, after Solutions We Build, with neutral **Professional connection** badges. The supplied section description is general positioning, not evidence of an official designation. See [the enhancement review](partnership-enhancement-review.md) for implementation, responsive screenshots and verification.
