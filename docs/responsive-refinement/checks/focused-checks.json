@@ -1,0 +1,363 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 1,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.7995226730310262,
+      "footerContactSeparate": true,
+      "methodologyColumns": 1,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.7990867579908676,
+      "footerContactSeparate": true,
+      "methodologyColumns": 1,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 1,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 3,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 5,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 5,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 5,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "clippedHeadings": [],
+      "illustrations": 3,
+      "founder": "Nikhil Jogiparthy",
+      "founderAlt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "footerContactSeparate": true,
+      "methodologyColumns": 5,
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ]
+    }
+  ],
+  "faq": "pass",
+  "internalDestinations": [
+    "/services/gdpr-data-retention",
+    "/",
+    "/work",
+    "/services/ai-intelligent-automation",
+    "/services/crm-erp-solutions"
+  ]
+}

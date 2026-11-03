@@ -1,0 +1,407 @@
+[
+  {
+    "width": 320,
+    "path": "/",
+    "bottomGap": 0.09375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/work",
+    "bottomGap": 0.28125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/custom-software-development",
+    "bottomGap": -0.328125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/ai-intelligent-automation",
+    "bottomGap": 0.359375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/crm-erp-solutions",
+    "bottomGap": 0.5,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/gdpr-data-retention",
+    "bottomGap": 0.28125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/cloud-application-modernization",
+    "bottomGap": 0.328125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/web-mobile-development",
+    "bottomGap": 0.109375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 320,
+    "path": "/services/technology-consulting-delivery",
+    "bottomGap": 0.328125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/",
+    "bottomGap": 0,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/work",
+    "bottomGap": -0.28125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/custom-software-development",
+    "bottomGap": -0.203125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/ai-intelligent-automation",
+    "bottomGap": -0.3125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/crm-erp-solutions",
+    "bottomGap": -0.15625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/gdpr-data-retention",
+    "bottomGap": -0.25,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/cloud-application-modernization",
+    "bottomGap": 0.109375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/web-mobile-development",
+    "bottomGap": -0.15625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 375,
+    "path": "/services/technology-consulting-delivery",
+    "bottomGap": 0.3125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/",
+    "bottomGap": -0.296875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/work",
+    "bottomGap": -0.296875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/custom-software-development",
+    "bottomGap": 0.46875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/ai-intelligent-automation",
+    "bottomGap": -0.03125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/crm-erp-solutions",
+    "bottomGap": 0.171875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/gdpr-data-retention",
+    "bottomGap": 0.109375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/cloud-application-modernization",
+    "bottomGap": 0.171875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/web-mobile-development",
+    "bottomGap": -0.21875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 768,
+    "path": "/services/technology-consulting-delivery",
+    "bottomGap": 0.46875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/",
+    "bottomGap": -0.28125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/work",
+    "bottomGap": -0.453125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/custom-software-development",
+    "bottomGap": -0.015625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/ai-intelligent-automation",
+    "bottomGap": -0.015625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/crm-erp-solutions",
+    "bottomGap": -0.21875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/gdpr-data-retention",
+    "bottomGap": -0.328125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/cloud-application-modernization",
+    "bottomGap": -0.015625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/web-mobile-development",
+    "bottomGap": -0.015625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1024,
+    "path": "/services/technology-consulting-delivery",
+    "bottomGap": 0.453125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/",
+    "bottomGap": -0.3125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/work",
+    "bottomGap": -0.109375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/custom-software-development",
+    "bottomGap": -0.234375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/ai-intelligent-automation",
+    "bottomGap": -0.234375,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/crm-erp-solutions",
+    "bottomGap": -0.03125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/gdpr-data-retention",
+    "bottomGap": -0.078125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/cloud-application-modernization",
+    "bottomGap": 0.171875,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/web-mobile-development",
+    "bottomGap": -0.03125,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  },
+  {
+    "width": 1440,
+    "path": "/services/technology-consulting-delivery",
+    "bottomGap": -0.15625,
+    "overflow": false,
+    "overlap": false,
+    "missingHashes": [],
+    "whatsapp": "https://wa.me/916300675410?text=Hi%20Rapidnest,%20I%20want%20to%20discuss%20my%20project."
+  }
+]

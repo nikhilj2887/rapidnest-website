@@ -1,0 +1,174 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "name": "Nikhil Jogiparthy",
+      "alt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "wrongName": false,
+      "highlights": 3,
+      "qualifications": [
+        "PRINCE2 Practitioner",
+        "Certified ScrumMaster (CSM)",
+        "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+      ],
+      "quote": "“Understand the business first. Build with purpose. Deliver with accountability.”",
+      "links": [
+        {
+          "href": "http://127.0.0.1:3100/#contact",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "overflow": false,
+      "photo": {
+        "width": 288,
+        "height": 360
+      },
+      "sectionHeight": 2313
+    },
+    {
+      "width": 375,
+      "name": "Nikhil Jogiparthy",
+      "alt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "wrongName": false,
+      "highlights": 3,
+      "qualifications": [
+        "PRINCE2 Practitioner",
+        "Certified ScrumMaster (CSM)",
+        "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+      ],
+      "quote": "“Understand the business first. Build with purpose. Deliver with accountability.”",
+      "links": [
+        {
+          "href": "http://127.0.0.1:3100/#contact",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "overflow": false,
+      "photo": {
+        "width": 335,
+        "height": 418.75
+      },
+      "sectionHeight": 2198
+    },
+    {
+      "width": 768,
+      "name": "Nikhil Jogiparthy",
+      "alt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "wrongName": false,
+      "highlights": 3,
+      "qualifications": [
+        "PRINCE2 Practitioner",
+        "Certified ScrumMaster (CSM)",
+        "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+      ],
+      "quote": "“Understand the business first. Build with purpose. Deliver with accountability.”",
+      "links": [
+        {
+          "href": "http://127.0.0.1:3100/#contact",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "overflow": false,
+      "photo": {
+        "width": 380,
+        "height": 475
+      },
+      "sectionHeight": 1617
+    },
+    {
+      "width": 1024,
+      "name": "Nikhil Jogiparthy",
+      "alt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "wrongName": false,
+      "highlights": 3,
+      "qualifications": [
+        "PRINCE2 Practitioner",
+        "Certified ScrumMaster (CSM)",
+        "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+      ],
+      "quote": "“Understand the business first. Build with purpose. Deliver with accountability.”",
+      "links": [
+        {
+          "href": "http://127.0.0.1:3100/#contact",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "overflow": false,
+      "photo": {
+        "width": 320,
+        "height": 400
+      },
+      "sectionHeight": 1126
+    },
+    {
+      "width": 1440,
+      "name": "Nikhil Jogiparthy",
+      "alt": "Nikhil Jogiparthy, Founder of RapidNest Software Solutions",
+      "wrongName": false,
+      "highlights": 3,
+      "qualifications": [
+        "PRINCE2 Practitioner",
+        "Certified ScrumMaster (CSM)",
+        "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+      ],
+      "quote": "“Understand the business first. Build with purpose. Deliver with accountability.”",
+      "links": [
+        {
+          "href": "http://127.0.0.1:3100/#contact",
+          "target": "",
+          "rel": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "overflow": false,
+      "photo": {
+        "width": 380,
+        "height": 475
+      },
+      "sectionHeight": 1016
+    }
+  ],
+  "keyboard": {
+    "linkedin": true,
+    "outline": "solid",
+    "width": "3px"
+  },
+  "reduced": {
+    "active": 0,
+    "portrait": "none",
+    "copy": "none"
+  },
+  "contact": {
+    "hash": "#contact",
+    "top": 96.34375
+  },
+  "consoleErrors": []
+}

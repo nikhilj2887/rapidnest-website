@@ -1,0 +1,1274 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "layout": {
+        "width": 320,
+        "scrollWidth": 320,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 320,
+          "height": 1191.265625,
+          "top": 73,
+          "right": 320,
+          "bottom": 1264.265625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          362.5,
+          362.5
+        ],
+        "lefts": [
+          16,
+          16
+        ],
+        "tops": [
+          9300.1875,
+          9680.6875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 748
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 748
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 375,
+      "layout": {
+        "width": 375,
+        "scrollWidth": 375,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 375,
+          "height": 1213.078125,
+          "top": 73,
+          "right": 375,
+          "bottom": 1286.078125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          362.5,
+          362.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          8799.59375,
+          9180.09375
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 264
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 264
+          }
+        ],
+        "revealTargets": 28
+      },
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 390,
+          "height": 1186.828125,
+          "top": 73,
+          "right": 390,
+          "bottom": 1259.828125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          362.5,
+          362.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          8649.953125,
+          9030.453125
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 296
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 296
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "layout": {
+        "width": 768,
+        "scrollWidth": 768,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 768,
+          "height": 947.578125,
+          "top": 73,
+          "right": 768,
+          "bottom": 1020.578125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          370.5,
+          370.5
+        ],
+        "lefts": [
+          24,
+          396
+        ],
+        "tops": [
+          5911.875,
+          5911.875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 324
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 324
+          }
+        ],
+        "revealTargets": 28
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1024,
+      "layout": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1024,
+          "height": 541.140625,
+          "top": 79,
+          "right": 1024,
+          "bottom": 620.140625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          370.5,
+          370.5
+        ],
+        "lefts": [
+          102,
+          524
+        ],
+        "tops": [
+          4967.1875,
+          4967.1875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 468
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 468
+          }
+        ],
+        "revealTargets": 4
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1280,
+      "layout": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1280,
+          "height": 575.265625,
+          "top": 79,
+          "right": 1280,
+          "bottom": 654.265625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          370.5,
+          370.5
+        ],
+        "lefts": [
+          230,
+          652
+        ],
+        "tops": [
+          4035.1875,
+          4035.1875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 328
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 328
+          }
+        ],
+        "revealTargets": 4
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1440,
+          "height": 601.703125,
+          "top": 79,
+          "right": 1440,
+          "bottom": 680.703125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          370.5,
+          370.5
+        ],
+        "lefts": [
+          310,
+          732
+        ],
+        "tops": [
+          4080.65625,
+          4080.65625
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 284
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 284
+          }
+        ],
+        "revealTargets": 28
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1920,
+      "layout": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1920,
+          "height": 694.203125,
+          "top": 79,
+          "right": 1920,
+          "bottom": 773.203125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          370.5,
+          370.5
+        ],
+        "lefts": [
+          550,
+          972
+        ],
+        "tops": [
+          4177.15625,
+          4177.15625
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 456
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 456
+          }
+        ],
+        "revealTargets": 4
+      },
+      "status": "pass"
+    }
+  ],
+  "serviceResults": [
+    {
+      "slug": "custom-software-development",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "home-375",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "home-1440",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "custom-software-development",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "ai-intelligent-automation",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "crm-erp-solutions",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "gdpr-data-retention",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "cloud-application-modernization",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "web-mobile-development",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "technology-consulting-delivery",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "work",
+      "violations": [],
+      "passes": 20,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ],
+  "reducedMotion": {
+    "scroll": "auto",
+    "animation": "none",
+    "active": 0
+  },
+  "noJs": true,
+  "integrationLinks": {
+    "whatsApp": true,
+    "email": true
+  },
+  "mockedContact": [
+    {
+      "outcome": "success",
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "Your message was sent. Thank you for contacting RapidNest.",
+      "error": "",
+      "retained": "",
+      "message": "Mocked request; no live email\n\nProject details\ncompany: Example\nphone: 123\nservice: GDPR & Data Retention Solutions\nbudget: Test only\ntimeline: Test only"
+    },
+    {
+      "outcome": "failure",
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "",
+      "error": "We couldn’t send your message. Your details are still here. Please try again, or email contact@therapidnest.com.",
+      "retained": "Browser review",
+      "message": "Mocked request; no live email\n\nProject details\ncompany: Example\nphone: 123\nservice: GDPR & Data Retention Solutions\nbudget: Test only\ntimeline: Test only"
+    }
+  ],
+  "consoleErrors": [],
+  "emailSubmission": "mocked in browser; external provider requests blocked"
+}

@@ -1,0 +1,917 @@
+[
+  {
+    "width": 320,
+    "scrollWidth": 320,
+    "height": 698.1875,
+    "footerBottom": 18327.90625,
+    "documentBottom": 18328,
+    "bodyPadding": "0px",
+    "railBackground": "rgba(0, 0, 0, 0)",
+    "links": [
+      {
+        "text": "RapidNestSOFTWARE SOLUTIONS",
+        "href": "/",
+        "rect": {
+          "x": 16,
+          "y": 315.71875,
+          "width": 128.390625,
+          "height": 46,
+          "top": 315.71875,
+          "right": 144.390625,
+          "bottom": 361.71875,
+          "left": 16
+        }
+      },
+      {
+        "text": "Discuss Your Project ",
+        "href": "/#contact",
+        "rect": {
+          "x": 16,
+          "y": 422.71875,
+          "width": 147.609375,
+          "height": 44,
+          "top": 422.71875,
+          "right": 163.609375,
+          "bottom": 466.71875,
+          "left": 16
+        }
+      },
+      {
+        "text": "contact@therapidnest.com ↗",
+        "href": "mailto:contact@therapidnest.com",
+        "rect": {
+          "x": 16,
+          "y": 535.3125,
+          "width": 158.265625,
+          "height": 44,
+          "top": 535.3125,
+          "right": 174.265625,
+          "bottom": 579.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "+91 6300675410",
+        "href": "tel:+916300675410",
+        "rect": {
+          "x": 16,
+          "y": 579.3125,
+          "width": 90.4375,
+          "height": 44,
+          "top": 579.3125,
+          "right": 106.4375,
+          "bottom": 623.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Services",
+        "href": "/#services",
+        "rect": {
+          "x": 16,
+          "y": 633.3125,
+          "width": 46.015625,
+          "height": 44,
+          "top": 633.3125,
+          "right": 62.015625,
+          "bottom": 677.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Our work",
+        "href": "/work",
+        "rect": {
+          "x": 16,
+          "y": 678.3125,
+          "width": 48.6875,
+          "height": 44,
+          "top": 678.3125,
+          "right": 64.6875,
+          "bottom": 722.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Company",
+        "href": "/#about",
+        "rect": {
+          "x": 16,
+          "y": 723.3125,
+          "width": 51.359375,
+          "height": 44,
+          "top": 723.3125,
+          "right": 67.359375,
+          "bottom": 767.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Founder",
+        "href": "/#founder",
+        "rect": {
+          "x": 16,
+          "y": 768.3125,
+          "width": 44.703125,
+          "height": 44,
+          "top": 768.3125,
+          "right": 60.703125,
+          "bottom": 812.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 16,
+          "y": 813.3125,
+          "width": 41.359375,
+          "height": 44,
+          "top": 813.3125,
+          "right": 57.359375,
+          "bottom": 857.3125,
+          "left": 16
+        }
+      },
+      {
+        "text": "Data retention & governance",
+        "href": "/services/gdpr-data-retention",
+        "rect": {
+          "x": 165,
+          "y": 633.3125,
+          "width": 139,
+          "height": 44,
+          "top": 633.3125,
+          "right": 304,
+          "bottom": 677.3125,
+          "left": 165
+        }
+      },
+      {
+        "text": "AI & automation",
+        "href": "/services/ai-intelligent-automation",
+        "rect": {
+          "x": 165,
+          "y": 678.3125,
+          "width": 85.390625,
+          "height": 44,
+          "top": 678.3125,
+          "right": 250.390625,
+          "bottom": 722.3125,
+          "left": 165
+        }
+      },
+      {
+        "text": "CRM & ERP solutions",
+        "href": "/services/crm-erp-solutions",
+        "rect": {
+          "x": 165,
+          "y": 723.3125,
+          "width": 117.15625,
+          "height": 44,
+          "top": 723.3125,
+          "right": 282.15625,
+          "bottom": 767.3125,
+          "left": 165
+        }
+      }
+    ],
+    "copyrightBottom": 925.90625,
+    "railTop": 934,
+    "overflow": [],
+    "heightReductionPercent": 3.9
+  },
+  {
+    "width": 375,
+    "scrollWidth": 375,
+    "height": 698.1875,
+    "footerBottom": 17364,
+    "documentBottom": 17364,
+    "bodyPadding": "0px",
+    "railBackground": "rgba(0, 0, 0, 0)",
+    "links": [
+      {
+        "text": "RapidNestSOFTWARE SOLUTIONS",
+        "href": "/",
+        "rect": {
+          "x": 20,
+          "y": 315.8125,
+          "width": 128.390625,
+          "height": 46,
+          "top": 315.8125,
+          "right": 148.390625,
+          "bottom": 361.8125,
+          "left": 20
+        }
+      },
+      {
+        "text": "Discuss Your Project ",
+        "href": "/#contact",
+        "rect": {
+          "x": 20,
+          "y": 422.8125,
+          "width": 147.609375,
+          "height": 44,
+          "top": 422.8125,
+          "right": 167.609375,
+          "bottom": 466.8125,
+          "left": 20
+        }
+      },
+      {
+        "text": "contact@therapidnest.com ↗",
+        "href": "mailto:contact@therapidnest.com",
+        "rect": {
+          "x": 20,
+          "y": 535.40625,
+          "width": 158.265625,
+          "height": 44,
+          "top": 535.40625,
+          "right": 178.265625,
+          "bottom": 579.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "+91 6300675410",
+        "href": "tel:+916300675410",
+        "rect": {
+          "x": 20,
+          "y": 579.40625,
+          "width": 90.4375,
+          "height": 44,
+          "top": 579.40625,
+          "right": 110.4375,
+          "bottom": 623.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Services",
+        "href": "/#services",
+        "rect": {
+          "x": 20,
+          "y": 633.40625,
+          "width": 46.015625,
+          "height": 44,
+          "top": 633.40625,
+          "right": 66.015625,
+          "bottom": 677.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Our work",
+        "href": "/work",
+        "rect": {
+          "x": 20,
+          "y": 678.40625,
+          "width": 48.6875,
+          "height": 44,
+          "top": 678.40625,
+          "right": 68.6875,
+          "bottom": 722.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Company",
+        "href": "/#about",
+        "rect": {
+          "x": 20,
+          "y": 723.40625,
+          "width": 51.359375,
+          "height": 44,
+          "top": 723.40625,
+          "right": 71.359375,
+          "bottom": 767.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Founder",
+        "href": "/#founder",
+        "rect": {
+          "x": 20,
+          "y": 768.40625,
+          "width": 44.703125,
+          "height": 44,
+          "top": 768.40625,
+          "right": 64.703125,
+          "bottom": 812.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 20,
+          "y": 813.40625,
+          "width": 41.359375,
+          "height": 44,
+          "top": 813.40625,
+          "right": 61.359375,
+          "bottom": 857.40625,
+          "left": 20
+        }
+      },
+      {
+        "text": "Data retention & governance",
+        "href": "/services/gdpr-data-retention",
+        "rect": {
+          "x": 192.5,
+          "y": 633.40625,
+          "width": 152.765625,
+          "height": 44,
+          "top": 633.40625,
+          "right": 345.265625,
+          "bottom": 677.40625,
+          "left": 192.5
+        }
+      },
+      {
+        "text": "AI & automation",
+        "href": "/services/ai-intelligent-automation",
+        "rect": {
+          "x": 192.5,
+          "y": 678.40625,
+          "width": 85.390625,
+          "height": 44,
+          "top": 678.40625,
+          "right": 277.890625,
+          "bottom": 722.40625,
+          "left": 192.5
+        }
+      },
+      {
+        "text": "CRM & ERP solutions",
+        "href": "/services/crm-erp-solutions",
+        "rect": {
+          "x": 192.5,
+          "y": 723.40625,
+          "width": 117.15625,
+          "height": 44,
+          "top": 723.40625,
+          "right": 309.65625,
+          "bottom": 767.40625,
+          "left": 192.5
+        }
+      }
+    ],
+    "copyrightBottom": 926,
+    "railTop": 934,
+    "overflow": [],
+    "heightReductionPercent": 3.9
+  },
+  {
+    "width": 768,
+    "scrollWidth": 768,
+    "height": 479.796875,
+    "footerBottom": 11737.296875,
+    "documentBottom": 11737,
+    "bodyPadding": "0px",
+    "railBackground": "rgba(0, 0, 0, 0)",
+    "links": [
+      {
+        "text": "RapidNestSOFTWARE SOLUTIONS",
+        "href": "/",
+        "rect": {
+          "x": 24,
+          "y": 534.5,
+          "width": 128.390625,
+          "height": 46,
+          "top": 534.5,
+          "right": 152.390625,
+          "bottom": 580.5,
+          "left": 24
+        }
+      },
+      {
+        "text": "Discuss Your Project ",
+        "href": "/#contact",
+        "rect": {
+          "x": 24,
+          "y": 596.5,
+          "width": 720,
+          "height": 44,
+          "top": 596.5,
+          "right": 744,
+          "bottom": 640.5,
+          "left": 24
+        }
+      },
+      {
+        "text": "contact@therapidnest.com ↗",
+        "href": "mailto:contact@therapidnest.com",
+        "rect": {
+          "x": 24,
+          "y": 709.09375,
+          "width": 158.265625,
+          "height": 44,
+          "top": 709.09375,
+          "right": 182.265625,
+          "bottom": 753.09375,
+          "left": 24
+        }
+      },
+      {
+        "text": "+91 6300675410",
+        "href": "tel:+916300675410",
+        "rect": {
+          "x": 24,
+          "y": 753.09375,
+          "width": 90.4375,
+          "height": 44,
+          "top": 753.09375,
+          "right": 114.4375,
+          "bottom": 797.09375,
+          "left": 24
+        }
+      },
+      {
+        "text": "Services",
+        "href": "/#services",
+        "rect": {
+          "x": 306.453125,
+          "y": 661.5,
+          "width": 46.015625,
+          "height": 44,
+          "top": 661.5,
+          "right": 352.46875,
+          "bottom": 705.5,
+          "left": 306.453125
+        }
+      },
+      {
+        "text": "Our work",
+        "href": "/work",
+        "rect": {
+          "x": 306.453125,
+          "y": 706.5,
+          "width": 48.6875,
+          "height": 44,
+          "top": 706.5,
+          "right": 355.140625,
+          "bottom": 750.5,
+          "left": 306.453125
+        }
+      },
+      {
+        "text": "Company",
+        "href": "/#about",
+        "rect": {
+          "x": 306.453125,
+          "y": 751.5,
+          "width": 51.359375,
+          "height": 44,
+          "top": 751.5,
+          "right": 357.8125,
+          "bottom": 795.5,
+          "left": 306.453125
+        }
+      },
+      {
+        "text": "Founder",
+        "href": "/#founder",
+        "rect": {
+          "x": 306.453125,
+          "y": 796.5,
+          "width": 44.703125,
+          "height": 44,
+          "top": 796.5,
+          "right": 351.15625,
+          "bottom": 840.5,
+          "left": 306.453125
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 306.453125,
+          "y": 841.5,
+          "width": 41.359375,
+          "height": 44,
+          "top": 841.5,
+          "right": 347.8125,
+          "bottom": 885.5,
+          "left": 306.453125
+        }
+      },
+      {
+        "text": "Data retention & governance",
+        "href": "/services/gdpr-data-retention",
+        "rect": {
+          "x": 485.53125,
+          "y": 661.5,
+          "width": 152.765625,
+          "height": 44,
+          "top": 661.5,
+          "right": 638.296875,
+          "bottom": 705.5,
+          "left": 485.53125
+        }
+      },
+      {
+        "text": "AI & automation",
+        "href": "/services/ai-intelligent-automation",
+        "rect": {
+          "x": 485.53125,
+          "y": 706.5,
+          "width": 85.390625,
+          "height": 44,
+          "top": 706.5,
+          "right": 570.921875,
+          "bottom": 750.5,
+          "left": 485.53125
+        }
+      },
+      {
+        "text": "CRM & ERP solutions",
+        "href": "/services/crm-erp-solutions",
+        "rect": {
+          "x": 485.53125,
+          "y": 751.5,
+          "width": 117.15625,
+          "height": 44,
+          "top": 751.5,
+          "right": 602.6875,
+          "bottom": 795.5,
+          "left": 485.53125
+        }
+      }
+    ],
+    "copyrightBottom": 926.296875,
+    "railTop": 934,
+    "overflow": [],
+    "heightReductionPercent": 4
+  },
+  {
+    "width": 1024,
+    "scrollWidth": 1024,
+    "height": 424.796875,
+    "footerBottom": 10010.28125,
+    "documentBottom": 10010,
+    "bodyPadding": "0px",
+    "railBackground": "rgba(0, 0, 0, 0)",
+    "links": [
+      {
+        "text": "RapidNestSOFTWARE SOLUTIONS",
+        "href": "/",
+        "rect": {
+          "x": 32,
+          "y": 591.984375,
+          "width": 128.390625,
+          "height": 46,
+          "top": 591.984375,
+          "right": 160.390625,
+          "bottom": 637.984375,
+          "left": 32
+        }
+      },
+      {
+        "text": "Discuss Your Project ",
+        "href": "/#contact",
+        "rect": {
+          "x": 844.390625,
+          "y": 592.984375,
+          "width": 147.609375,
+          "height": 44,
+          "top": 592.984375,
+          "right": 992,
+          "bottom": 636.984375,
+          "left": 844.390625
+        }
+      },
+      {
+        "text": "contact@therapidnest.com ↗",
+        "href": "mailto:contact@therapidnest.com",
+        "rect": {
+          "x": 32,
+          "y": 709.078125,
+          "width": 158.265625,
+          "height": 44,
+          "top": 709.078125,
+          "right": 190.265625,
+          "bottom": 753.078125,
+          "left": 32
+        }
+      },
+      {
+        "text": "+91 6300675410",
+        "href": "tel:+916300675410",
+        "rect": {
+          "x": 32,
+          "y": 753.078125,
+          "width": 90.4375,
+          "height": 44,
+          "top": 753.078125,
+          "right": 122.4375,
+          "bottom": 797.078125,
+          "left": 32
+        }
+      },
+      {
+        "text": "Services",
+        "href": "/#services",
+        "rect": {
+          "x": 451.28125,
+          "y": 661.484375,
+          "width": 46.015625,
+          "height": 44,
+          "top": 661.484375,
+          "right": 497.296875,
+          "bottom": 705.484375,
+          "left": 451.28125
+        }
+      },
+      {
+        "text": "Our work",
+        "href": "/work",
+        "rect": {
+          "x": 451.28125,
+          "y": 706.484375,
+          "width": 48.6875,
+          "height": 44,
+          "top": 706.484375,
+          "right": 499.96875,
+          "bottom": 750.484375,
+          "left": 451.28125
+        }
+      },
+      {
+        "text": "Company",
+        "href": "/#about",
+        "rect": {
+          "x": 451.28125,
+          "y": 751.484375,
+          "width": 51.359375,
+          "height": 44,
+          "top": 751.484375,
+          "right": 502.640625,
+          "bottom": 795.484375,
+          "left": 451.28125
+        }
+      },
+      {
+        "text": "Founder",
+        "href": "/#founder",
+        "rect": {
+          "x": 451.28125,
+          "y": 796.484375,
+          "width": 44.703125,
+          "height": 44,
+          "top": 796.484375,
+          "right": 495.984375,
+          "bottom": 840.484375,
+          "left": 451.28125
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 451.28125,
+          "y": 841.484375,
+          "width": 41.359375,
+          "height": 44,
+          "top": 841.484375,
+          "right": 492.640625,
+          "bottom": 885.484375,
+          "left": 451.28125
+        }
+      },
+      {
+        "text": "Data retention & governance",
+        "href": "/services/gdpr-data-retention",
+        "rect": {
+          "x": 688.421875,
+          "y": 661.484375,
+          "width": 152.765625,
+          "height": 44,
+          "top": 661.484375,
+          "right": 841.1875,
+          "bottom": 705.484375,
+          "left": 688.421875
+        }
+      },
+      {
+        "text": "AI & automation",
+        "href": "/services/ai-intelligent-automation",
+        "rect": {
+          "x": 688.421875,
+          "y": 706.484375,
+          "width": 85.390625,
+          "height": 44,
+          "top": 706.484375,
+          "right": 773.8125,
+          "bottom": 750.484375,
+          "left": 688.421875
+        }
+      },
+      {
+        "text": "CRM & ERP solutions",
+        "href": "/services/crm-erp-solutions",
+        "rect": {
+          "x": 688.421875,
+          "y": 751.484375,
+          "width": 117.15625,
+          "height": 44,
+          "top": 751.484375,
+          "right": 805.578125,
+          "bottom": 795.484375,
+          "left": 688.421875
+        }
+      }
+    ],
+    "copyrightBottom": 926.28125,
+    "railTop": 934,
+    "overflow": [],
+    "heightReductionPercent": 4.5
+  },
+  {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 424.796875,
+    "footerBottom": 9082.3125,
+    "documentBottom": 9082,
+    "bodyPadding": "0px",
+    "railBackground": "rgba(0, 0, 0, 0)",
+    "links": [
+      {
+        "text": "RapidNestSOFTWARE SOLUTIONS",
+        "href": "/",
+        "rect": {
+          "x": 100,
+          "y": 592.015625,
+          "width": 128.390625,
+          "height": 46,
+          "top": 592.015625,
+          "right": 228.390625,
+          "bottom": 638.015625,
+          "left": 100
+        }
+      },
+      {
+        "text": "Discuss Your Project ",
+        "href": "/#contact",
+        "rect": {
+          "x": 1192.390625,
+          "y": 593.015625,
+          "width": 147.609375,
+          "height": 44,
+          "top": 593.015625,
+          "right": 1340,
+          "bottom": 637.015625,
+          "left": 1192.390625
+        }
+      },
+      {
+        "text": "contact@therapidnest.com ↗",
+        "href": "mailto:contact@therapidnest.com",
+        "rect": {
+          "x": 100,
+          "y": 709.109375,
+          "width": 158.265625,
+          "height": 44,
+          "top": 709.109375,
+          "right": 258.265625,
+          "bottom": 753.109375,
+          "left": 100
+        }
+      },
+      {
+        "text": "+91 6300675410",
+        "href": "tel:+916300675410",
+        "rect": {
+          "x": 100,
+          "y": 753.109375,
+          "width": 90.4375,
+          "height": 44,
+          "top": 753.109375,
+          "right": 190.4375,
+          "bottom": 797.109375,
+          "left": 100
+        }
+      },
+      {
+        "text": "Services",
+        "href": "/#services",
+        "rect": {
+          "x": 639.28125,
+          "y": 661.515625,
+          "width": 46.015625,
+          "height": 44,
+          "top": 661.515625,
+          "right": 685.296875,
+          "bottom": 705.515625,
+          "left": 639.28125
+        }
+      },
+      {
+        "text": "Our work",
+        "href": "/work",
+        "rect": {
+          "x": 639.28125,
+          "y": 706.515625,
+          "width": 48.6875,
+          "height": 44,
+          "top": 706.515625,
+          "right": 687.96875,
+          "bottom": 750.515625,
+          "left": 639.28125
+        }
+      },
+      {
+        "text": "Company",
+        "href": "/#about",
+        "rect": {
+          "x": 639.28125,
+          "y": 751.515625,
+          "width": 51.359375,
+          "height": 44,
+          "top": 751.515625,
+          "right": 690.640625,
+          "bottom": 795.515625,
+          "left": 639.28125
+        }
+      },
+      {
+        "text": "Founder",
+        "href": "/#founder",
+        "rect": {
+          "x": 639.28125,
+          "y": 796.515625,
+          "width": 44.703125,
+          "height": 44,
+          "top": 796.515625,
+          "right": 683.984375,
+          "bottom": 840.515625,
+          "left": 639.28125
+        }
+      },
+      {
+        "text": "Contact",
+        "href": "/#contact",
+        "rect": {
+          "x": 639.28125,
+          "y": 841.515625,
+          "width": 41.359375,
+          "height": 44,
+          "top": 841.515625,
+          "right": 680.640625,
+          "bottom": 885.515625,
+          "left": 639.28125
+        }
+      },
+      {
+        "text": "Data retention & governance",
+        "href": "/services/gdpr-data-retention",
+        "rect": {
+          "x": 936.421875,
+          "y": 661.515625,
+          "width": 152.765625,
+          "height": 44,
+          "top": 661.515625,
+          "right": 1089.1875,
+          "bottom": 705.515625,
+          "left": 936.421875
+        }
+      },
+      {
+        "text": "AI & automation",
+        "href": "/services/ai-intelligent-automation",
+        "rect": {
+          "x": 936.421875,
+          "y": 706.515625,
+          "width": 85.390625,
+          "height": 44,
+          "top": 706.515625,
+          "right": 1021.8125,
+          "bottom": 750.515625,
+          "left": 936.421875
+        }
+      },
+      {
+        "text": "CRM & ERP solutions",
+        "href": "/services/crm-erp-solutions",
+        "rect": {
+          "x": 936.421875,
+          "y": 751.515625,
+          "width": 117.15625,
+          "height": 44,
+          "top": 751.515625,
+          "right": 1053.578125,
+          "bottom": 795.515625,
+          "left": 936.421875
+        }
+      }
+    ],
+    "copyrightBottom": 926.3125,
+    "railTop": 934,
+    "overflow": [],
+    "heightReductionPercent": 4.5
+  }
+]

@@ -1,94 +1,35 @@
-"use client";
-
 import Image from "next/image";
-import { Award, Globe, Briefcase } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, BriefcaseBusiness, Globe2, ListChecks } from "lucide-react";
+
+const highlights = [
+  { title: "Cross-Industry Experience", description: "FinTech, payments, healthcare, education technology, and IT services.", icon: BriefcaseBusiness },
+  { title: "Global Delivery Exposure", description: "Experience collaborating with international stakeholders and distributed technology teams.", icon: Globe2 },
+  { title: "Structured Leadership", description: "Project governance, Agile delivery, stakeholder management, and operational excellence.", icon: ListChecks },
+];
 
 export default function FounderSection() {
   return (
-    <section
-      id="founder"
-      className="scroll-mt-24 py-16 bg-white"
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-
-          {/* Left Image */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-[340px] md:max-w-[380px]">
-              <Image
-                src="/founder.png"
-                alt="Nikhil Gupta Founder Rapidnest"
-                width={300}
-                height={300}
-                className="rounded-3xl shadow-xl object-cover w-full h-auto"
-                priority
-              />
-            </div>
-          </div>
-
-          {/* Right Content */}
-          <div>
-            <p className="text-orange-600 font-semibold mb-3">
-              Meet The Founder
-            </p>
-
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Hi, I’m Nikhil Gupta
-            </h2>
-
-            <p className="text-gray-600 mb-5 leading-relaxed">
-              Founder of Rapidnest Software Solutions with over 15+ years of
-              experience in business development, project management, and
-              resource management.
-            </p>
-
-            <p className="text-gray-600 mb-5 leading-relaxed">
-              Worked across EdTech, FinTech, Healthcare, Staffing, and
-              Ecommerce industries while delivering scalable solutions.
-            </p>
-
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              Successfully served clients across the US, South Africa,
-              Europe, UAE, and India.
-            </p>
-
-            {/* Highlight Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-              <div className="bg-orange-50 border border-orange-100 p-4 rounded-xl text-center">
-                <Award className="mx-auto text-orange-600 mb-2" />
-                <p className="font-semibold text-gray-800">
-                  PRINCE2 + CSM
-                </p>
-              </div>
-
-              <div className="bg-orange-50 border border-orange-100 p-4 rounded-xl text-center">
-                <Briefcase className="mx-auto text-orange-600 mb-2" />
-                <p className="font-semibold text-gray-800">
-                  15+ Years
-                </p>
-              </div>
-
-              <div className="bg-orange-50 border border-orange-100 p-4 rounded-xl text-center">
-                <Globe className="mx-auto text-orange-600 mb-2" />
-                <p className="font-semibold text-gray-800">
-                  Global Clients
-                </p>
-              </div>
-            </div>
-
-            {/* CTA Button */}
-            <button
-              onClick={() => {
-                document.getElementById("contact")?.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }}
-              className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-semibold transition"
-            >
-              Book a Free Consultation
-            </button>
-          </div>
+    <section id="founder" className="section founder-section" aria-labelledby="founder-heading">
+      <div className="container founder-grid">
+        <div className="founder-portrait">
+          <div className="founder-photo"><Image src="/founder.png" alt="Nikhil Jogiparthy, Founder of RapidNest Software Solutions" width={784} height={1176} sizes="745px" /></div>
+          <div className="portrait-caption"><strong>Nikhil Jogiparthy</strong><span>Founder | RapidNest Software Solutions</span></div>
+        </div>
+        <div className="founder-copy">
+          <p className="eyebrow">MEET THE FOUNDER</p>
+          <h2 id="founder-heading">Leadership Built on Delivery Excellence</h2>
+          <p className="founder-intro">A business perspective. A delivery mindset.</p>
+          <p>Nikhil Jogiparthy is a technology delivery and program management professional with over 14 years of experience across FinTech, payments, healthcare, education technology, and IT services. His background includes leading cross-functional teams, managing complex technology initiatives, and translating business requirements into practical software solutions.</p>
+          <p>At RapidNest Software Solutions, he brings a structured approach to technology delivery, stakeholder collaboration, risk management, and continuous improvement, with a focus on maintainable solutions and meaningful business outcomes.</p>
+        </div>
+        <div className="founder-details">
+          <ul className="founder-highlights">
+            {highlights.map(({ title, description, icon: Icon }) => <li key={title}><Icon size={20} aria-hidden="true" /><h3>{title}</h3><p>{description}</p></li>)}
+          </ul>
+          <div className="founder-qualifications"><h3>Professional Qualifications</h3><ul><li>PRINCE2 Practitioner</li><li>Certified ScrumMaster (CSM)</li><li>Senior Management Programme — Indian Institute of Management Visakhapatnam</li></ul></div>
+          <blockquote className="founder-quote"><p>“Understand the business first. Build with purpose. Deliver with accountability.”</p><footer>— Nikhil Jogiparthy</footer></blockquote>
+          <div className="founder-actions"><Link href="/#contact" className="button primary">Discuss Your Project <ArrowUpRight size={16} aria-hidden="true" /></Link><a href="https://www.linkedin.com/in/nikhil-jogiparthy/" target="_blank" rel="noopener noreferrer" className="text-link">Connect on LinkedIn <ArrowUpRight size={16} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span></a></div>
         </div>
       </div>
     </section>

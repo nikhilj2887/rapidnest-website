@@ -1,0 +1,174 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "layout": {
+        "width": 320,
+        "scrollWidth": 320,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 320,
+          "height": 1164.53125,
+          "top": 73,
+          "right": 320,
+          "bottom": 1237.53125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "status": "pass"
+    },
+    {
+      "width": 375,
+      "layout": {
+        "width": 375,
+        "scrollWidth": 375,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 375,
+          "height": 1190.234375,
+          "top": 73,
+          "right": 375,
+          "bottom": 1263.234375,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "layout": {
+        "width": 768,
+        "scrollWidth": 768,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 768,
+          "height": 1014.078125,
+          "top": 73,
+          "right": 768,
+          "bottom": 1087.078125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1024,
+      "layout": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1024,
+          "height": 618.6875,
+          "top": 79,
+          "right": 1024,
+          "bottom": 697.6875,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1440,
+          "height": 618.6875,
+          "top": 79,
+          "right": 1440,
+          "bottom": 697.6875,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "status": "pass"
+    }
+  ],
+  "nested": {
+    "h1": "Smarter Data Retention. Better Information Governance.",
+    "homeLinks": [
+      "/",
+      "/#services",
+      "/work",
+      "/#why-us",
+      "/#about",
+      "/#contact"
+    ],
+    "overflow": false
+  },
+  "reducedMotion": "pass",
+  "consoleErrors": [],
+  "emailSubmission": "not performed; provider requests blocked"
+}

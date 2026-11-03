@@ -1,27 +1,12 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Contact from "./components/Contact";
 import Clients from "./components/Clients";
+import Partnerships from "./components/Partnerships";
+import Services from "./components/Services";
+import CaseStudies from "./components/CaseStudies";
+import WhyChooseUs from "./components/WhyChooseUs";
+import DeliveryMethodology from "./components/DeliveryMethodology";
+import TechnologyExpertise from "./components/TechnologyExpertise";
+import About from "./components/About";
 import FounderSection from "./components/FounderSection";
-
-export default function Home() {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Services />
-      <Clients />
-      <WhyChooseUs />
-      <About />
-      <FounderSection />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
-    </main>
-  );
-}
+import Contact from "./components/Contact";
+export default function Home() { return <><Hero /><Clients /><Services /><CaseStudies /><Partnerships /><WhyChooseUs /><DeliveryMethodology /><TechnologyExpertise /><About /><FounderSection /><Contact /></>; }

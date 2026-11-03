@@ -1,0 +1,24 @@
+[
+  {
+    "keyboardTabToG100": true,
+    "outline": "solid",
+    "outlineWidth": "3px"
+  },
+  {
+    "reduced": {
+      "cards": [
+        {
+          "animation": "none",
+          "transform": "none",
+          "reveal": false
+        },
+        {
+          "animation": "none",
+          "transform": "none",
+          "reveal": false
+        }
+      ],
+      "active": 0
+    }
+  }
+]

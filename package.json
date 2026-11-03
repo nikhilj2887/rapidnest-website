@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test tests/content.test.mjs",
+    "test:http": "node tests/http-smoke.mjs",
+    "test:browser": "node tests/browser-review.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
