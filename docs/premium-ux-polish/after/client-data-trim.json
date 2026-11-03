@@ -1,0 +1,15 @@
+{
+  "before": {
+    "chunk": "0uwl6vk89x_tf.js",
+    "rawBytes": 27540,
+    "gzipBytes": 9097
+  },
+  "after": {
+    "chunk": "14gs8-u9__q0s.js",
+    "rawBytes": 8232,
+    "gzipBytes": 3267
+  },
+  "rawReductionPercent": 70.1,
+  "gzipReductionPercent": 64.1,
+  "compression": "gzip level 9 for both measurements"
+}

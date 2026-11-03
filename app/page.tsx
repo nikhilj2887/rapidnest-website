@@ -9,4 +9,5 @@ import TechnologyExpertise from "./components/TechnologyExpertise";
 import About from "./components/About";
 import FounderSection from "./components/FounderSection";
 import Contact from "./components/Contact";
-export default function Home() { return <><Hero /><Clients /><Services /><CaseStudies /><Partnerships /><WhyChooseUs /><DeliveryMethodology /><TechnologyExpertise /><About /><FounderSection /><Contact /></>; }
+import { services } from "./data/services";
+export default function Home() { return <><Hero /><Clients /><Services /><CaseStudies /><Partnerships /><WhyChooseUs /><DeliveryMethodology /><TechnologyExpertise /><About /><FounderSection /><Contact serviceTitles={services.map(service => service.title)} /></>; }

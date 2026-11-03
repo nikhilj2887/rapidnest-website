@@ -1,0 +1,711 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "coarse": true,
+      "hover": false,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 587.078125,
+      "footerGap": -0.3125,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": true,
+      "card": {
+        "transform": "none",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          69.5,
+          44.75,
+          69.5,
+          69.5
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 360,
+      "coarse": true,
+      "hover": false,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 560.6875,
+      "footerGap": -0.3125,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": true,
+      "card": {
+        "transform": "none",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          69.5
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 375,
+      "coarse": true,
+      "hover": false,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 578.75,
+      "footerGap": -0.28125,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": true,
+      "card": {
+        "transform": "none",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "coarse": true,
+      "hover": false,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 578.75,
+      "footerGap": 0.265625,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": true,
+      "card": {
+        "transform": "none",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 414,
+      "coarse": true,
+      "hover": false,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 578.75,
+      "footerGap": -0.078125,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": true,
+      "card": {
+        "transform": "none",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 768,
+      "coarse": false,
+      "hover": true,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 387.3125,
+      "footerGap": 0.5,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": false,
+      "card": {
+        "transform": "matrix(1, 0, 0, 1, 0, -3)",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 1024,
+      "coarse": false,
+      "hover": true,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 522.671875,
+      "footerGap": -0.1875,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": false,
+      "card": {
+        "transform": "matrix(1, 0, 0, 1, 0, -3)",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 1280,
+      "coarse": false,
+      "hover": true,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 521.890625,
+      "footerGap": -0.09375,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": false,
+      "card": {
+        "transform": "matrix(1, 0, 0, 1, 0, -3)",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    },
+    {
+      "width": 1440,
+      "coarse": false,
+      "hover": true,
+      "overflow": false,
+      "smallTargets": [],
+      "heroCTA": 548.328125,
+      "footerGap": 0.46875,
+      "heroAnimations": [
+        {
+          "selector": ".hero-copy > .eyebrow",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy h1",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .lead",
+          "name": "hero-enter",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-copy .actions",
+          "name": "hero-fade",
+          "iterations": "1"
+        },
+        {
+          "selector": ".hero-composition",
+          "name": "hero-fade",
+          "iterations": "1"
+        }
+      ],
+      "mobile": false,
+      "card": {
+        "transform": "matrix(1, 0, 0, 1, 0, -3)",
+        "duration": "0.22s"
+      },
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "faqs": {
+        "heights": [
+          44.75,
+          44.75,
+          44.75,
+          44.75
+        ],
+        "open": true,
+        "overflow": false
+      }
+    }
+  ],
+  "technologyReveal": {
+    "allTriggered": true,
+    "runningAfterRevisit": 0
+  },
+  "consoleErrors": []
+}

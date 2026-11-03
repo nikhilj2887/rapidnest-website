@@ -1,0 +1,2527 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "layout": {
+        "width": 320,
+        "scrollWidth": 320,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 320,
+          "height": 1132.71875,
+          "top": 73,
+          "right": 320,
+          "bottom": 1205.71875,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          16,
+          16
+        ],
+        "tops": [
+          8179.203125,
+          8543.703125
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": -0.3125,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 468
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 468
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 360,
+      "layout": {
+        "width": 360,
+        "scrollWidth": 360,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 360,
+          "height": 1106.328125,
+          "top": 73,
+          "right": 360,
+          "bottom": 1179.328125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          16,
+          16
+        ],
+        "tops": [
+          7785.859375,
+          8150.359375
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": -0.3125,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 224
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 224
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 375,
+      "layout": {
+        "width": 375,
+        "scrollWidth": 375,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 375,
+          "height": 1154.390625,
+          "top": 73,
+          "right": 375,
+          "bottom": 1227.390625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          7774.328125,
+          8138.828125
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": -0.28125,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 192
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 192
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "layout": {
+        "width": 390,
+        "scrollWidth": 390,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 390,
+          "height": 1154.390625,
+          "top": 73,
+          "right": 390,
+          "bottom": 1227.390625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          7667.03125,
+          8031.53125
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0.265625,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 224
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 224
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 414,
+      "layout": {
+        "width": 414,
+        "scrollWidth": 414,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 414,
+          "height": 1154.390625,
+          "top": 73,
+          "right": 414,
+          "bottom": 1227.390625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          7543.25,
+          7907.75
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": -0.078125,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 200
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 200
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 430,
+      "layout": {
+        "width": 430,
+        "scrollWidth": 430,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 430,
+          "height": 1154.390625,
+          "top": 73,
+          "right": 430,
+          "bottom": 1227.390625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          20,
+          20
+        ],
+        "tops": [
+          7499.296875,
+          7863.796875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "15px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0.46875,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 200
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 200
+          }
+        ],
+        "revealTargets": 3
+      },
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "layout": {
+        "width": 768,
+        "scrollWidth": 768,
+        "hero": {
+          "x": 0,
+          "y": 73,
+          "width": 768,
+          "height": 896.609375,
+          "top": 73,
+          "right": 768,
+          "bottom": 969.609375,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 73,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          24,
+          394
+        ],
+        "tops": [
+          5282.75,
+          5282.75
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "16px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0.5,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 288
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 288
+          }
+        ],
+        "revealTargets": 18
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1024,
+      "layout": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1024,
+          "height": 550.8125,
+          "top": 79,
+          "right": 1024,
+          "bottom": 629.8125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          102,
+          522
+        ],
+        "tops": [
+          4817.90625,
+          4817.90625
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "16px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0.46875,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 232
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 232
+          }
+        ],
+        "revealTargets": 18
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1280,
+      "layout": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1280,
+          "height": 565.6875,
+          "top": 79,
+          "right": 1280,
+          "bottom": 644.6875,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          230,
+          650
+        ],
+        "tops": [
+          3965.78125,
+          3965.78125
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "16px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": -0.09375,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 232
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 232
+          }
+        ],
+        "revealTargets": 18
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "layout": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1440,
+          "height": 592.125,
+          "top": 79,
+          "right": 1440,
+          "bottom": 671.125,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          310,
+          730
+        ],
+        "tops": [
+          4021.0625,
+          4021.0625
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "16px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0.46875,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 248
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 248
+          }
+        ],
+        "revealTargets": 18
+      },
+      "status": "pass"
+    },
+    {
+      "width": 1920,
+      "layout": {
+        "width": 1920,
+        "scrollWidth": 1920,
+        "hero": {
+          "x": 0,
+          "y": 79,
+          "width": 1920,
+          "height": 684.625,
+          "top": 79,
+          "right": 1920,
+          "bottom": 763.625,
+          "left": 0
+        },
+        "brokenImages": [],
+        "overflow": []
+      },
+      "header": {
+        "top": 0,
+        "bottom": 79,
+        "background": "rgb(255, 255, 255)",
+        "zIndex": "50"
+      },
+      "form": {
+        "empty": false,
+        "invalidEmail": false,
+        "valid": true
+      },
+      "logos": {
+        "clients": 6,
+        "partners": 2,
+        "clientOrder": "clients",
+        "partnerOrder": "partnerships",
+        "baselineLinks": 0,
+        "unapproved": false,
+        "fit": true
+      },
+      "partnership": {
+        "heights": [
+          344.5,
+          344.5
+        ],
+        "lefts": [
+          550,
+          970
+        ],
+        "tops": [
+          4118.875,
+          4118.875
+        ],
+        "links": [
+          {
+            "url": "https://wicci.au/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          },
+          {
+            "url": "https://g100.in/",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+            "height": 44
+          }
+        ],
+        "count": 1,
+        "badges": [
+          "Professional connection",
+          "Professional connection"
+        ]
+      },
+      "technology": {
+        "categories": [
+          "Cloud & Modernization",
+          "Automation & Intelligent Workflows",
+          "Microsoft .NET Development",
+          "Data & Analytics",
+          "Microsoft Power Platform",
+          "Web & Application Engineering"
+        ],
+        "tools": [
+          "AWS",
+          "Azure",
+          "C#",
+          ".NET",
+          "ASP.NET Core",
+          "SQL Server",
+          "PostgreSQL",
+          "Power BI",
+          "Power Apps",
+          "Power Automate",
+          "Angular",
+          "React",
+          "Next.js",
+          "TypeScript"
+        ],
+        "serviceOptions": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "serviceTitles": [
+          "Custom Software Development",
+          "AI & Intelligent Automation",
+          "CRM & ERP Solutions",
+          "GDPR & Data Retention Solutions",
+          "Cloud & Application Modernization",
+          "Web & Mobile Application Development",
+          "Technology Consulting & Delivery"
+        ],
+        "optional": true
+      },
+      "reading": {
+        "clippedHeadings": [],
+        "bodySize": "16px",
+        "heroSize": "16px",
+        "inputSizes": [
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px",
+          "16px"
+        ],
+        "portraitRatio": 0.8,
+        "founderName": "Nikhil Jogiparthy",
+        "biographyParagraphs": 2,
+        "qualifications": [
+          "PRINCE2 Practitioner",
+          "Certified ScrumMaster (CSM)",
+          "Senior Management Programme — Indian Institute of Management Visakhapatnam"
+        ],
+        "privacyNote": "We'll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.",
+        "footerGap": 0,
+        "footerTouchTargets": true,
+        "railBackground": "rgba(0, 0, 0, 0)"
+      },
+      "measurements": {
+        "layoutShiftScore": 0,
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 264
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 264
+          }
+        ],
+        "revealTargets": 18
+      },
+      "status": "pass"
+    }
+  ],
+  "serviceResults": [
+    {
+      "slug": "custom-software-development",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 320,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 360,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 375,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 414,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 430,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 768,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1024,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1280,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "custom-software-development",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "ai-intelligent-automation",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "crm-erp-solutions",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "gdpr-data-retention",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "cloud-application-modernization",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "web-mobile-development",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    },
+    {
+      "slug": "technology-consulting-delivery",
+      "width": 1920,
+      "overflow": false,
+      "h1": 1,
+      "brokenImages": 0,
+      "activeService": "location"
+    }
+  ],
+  "accessibility": [
+    {
+      "label": "home-375",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "home-1440",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "custom-software-development",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "ai-intelligent-automation",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "crm-erp-solutions",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "gdpr-data-retention",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "cloud-application-modernization",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "web-mobile-development",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "technology-consulting-delivery",
+      "violations": [],
+      "passes": 24,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "work",
+      "violations": [],
+      "passes": 22,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ],
+  "reducedMotion": {
+    "scroll": "auto",
+    "animation": "none",
+    "active": 0
+  },
+  "noJs": true,
+  "integrationLinks": {
+    "whatsApp": true,
+    "email": true
+  },
+  "mockedContact": [
+    {
+      "outcome": "success",
+      "withOptional": true,
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "Your message was sent. Thank you for contacting RapidNest.",
+      "error": "",
+      "retained": "",
+      "message": "Mocked request; no live email\n\nProject details\ncompany: Example\nphone: 123\nservice: GDPR & Data Retention Solutions\nbudget: Test only\ntimeline: Test only"
+    },
+    {
+      "outcome": "failure",
+      "withOptional": true,
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "",
+      "error": "We couldn’t send your message. Your details are still here. Please try again, or email contact@therapidnest.com.",
+      "retained": "Browser review",
+      "message": "Mocked request; no live email\n\nProject details\ncompany: Example\nphone: 123\nservice: GDPR & Data Retention Solutions\nbudget: Test only\ntimeline: Test only"
+    },
+    {
+      "outcome": "success",
+      "withOptional": false,
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "Your message was sent. Thank you for contacting RapidNest.",
+      "error": "",
+      "retained": "",
+      "message": "Mocked request; no live email"
+    },
+    {
+      "outcome": "failure",
+      "withOptional": false,
+      "loading": true,
+      "calls": 1,
+      "keys": [
+        "email",
+        "message",
+        "name"
+      ],
+      "status": "",
+      "error": "We couldn’t send your message. Your details are still here. Please try again, or email contact@therapidnest.com.",
+      "retained": "Browser review",
+      "message": "Mocked request; no live email"
+    }
+  ],
+  "consoleErrors": [],
+  "emailSubmission": "mocked in browser; external provider requests blocked"
+}

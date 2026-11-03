@@ -1,0 +1,16 @@
+{
+  width: 390,
+  linkedin: true,
+  outline: 'solid',
+  bottom: 502.40625,
+  rail: 834
+}
+PASS FAQ keyboard toggle 390
+{
+  width: 1440,
+  linkedin: true,
+  outline: 'solid',
+  bottom: 472,
+  rail: 834
+}
+PASS FAQ keyboard toggle 1440

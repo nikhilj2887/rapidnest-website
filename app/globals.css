@@ -1019,3 +1019,64 @@ main > .section:not([id]) p:not(.eyebrow), main > .section:not([id]) .detail-lis
   #contact .two > div > p:not(.eyebrow),
   main > .section:not([id]) p:not(.eyebrow), main > .section:not([id]) .detail-list { font-size: 15px; }
 }
+
+/* Premium UX polish: short entrances and purposeful, local spacing adjustments. */
+.hero-copy > .eyebrow { animation: hero-fade 400ms var(--motion-ease) backwards; }
+.hero-copy h1 { animation-delay: 60ms; }
+.hero-copy .lead { animation-delay: 120ms; }
+.hero-copy .actions { animation: hero-fade 400ms var(--motion-ease) 180ms backwards; }
+.hero-composition { animation: hero-fade 500ms var(--motion-ease) 220ms backwards; }
+@keyframes hero-fade { from { opacity: .45; } to { opacity: 1; } }
+.hero h1 { margin-block: 16px 20px; }
+.hero .actions { margin-block: 24px; }
+.service-card { transition-duration: 220ms; }
+@media (hover: none), (pointer: coarse) {
+  .service-card:hover, .partnership-card:hover, .partnership-card:focus-within,
+  .solution-card:hover .interface-preview, .primary:hover { transform: none; }
+  .logo-card:hover { opacity: 1; }
+  .button:hover svg, .partnership-link:hover svg { transform: none; }
+}
+#founder { padding-block: 56px; }
+.founder-grid { grid-template-columns: minmax(0, 340px) minmax(0, 1fr); column-gap: 40px; row-gap: 20px; }
+.founder-portrait { max-width: 340px; }
+.founder-copy > p:not(.eyebrow):not(.founder-intro) { max-width: 72ch; }
+.portrait-caption { padding-top: 16px; }
+.founder-details .founder-highlights { margin-bottom: 20px; }
+.founder-qualifications { padding-block: 16px; }
+.founder-details .founder-quote { margin-block: 16px; }
+#contact { padding-block: 64px; }
+.contact-form { padding: 26px; }
+.contact-form .form-grid { row-gap: 13px; }
+.form-intro { margin-bottom: 20px; padding-bottom: 14px; }
+#contact .discovery-steps { margin-block: 24px; }
+#contact .contact-links { margin-top: 24px; padding-top: 20px; gap: 12px; }
+@media (max-width: 1100px) {
+  .founder-grid { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); column-gap: 28px; }
+}
+@media (max-width: 850px) {
+  .hero-grid { gap: 20px; padding-block: 36px 30px; }
+  #founder { padding-block: 48px; }
+  .founder-grid { grid-template-columns: 1fr; row-gap: 24px; }
+  .founder-portrait { max-width: 320px; }
+  #contact { padding-block: 56px; }
+  #contact .two { row-gap: 30px; }
+  .contact-form { padding: 22px; }
+}
+@media (max-width: 600px) {
+  .hero-grid { padding-block: 34px 28px; }
+  .hero .actions { margin-block: 22px; }
+  #founder { padding-block: 36px; }
+  .founder-portrait { max-width: 300px; }
+  .founder-details .founder-highlights { gap: 14px; }
+  .founder-highlights li { padding-top: 14px; }
+  .founder-actions { gap: 12px; }
+  #contact { padding-block: 44px; }
+  #contact .two { row-gap: 28px; }
+  #contact .contact-links { margin-top: 20px; padding-top: 18px; gap: 10px; }
+  .contact-form { padding: 20px; }
+}
+
+/* Expand genuine small hit areas without changing the surrounding navigation rhythm. */
+.brand, .hero-bottom a { min-height: 44px; }
+main details { padding-block: 10px; }
+main summary { min-height: 44px; padding-block: 10px; }

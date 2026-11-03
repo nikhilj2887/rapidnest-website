@@ -55,8 +55,7 @@ function contactHarness(send) {
   const dependencies = {
     react: { useState: () => ['idle', value => updates.push(value)], useRef: value => ({ current: value }) },
     'react/jsx-runtime': { jsx, jsxs: jsx },
-    '@emailjs/browser': { default: { send } },
-    '../data/services': { services }
+    '@emailjs/browser': { default: { send } }
   };
   new Function('module', 'exports', 'require', output)(sandboxModule, sandboxModule.exports, id => dependencies[id]);
   function find(node) {
@@ -65,7 +64,7 @@ function contactHarness(send) {
     for (const child of [node.props?.children].flat(Infinity)) { const result = find(child); if (result) return result; }
   }
   global.window = { gtag: (...args) => events.push(args) };
-  const form = find(sandboxModule.exports.default());
+  const form = find(sandboxModule.exports.default({ serviceTitles: services.map(service => service.title) }));
   return { submit: form.props.onSubmit, updates, events, form };
 }
 function inquiry(overrides = {}) {
@@ -184,4 +183,7 @@ test('the form requires only name, email and project details', () => {
   walk(h.form);
   assert.deepEqual(fields.filter(field=>field.props.required).map(field=>field.props.name).sort(),['email','message','name']);
   assert.ok(['company','phone','service','budget','timeline'].every(name=>fields.some(field=>field.props.name===name&&!field.props.required)));
+  const select=fields.find(field=>field.props.name==='service');
+  const options=[select.props.children].flat(Infinity).filter(node=>node?.type==='option');
+  assert.deepEqual(options.map(option=>option.props.value),['',...services.map(service=>service.title)]);
 });

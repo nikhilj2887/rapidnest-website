@@ -1,0 +1,29 @@
+[
+  {
+    "width": 390,
+    "height": 17009,
+    "heroHeight": 1187.390625,
+    "founderHeight": 2089.5,
+    "contactHeight": 1854.140625,
+    "ctaBottom": 609.75,
+    "heroFont": "37px"
+  },
+  {
+    "width": 768,
+    "height": 11806,
+    "heroHeight": 921.609375,
+    "founderHeight": 1541.921875,
+    "contactHeight": 1399.59375,
+    "ctaBottom": 414.3125,
+    "heroFont": "43.776px"
+  },
+  {
+    "width": 1440,
+    "height": 9216,
+    "heroHeight": 602.125,
+    "founderHeight": 1096.53125,
+    "contactHeight": 998.734375,
+    "ctaBottom": 569.328125,
+    "heroFont": "52.56px"
+  }
+]
