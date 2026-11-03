@@ -20,10 +20,8 @@ export default function FounderSection() {
           <p className="eyebrow">MEET THE FOUNDER</p>
           <h2 id="founder-heading">Leadership Built on Delivery Excellence</h2>
           <p className="founder-intro">A business perspective. A delivery mindset.</p>
-          <p>Nikhil Jogiparthy is a technology delivery and program management professional with over 14 years of experience across FinTech, payments, healthcare, education technology, and IT services.</p>
-          <p>His professional background includes managing cross-functional teams, coordinating complex technology initiatives, strengthening delivery governance, and translating business requirements into practical software solutions.</p>
-          <p>With experience in Agile and traditional project delivery methodologies, he brings a structured approach to execution, stakeholder collaboration, risk management, and continuous improvement.</p>
-          <p>At RapidNest Software Solutions, his leadership philosophy emphasizes understanding business challenges, selecting appropriate technologies, building maintainable solutions, and delivering measurable business value.</p>
+          <p>Nikhil Jogiparthy is a technology delivery and program management professional with over 14 years of experience across FinTech, payments, healthcare, education technology, and IT services. His background includes leading cross-functional teams, managing complex technology initiatives, and translating business requirements into practical software solutions.</p>
+          <p>At RapidNest Software Solutions, he brings a structured approach to technology delivery, stakeholder collaboration, risk management, and continuous improvement, with a focus on maintainable solutions and meaningful business outcomes.</p>
         </div>
         <div className="founder-details">
           <ul className="founder-highlights">

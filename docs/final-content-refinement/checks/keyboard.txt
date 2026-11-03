@@ -1,0 +1,14 @@
+{
+  width: 375,
+  linkedin: true,
+  outline: 'solid',
+  bottom: 504.015625,
+  rail: 834
+}
+{
+  width: 1440,
+  linkedin: true,
+  outline: 'solid',
+  bottom: 472,
+  rail: 834
+}

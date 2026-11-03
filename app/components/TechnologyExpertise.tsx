@@ -11,7 +11,7 @@ export default function TechnologyExpertise() {
         <p className="eyebrow">TECHNOLOGY EXPERTISE</p>
         <div className="section-heading technology-heading">
           <h2>Technology Expertise Across the Digital Ecosystem</h2>
-          <p>From enterprise applications and cloud solutions to automation, data platforms, and modern web technologies, we select technologies based on business requirements, maintainability, and long-term value.</p>
+          <p>Our engineering capabilities cover application development, cloud deployment, workflow automation, and reporting. Technology choices reflect your existing platforms, integration needs, and support requirements.</p>
         </div>
         <div className="technology-categories">
           {technologyCategories.map(category => {

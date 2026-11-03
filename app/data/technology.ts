@@ -16,10 +16,10 @@ export function getApprovedTechnologyNames(records: readonly TechnologyApproval[
 }
 
 export const technologyCategories = [
-  { id: "cloud", title: "Cloud & Modernization", description: "Cloud applications, deployment, infrastructure and integration, with modernization planned around existing systems.", technologies: ["AWS", "Azure"] },
-  { id: "automation", title: "Automation & Intelligent Workflows", description: "Business process automation and workflow orchestration, connecting applications with AI-assisted steps and appropriate human oversight.", technologies: [] },
+  { id: "cloud", title: "Cloud & Modernization", description: "Cloud application development, deployment and modernization on AWS and Azure, with migration planned around continuity and existing systems.", technologies: ["AWS", "Azure"] },
+  { id: "automation", title: "Automation & Intelligent Workflows", description: "AI-assisted workflows connect document processing and application integrations with human review, exception handling and clear decision ownership.", technologies: [] },
   { id: "dotnet", title: "Microsoft .NET Development", description: "Backend applications and enterprise APIs that connect business rules, data and operational workflows.", technologies: ["C#", ".NET", "ASP.NET Core"] },
   { id: "data", title: "Data & Analytics", description: "Databases, data integration, reporting and analytics that help teams manage information and understand their operations.", technologies: ["SQL Server", "PostgreSQL", "Power BI"] },
-  { id: "power", title: "Microsoft Power Platform", description: "Business applications and workflow automation for approvals, operational tasks and connections between everyday tools.", technologies: ["Power Apps", "Power Automate"] },
+  { id: "power", title: "Microsoft Power Platform", description: "Low-code applications and workflow automation for approvals, operational tasks and connections between everyday tools.", technologies: ["Power Apps", "Power Automate"] },
   { id: "web", title: "Web & Application Engineering", description: "Responsive web applications and maintainable interfaces designed around users, business processes and system integrations.", technologies: ["Angular", "React", "Next.js", "TypeScript"] },
 ] as const;

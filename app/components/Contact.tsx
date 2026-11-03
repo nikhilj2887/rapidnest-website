@@ -51,7 +51,7 @@ export default function Contact() {
  <label htmlFor="timeline">Expected timeline (optional)<input id="timeline" name="timeline" placeholder="Your target date" maxLength={80}/></label>
  <label htmlFor="message" className="full-width">Project details *<textarea aria-describedby="contact-privacy" id="message" name="message" rows={4} required maxLength={5000}/></label>
  </div><div className="honeypot" aria-hidden="true"><label htmlFor="website">Leave this field empty</label><input id="website" name="website" tabIndex={-1} autoComplete="off"/></div>
- <p id="contact-privacy" className="privacy-note">Your details are sent through EmailJS to respond to your inquiry. Please avoid sensitive or confidential information. For privacy questions, email contact@therapidnest.com.</p>
+ <p id="contact-privacy" className="privacy-note">We&apos;ll use your details to respond to your inquiry. Please avoid including confidential or sensitive information.</p>
  <button className="button primary" type="submit" disabled={status === "sending"}>{status === "sending" && <span className="loading-indicator" aria-hidden="true" />}{status === "sending" ? "Sending…" : "Request a Consultation ↗"}</button>
  <div role="status" aria-live="polite">{status === "success" && <p className="form-feedback">Your message was sent. Thank you for contacting RapidNest.</p>}</div>
  {status === "invalid" && <p role="alert" className="form-feedback">Please enter your name, a valid email address, and a project description.</p>}

@@ -990,3 +990,32 @@ h2 { font-size: clamp(28px, 2.7vw, 40px); }
   .related-services { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
 @media (prefers-reduced-motion: reduce) { .hero .pipeline-column::after { animation: none; opacity: 0; } }
+
+/* Targeted reading improvements; approved service cards and footer type remain unchanged. */
+.hero .lead { font-size: 16px; line-height: 1.65; }
+#clients .clients-intro, #partnerships .partnerships-intro,
+#work .section-heading p, #work .solution-copy > p:not(.eyebrow),
+#why-us .why-intro > p:not(.eyebrow), #why-us .value-row p,
+#methodology .process p, #technology .section-heading p, #technology .technology-category p,
+#about p:not(.eyebrow), #founder .founder-copy > p:not(.eyebrow):not(.founder-intro),
+#contact .two > div > p:not(.eyebrow),
+main > .section:not([id]) p:not(.eyebrow), main > .section:not([id]) .detail-list {
+  font-size: 16px;
+  line-height: 1.65;
+}
+#why-us .why-intro > p:not(.eyebrow) { max-width: 42ch; }
+#why-us .approach-signature > span:last-child { color: var(--muted); }
+#founder .founder-details .founder-highlights p,
+#founder .founder-details .founder-qualifications ul { font-size: 15px; line-height: 1.65; }
+#technology .technology-tools li { font-size: 13px; }
+.contact-form input, .contact-form select, .contact-form textarea { font-size: 16px; }
+.contact-form .privacy-note, .form-intro p, .form-intro > span { font-size: 14px; line-height: 1.65; }
+@media (max-width: 600px) {
+  #clients .clients-intro, #partnerships .partnerships-intro,
+  #work .section-heading p, #work .solution-copy > p:not(.eyebrow),
+  #why-us .why-intro > p:not(.eyebrow), #why-us .value-row p,
+  #methodology .process p, #technology .section-heading p, #technology .technology-category p,
+  #about p:not(.eyebrow), #founder .founder-copy > p:not(.eyebrow):not(.founder-intro),
+  #contact .two > div > p:not(.eyebrow),
+  main > .section:not([id]) p:not(.eyebrow), main > .section:not([id]) .detail-list { font-size: 15px; }
+}

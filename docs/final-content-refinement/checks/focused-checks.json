@@ -1,0 +1,508 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "40px",
+      "compactPadding": "36px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.375,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 375,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "40px",
+      "compactPadding": "36px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.09375,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 390,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "40px",
+      "compactPadding": "36px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.296875,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 430,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "40px",
+      "compactPadding": "36px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": 0.34375,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 768,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "56px",
+      "compactPadding": "40px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.109375,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 1024,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "64px",
+      "compactPadding": "48px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.1875,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 1280,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "64px",
+      "compactPadding": "48px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": -0.09375,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 1440,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "64px",
+      "compactPadding": "48px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": 0.46875,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "width": 1920,
+      "clippedHeadings": [],
+      "categories": 6,
+      "tools": 14,
+      "founder": "Nikhil Jogiparthy",
+      "linkedin": "https://www.linkedin.com/in/nikhil-jogiparthy/",
+      "qualifications": 3,
+      "portraitRatio": 0.8,
+      "detailsSpan": "1 / -1",
+      "clientHeading": "Businesses We've Worked With",
+      "footerContactSeparate": true,
+      "required": [
+        "email",
+        "message",
+        "name"
+      ],
+      "generalPadding": "64px",
+      "compactPadding": "48px",
+      "focus": [
+        {
+          "selector": "#name",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#email",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": "#message",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".contact-form button[type=\"submit\"]",
+          "visible": true,
+          "hit": true
+        },
+        {
+          "selector": ".founder-actions a",
+          "visible": true,
+          "hit": true
+        }
+      ],
+      "preserved": {
+        "serviceBody": "15px",
+        "footerBody": "12px",
+        "linkTargets": true,
+        "footerGap": 0,
+        "rail": "rgba(0, 0, 0, 0)"
+      }
+    }
+  ],
+  "motion": {
+    "iterations": [
+      "1",
+      "1",
+      "1"
+    ],
+    "names": [
+      "illustrative-stage",
+      "illustrative-stage",
+      "illustrative-stage"
+    ],
+    "runningAfterEnd": 0,
+    "reduced": {
+      "active": 0,
+      "stage": "none"
+    }
+  },
+  "consoleErrors": []
+}
