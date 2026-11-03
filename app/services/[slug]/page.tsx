@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ServicePage({ params }: Props) {
   const service = await findService(params);
+  const related = services.filter(item => service.relatedServices.includes(item.slug));
   const gdpr = service.slug === "gdpr-data-retention";
   return <>
     <section className="detail-hero"><div className="container">
@@ -48,8 +49,8 @@ export default async function ServicePage({ params }: Props) {
     {gdpr && <section className="section"><div className="container"><p className="eyebrow">RETENTION WORKFLOW</p><h2>From policy to accountable execution</h2><ol className="workflow">{["Data Catalogue", "Policy Configuration", "Job Setup", "Validation", "Authorized Execution", "Monitoring & Reporting"].map(item => <li key={item}>{item}<span aria-hidden="true"> →</span></li>)}</ol></div></section>}
     <section className="section"><div className="container grid two">
       <div><p className="eyebrow">IMPLEMENTATION</p><h2>How we approach the work</h2><p>{service.implementation}</p><h3>Relevant use cases</h3><ul className="detail-list">{service.useCases.map(item => <li key={item}>{item}</li>)}</ul></div>
-      <div><p className="eyebrow">INTEGRATIONS & CONSTRAINTS</p><h2>Working with your environment</h2><p>{service.integrationConsiderations}</p>{service.technologies.length > 0 && <><h3>Relevant frontend technologies</h3><div className="badges">{service.technologies.map(technology => <span key={technology}>{technology}</span>)}</div><p>{service.technologyContext}</p></>}{gdpr && <p>This service supports technical information governance. It does not provide legal advice, certification, or a guarantee of GDPR compliance.</p>}</div>
+      <div><p className="eyebrow">INTEGRATIONS & CONSTRAINTS</p><h2>Working with your environment</h2><p>{service.integrationConsiderations}</p>{service.technologies.length > 0 && <><h3>Relevant technologies</h3><div className="badges">{service.technologies.map(technology => <span key={technology}>{technology}</span>)}</div><p>{service.technologyContext}</p></>}{gdpr && <p>This service supports technical information governance. It does not provide legal advice, certification, or a guarantee of GDPR compliance.</p>}</div>
     </div></section>
-    <section className="section muted"><div className="container narrow"><p className="eyebrow">COMMON QUESTIONS</p><h2>Before we get started</h2>{service.faqs.map(({ question, answer }) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}<div className="actions"><Link className="button primary" href="/#contact">Request a Consultation ↗</Link></div></div></section>
+    <section className="section muted"><div className="container narrow"><p className="eyebrow">COMMON QUESTIONS</p><h2>Before we get started</h2>{service.faqs.map(({ question, answer }) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}<nav className="related-services" aria-label="Related services"><h3>Related capabilities</h3>{related.map(item => <Link key={item.slug} className="text-link" href={`/services/${item.slug}`}>{item.title} <span aria-hidden="true">↗</span></Link>)}</nav><div className="actions"><Link className="button primary" href="/#contact">Request a Consultation ↗</Link></div></div></section>
   </>;
 }

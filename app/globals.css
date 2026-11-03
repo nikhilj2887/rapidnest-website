@@ -932,3 +932,61 @@ h2 { font-size: clamp(28px, 2.7vw, 40px); }
   .process li:last-child { padding-bottom: 0; }
   .process h3 { margin-block: 5px 8px; }
 }
+
+/* Compact section rhythm, approved engineering capabilities and finite illustrative activity. */
+:root { --section-space: 64px; --section-compact: 48px; }
+#clients, #partnerships, #technology, #about { padding-block: var(--section-compact); }
+.clients-intro { max-width: 860px; font-size: 15px; line-height: 1.8; }
+.logo-grid { margin-top: 22px; }
+.service-card { padding: 26px; }
+.service-featured { gap: 22px; }
+.service-copy > .text-link { padding-top: 8px; }
+.solution-stories .solution-card { padding-block: 24px; }
+.solution-disclaimer { margin-bottom: 18px; }
+.partnership-grid { margin-top: 24px; gap: 20px; }
+.partnership-card { padding: 24px; }
+.partnership-logo { height: 90px; margin-bottom: 16px; }
+.partnership-logo img { height: 84px; }
+.partnership-card h3 { margin-top: 12px; }
+.technology-heading { align-items: start; column-gap: 40px; row-gap: 16px; margin-bottom: 24px; }
+.technology-heading p { max-width: 54ch; }
+.technology-categories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
+.technology-category { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; border-top: 1px solid #d6dfe8; padding: 24px 0; }
+.technology-category-icon { display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background: #f4eee7; color: #93451e; border-radius: 10px; }
+.technology-category h3 { font-size: 20px; line-height: 1.4; margin: 0 0 10px; }
+.technology-category p { font-size: 15px; line-height: 1.75; margin: 0 0 12px; max-width: 54ch; }
+.technology-tools { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.technology-tools li { font-size: 12px; line-height: 1.6; color: #374e65; background: #fff; border: 1px solid #d6e0e9; border-radius: 5px; padding: 4px 9px; }
+.founder-grid { row-gap: 24px; }
+.founder-details { grid-column: 1 / -1; }
+.founder-details .founder-highlights { margin: 0 0 24px; gap: 28px; }
+.founder-details .founder-highlights p { font-size: 14px; max-width: 46ch; }
+.founder-details .founder-qualifications ul { font-size: 14px; }
+.founder-details .founder-quote { margin-block: 20px; }
+.related-services { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; padding-top: 24px; }
+.related-services h3 { flex-basis: 100%; font-size: 18px; margin: 0; }
+.related-services .text-link { min-height: 44px; }
+.hero .pipeline-column { position: relative; }
+.hero .pipeline-column::after { content: ""; position: absolute; inset: 0; border: 2px solid #c16c3c; border-radius: inherit; pointer-events: none; opacity: 0; animation: illustrative-stage 5s ease-in-out 1 both; }
+.hero .pipeline-column:nth-child(1)::after { animation-delay: .5s; }
+.hero .pipeline-column:nth-child(2)::after { animation-delay: 1.8s; }
+.hero .pipeline-column:nth-child(3)::after { animation-delay: 3.1s; }
+@keyframes illustrative-stage { 0%, 15%, 80%, 100% { opacity: 0; } 30%, 55% { opacity: .7; } }
+@media (max-width: 850px) {
+  :root { --section-space: 56px; --section-compact: 40px; }
+  .technology-categories { column-gap: 24px; }
+  .technology-category { grid-template-columns: 32px minmax(0, 1fr); gap: 12px; }
+  .technology-category-icon { width: 32px; height: 32px; }
+  .technology-category-icon svg { width: 19px; height: 19px; }
+}
+@media (max-width: 600px) {
+  :root { --section-space: 40px; --section-compact: 36px; }
+  .service-card { padding: 22px; }
+  .partnership-card { min-height: 330px; }
+  .technology-categories { grid-template-columns: 1fr; }
+  .technology-category { padding-block: 20px; }
+  .founder-details .founder-highlights { gap: 18px; }
+  .founder-grid { row-gap: 28px; }
+  .related-services { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) { .hero .pipeline-column::after { animation: none; opacity: 0; } }

@@ -15,6 +15,7 @@ socket.on('message', raw => {
  const message = JSON.parse(raw);
  if (message.id && pending.has(message.id)) { const {resolve,reject,timer} = pending.get(message.id); clearTimeout(timer); pending.delete(message.id); if (message.error) reject(message.error); else resolve(message.result); }
  if (message.method === 'Runtime.exceptionThrown') consoleErrors.push(message.params.exceptionDetails.text);
+ if (message.method === 'Runtime.consoleAPICalled' && message.params.type === 'error') consoleErrors.push(message.params.args.map(arg=>arg.value ?? arg.description ?? arg.type).join(' '));
 });
 function send(method, params = {}) { return new Promise((resolve, reject) => { const requestId = ++id; const timer = setTimeout(() => {pending.delete(requestId); reject(new Error(method+' timed out'));}, 20000); pending.set(requestId,{resolve,reject,timer}); socket.send(JSON.stringify({id:requestId,method,params})); }); }
 async function evaluate(expression) { const result = await send('Runtime.evaluate', {expression, returnByValue:true, awaitPromise:true}); if(result.exceptionDetails)throw new Error(JSON.stringify(result.exceptionDetails)); return result.result.value; }
@@ -71,6 +72,8 @@ try {
   const layout=await evaluate(`(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,hero:document.querySelector('.hero').getBoundingClientRect().toJSON(),brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src),overflow:[...document.querySelectorAll('main *')].filter(e=>{const r=e.getBoundingClientRect();return !e.closest('.honeypot')&&r.width>0&&(r.right>innerWidth+1||r.left< -1)&&getComputedStyle(e).position!=='absolute'}).slice(0,12).map(e=>({tag:e.tagName,class:e.className,width:e.getBoundingClientRect().width}))}))()`);
   if(width>=1024 && layout.hero.bottom>height-66) throw new Error('Desktop hero does not fit viewport: '+JSON.stringify(layout.hero));
   const stories=await evaluate(`[...document.querySelectorAll('.solution-stories .solution-card')].map(e=>({left:e.getBoundingClientRect().left,width:e.getBoundingClientRect().width,steps:e.querySelectorAll('.solution-flow li').length}))`);if(stories.length!==3||stories.some(s=>s.steps!==3||s.left!==stories[0].left||Math.abs(s.width-stories[0].width)>1))throw new Error('Illustrative solution stories layout');
+  const technology=await evaluate(`({categories:[...document.querySelectorAll('.technology-category h3')].map(e=>e.textContent),tools:[...document.querySelectorAll('.technology-tools li')].map(e=>e.textContent),optional:['company','phone','service','budget','timeline'].every(name=>!document.querySelector('.contact-form').elements.namedItem(name).required)})`);
+  if(technology.categories.length!==6||technology.tools.length!==14||!technology.optional||!technology.tools.includes('Angular')||!technology.tools.includes('AWS')||!technology.tools.includes('Power Apps'))throw new Error('Approved technology and optional fields '+JSON.stringify(technology));
   const logos=await evaluate(`({clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('#partnerships .partnership-card').length,clientOrder:document.querySelector('.hero').nextElementSibling?.id,partnerOrder:document.querySelector('#work').nextElementSibling?.id,baselineLinks:[...document.querySelectorAll('#clients a')].filter(a=>a.textContent.includes('Baseline')).length,unapproved:!!document.querySelector('img[src*="ALL.png"]'),fit:[...document.querySelectorAll('.logo-card img, .partnership-logo img')].every(i=>getComputedStyle(i).objectFit==='contain')})`);
   if(logos.clients!==6||logos.partners!==2||logos.clientOrder!=='clients'||logos.partnerOrder!=='partnerships'||logos.baselineLinks||logos.unapproved||!logos.fit)throw new Error('Approved logo rendering '+JSON.stringify(logos));
   const partnership=await evaluate(`(()=>{const cards=[...document.querySelectorAll('.partnership-card')];return {heights:cards.map(c=>c.getBoundingClientRect().height),lefts:cards.map(c=>c.getBoundingClientRect().left),tops:cards.map(c=>c.getBoundingClientRect().top),links:cards.map(c=>{const a=c.querySelector('a');return {url:a.href,rel:a.rel,target:a.target,height:a.getBoundingClientRect().height}}),count:document.querySelectorAll('#partnerships').length,badges:cards.map(c=>c.querySelector('.partnership-badge').textContent)}})()`);
@@ -99,7 +102,7 @@ try {
   if(form.empty||form.invalidEmail||!form.valid)throw new Error('Validation '+JSON.stringify(form));
   const measurements=await evaluate(`({layoutShiftScore:window.__layoutShifts.reduce((a,b)=>a+b,0),paint:performance.getEntriesByType('paint').map(p=>({name:p.name,startTime:p.startTime})),revealTargets:document.querySelectorAll('.reveal-enter').length})`);
   if([375,1440].includes(width))await scanAccessibility('home-'+width);
-  results.push({width,layout,header,form,logos,partnership,measurements,status:'pass'});
+  results.push({width,layout,header,form,logos,partnership,technology,measurements,status:'pass'});
   console.log('PASS homepage viewport '+width+'px: no overflow/broken images, opaque sticky header, native form validation'+(width<851?', mobile navigation and anchor offset':''));
  }
 
@@ -121,6 +124,15 @@ try {
   console.log('PASS all seven service pages and Our Work at '+width+'px');
  }
  await send('Emulation.setDeviceMetricsOverride',{width:1440,height:900,deviceScaleFactor:1,mobile:false});
+ await navigate(baseUrl+'/');
+ await evaluate(`document.querySelector('header a[href="/#services"]').click()`);
+ await new Promise(r=>setTimeout(r,250));
+ await evaluate(`history.back()`);
+ for(let i=0;i<30;i++){if(await evaluate(`location.hash===''&&!document.querySelector('header a[href="/#services"][aria-current]')`))break;await new Promise(r=>setTimeout(r,100));}
+ if(!await evaluate(`location.hash===''&&!document.querySelector('header a[href="/#services"][aria-current]')`))throw new Error('Stale anchor after browser Back');
+ await evaluate(`history.forward()`);
+ for(let i=0;i<30;i++){if(await evaluate(`location.hash==='#services'&&document.querySelector('header a[href="/#services"]').getAttribute('aria-current')==='location'`))break;await new Promise(r=>setTimeout(r,100));}
+ if(!await evaluate(`location.hash==='#services'&&document.querySelector('header a[href="/#services"]').getAttribute('aria-current')==='location'`))throw new Error('Anchor state after browser Forward');
  await navigate(baseUrl+'/services/gdpr-data-retention');
  await evaluate(`document.querySelector('header a[href="/#contact"]').click()`);
  for(let i=0;i<80;i++){if(await evaluate(`location.pathname==='/'&&location.hash==='#contact'&&!!document.querySelector('#contact')`))break;await new Promise(r=>setTimeout(r,100));}
@@ -138,10 +150,11 @@ try {
  const integrationLinks=await evaluate(`({whatsApp:[...document.querySelectorAll('a[href*="wa.me"]')].every(a=>new URL(a.href).pathname==='/916300675410'),email:[...document.querySelectorAll('a[href^="mailto:"]')].every(a=>a.getAttribute('href')==='mailto:contact@therapidnest.com')})`);
  if(!integrationLinks.whatsApp||!integrationLinks.email)throw new Error('Contact destination mismatch');
  const mockedContact=[];
- for(const outcome of ['success','failure']){
+ for(const scenario of [{outcome:'success',withOptional:true},{outcome:'failure',withOptional:true},{outcome:'success',withOptional:false},{outcome:'failure',withOptional:false}]){
+  const {outcome,withOptional}=scenario;
   await navigate(baseUrl+'/');
   await evaluate(`Object.defineProperty(navigator,'webdriver',{get:()=>false,configurable:true});localStorage.removeItem('rapidnest-contact');window.__mockCalls=[];const originalFetch=window.fetch;window.fetch=(input,init)=>{if(String(input).includes('api.emailjs.com')){window.__mockCalls.push(JSON.parse(init.body));return new Promise(resolve=>setTimeout(()=>resolve(new Response(${JSON.stringify(outcome)}==='success'?'OK':'Mock provider failure',{status:${JSON.stringify(outcome)}==='success'?200:500})),600));}return originalFetch(input,init)};`);
-  await evaluate(`(()=>{const values={name:'Browser review',email:'review@example.org',company:'Example',phone:'123',service:'GDPR & Data Retention Solutions',budget:'Test only',timeline:'Test only',message:'Mocked request; no live email'};const f=document.querySelector('.contact-form');for(const [key,value]of Object.entries(values)){const input=f.elements.namedItem(key);const setter=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(input),'value').set;setter.call(input,value);input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));}f.requestSubmit();f.requestSubmit()})()`);
+  await evaluate(`(()=>{const values={name:'Browser review',email:'review@example.org',company:${withOptional?"'Example'":"''"},phone:${withOptional?"'123'":"''"},service:${withOptional?"'GDPR & Data Retention Solutions'":"''"},budget:${withOptional?"'Test only'":"''"},timeline:${withOptional?"'Test only'":"''"},message:'Mocked request; no live email'};const f=document.querySelector('.contact-form');for(const [key,value]of Object.entries(values)){const input=f.elements.namedItem(key);const setter=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(input),'value').set;setter.call(input,value);input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));}f.requestSubmit();f.requestSubmit()})()`);
   await new Promise(r=>setTimeout(r,100));
   const loading=await evaluate(`document.querySelector('.contact-form').getAttribute('aria-busy')==='true' && document.querySelector('.contact-form button[type="submit"]').disabled`);
   for(let attempt=0;attempt<100;attempt++){
@@ -150,7 +163,8 @@ try {
   }
   const state=await evaluate(`({calls:window.__mockCalls.length,keys:window.__mockCalls[0]?Object.keys(window.__mockCalls[0].template_params).sort():[],status:document.querySelector('[role="status"]').textContent,error:document.querySelector('[role="alert"]')?.textContent||'',retained:document.querySelector('#name').value,message:window.__mockCalls[0]?.template_params.message})`);
   if(!loading||state.calls!==1||state.keys.join(',')!=='email,message,name'||(outcome==='success'?!state.status.includes('Your message was sent'):!state.error.includes('couldn’t send')||state.retained!=='Browser review'))throw new Error('Mock contact '+outcome+' '+JSON.stringify(state));
-  mockedContact.push({outcome,loading,...state});
+  if(!withOptional&&state.message!=='Mocked request; no live email')throw new Error('Empty optional fields changed the payload');
+  mockedContact.push({outcome,withOptional,loading,...state});
  }
  fs.writeFileSync(`${out}/results.json`,JSON.stringify({results,serviceResults,accessibility,reducedMotion,noJs,integrationLinks,mockedContact,consoleErrors,emailSubmission:'mocked in browser; external provider requests blocked'},null,2)+'\n');
  if(accessibility.some(scan=>scan.violations.length))throw new Error('Accessibility violations recorded in results.json');

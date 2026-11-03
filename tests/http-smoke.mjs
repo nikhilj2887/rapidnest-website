@@ -7,11 +7,16 @@ const sandbox = {exports:{}};
 new Function('exports', source)(sandbox.exports);
 const {services} = sandbox.exports;
 const routes = ['/', '/work', ...services.map(s=>`/services/${s.slug}`)];
+const pageMetadata=[];
 for (const route of routes) {
   const response = await fetch(base+route);
   assert.equal(response.status,200,route);
   const html = await response.text();
   assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,`${route}: one h1`);
+  const title=html.match(/<title>(.*?)<\/title>/)?.[1];
+  const description=html.match(/name="description" content="([^"]+)"/)?.[1];
+  assert.ok(title && description,`${route}: title and description`);
+  pageMetadata.push({route,title,description});
   const canonical = html.match(/rel="canonical" href="([^"]+)"/);
   assert.ok(canonical, `${route}: canonical exists`);
   assert.equal(new URL(canonical[1]).href,new URL(`https://www.therapidnest.com${route}`).href,`${route}: canonical`);
@@ -23,7 +28,7 @@ for (const route of routes) {
     for(const id of ['services','work','why-us','methodology','technology','about','founder','contact']) assert.ok(html.includes(`id="${id}"`),id);
     assert.equal((html.match(/name="service"/g)||[]).length,1);
     assert.ok(html.includes('Baseline Retention Solution'));
-    assert.ok(html.includes("Organizations We&amp;#x27;ve Worked With") || html.includes("Organizations We&#x27;ve Worked With") || html.includes("Organizations We've Worked With"));
+    assert.ok(html.includes("Businesses We&amp;#x27;ve Worked With") || html.includes("Businesses We&#x27;ve Worked With") || html.includes("Businesses We've Worked With"));
     assert.ok(!html.includes('Happy Customers'));
     assert.ok(html.includes('id="partnerships"'));
     assert.ok(html.includes('id="clients"'));
@@ -43,6 +48,9 @@ for (const route of routes) {
   }
   console.log(`PASS ${route}: HTTP 200, heading, canonical, navigation and social metadata`);
 }
+assert.equal(new Set(pageMetadata.map(page=>page.title)).size,routes.length,'Unique page titles');
+assert.equal(new Set(pageMetadata.map(page=>page.description)).size,routes.length,'Unique meta descriptions');
+console.log('PASS unique titles and meta descriptions across all public pages');
 for(const route of ['/services/not-a-service','/work/unapproved-story']) {
   assert.equal((await fetch(base+route)).status,404,route);
   console.log(`PASS ${route}: HTTP 404`);

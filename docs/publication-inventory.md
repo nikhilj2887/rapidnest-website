@@ -26,7 +26,6 @@ Every asset is byte-identical to `main`. Recovering an asset or finding prior pu
 - ALL relationship, identity confirmation and logo permission.
 - Company customer/project counts, success rates and years in operation.
 - Client-specific project examples, quotes, technologies, delivery status and measurable outcomes, each with explicit publication permission.
-- Broader technology delivery history beyond repository-supported React, Next.js and TypeScript frontend work.
 - A verified booking destination; the existing configuration remains unpublished.
 
 Original assets are preserved. Founder professional experience is described separately from company achievements. No legal certification or guaranteed GDPR compliance is claimed. The rendering gate continues to require both `verification: "verified"` and `publicationApproved: true` for each record; no bypass was added.
@@ -38,3 +37,13 @@ WICCI and G100 now appear once in **Our Global Partnerships**, after Solutions W
 ## Founder correction approval
 
 During the founder correction, the owner answered **“yes”** to the explicit question confirming verification and public-use approval for PRINCE2 Practitioner, Certified ScrumMaster (CSM), Senior Management Programme — Indian Institute of Management Visakhapatnam, and attribution of the proposed founder quotation. These items are now approved for the founder section. The owner also supplied `https://www.linkedin.com/in/nikhil-jogiparthy/` as the verified profile. The exact supplied biography attributes “over 14 years” to Nikhil Jogiparthy’s individual professional experience, not company history. These are owner-confirmed facts; certificate documents were not independently examined. See [the founder review](founder-profile-review.md).
+
+## Broader delivery capability confirmation — 3 November 2026
+
+In the complete business-information refinement, the owner explicitly confirmed actual RapidNest delivery capability and public display for **C#, .NET, ASP.NET Core, Power Apps, Power Automate, AWS, Azure, SQL Server, PostgreSQL, Power BI, Angular and React JS**. React JS is displayed as React. Previously approved Next.js and TypeScript remain included. The source approval question explicitly asked for both actual company capability and publication authorization; the owner replied with this complete list.
+
+`app/data/technology.ts` records the 14 distinct approved product names and six capability categories. The UI filters product labels through both verification and publication approval. Service-page tools align with the same inventory. These are owner-confirmed business facts, not independently inspected project records or vendor certifications. No vendor partnership, certification, endorsement or project outcome is implied.
+
+The new brief also explicitly confirms all six organizations as RapidNest clients. They are presented as **Businesses We've Worked With**, with the supplied company-level supporting copy, preserved assets and retained links. Baseline still has no website URL. WICCI and G100 remain visible as approved partnerships with neutral **Professional connection** badges; the exact formal designation is still not established. No “Official Digital Partner” title has been inferred from permission to display logos.
+
+See [the complete business refinement review](complete-business-refinement-review.md) for the final content, animation, responsive and required-fields-only contact verification.

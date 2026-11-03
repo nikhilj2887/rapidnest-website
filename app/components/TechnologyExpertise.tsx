@@ -1,12 +1,33 @@
-import { Braces, Code2, Layers3 } from "lucide-react";
-const frontend = [
-  { name: "React", detail: "Component-based interfaces", icon: Layers3 },
-  { name: "Next.js", detail: "Modern web applications", icon: Code2 },
-  { name: "TypeScript", detail: "Typed application development", icon: Braces },
-];
+import { Cloud, Workflow, Code2, Database, PanelsTopLeft, AppWindow } from "lucide-react";
+import { getApprovedTechnologyNames, technologyCategories } from "../data/technology";
+
+const icons = { cloud: Cloud, automation: Workflow, dotnet: Code2, data: Database, power: PanelsTopLeft, web: AppWindow };
+
 export default function TechnologyExpertise() {
-  return <section id="technology" className="section technology-section"><div className="container technology-layout">
-    <div><p className="eyebrow">TECHNOLOGY EXPERTISE</p><h2>Technology Selected for the Problem, Not the Trend</h2><p>A focused frontend stack for clear, responsive digital experiences.</p><p className="technology-context">These examples reflect the frontend technologies used on this website. The implementation stack for a client engagement is agreed during discovery.</p></div>
-    <div className="technology-panel"><div className="technology-label"><span>FRONTEND</span><span>ENGINEERING TOOLKIT</span></div>{frontend.map(({ name, detail, icon: Icon }) => <div className="technology-row" key={name}><span className="tech-mark"><Icon size={23} aria-hidden="true" /></span><div><strong>{name}</strong><span>{detail}</span></div><span className="tech-badge">Web</span></div>)}</div>
-  </div></section>;
+  const approved = new Set(getApprovedTechnologyNames());
+  return (
+    <section id="technology" className="section technology-section">
+      <div className="container">
+        <p className="eyebrow">TECHNOLOGY EXPERTISE</p>
+        <div className="section-heading technology-heading">
+          <h2>Technology Expertise Across the Digital Ecosystem</h2>
+          <p>From enterprise applications and cloud solutions to automation, data platforms, and modern web technologies, we select technologies based on business requirements, maintainability, and long-term value.</p>
+        </div>
+        <div className="technology-categories">
+          {technologyCategories.map(category => {
+            const Icon = icons[category.id];
+            const names = category.technologies.filter(name => approved.has(name));
+            return (
+              <article className="technology-category" key={category.id}>
+                <span className="technology-category-icon"><Icon size={22} aria-hidden="true" /></span>
+                <div><h3>{category.title}</h3><p>{category.description}</p>
+                  {names.length > 0 && <ul className="technology-tools" aria-label={`${category.title} technologies`}>{names.map(name => <li key={name}>{name}</li>)}</ul>}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }

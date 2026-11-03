@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useRef, useState, useSyncExternalStore } from "react";
 
 const links = [["/#services", "Services"], ["/work", "Our work"], ["/#why-us", "Approach"], ["/#about", "Company"], ["/#contact", "Discuss Your Project"]];
 function subscribeHash(onChange: () => void) {
@@ -18,8 +18,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
-  const hash = useSyncExternalStore(subscribeHash, getHash, emptyHash);
   const [clickedHash, setClickedHash] = useState("");
+  const subscribe = useCallback((onChange: () => void) => subscribeHash(() => {
+    setClickedHash("");
+    onChange();
+  }), []);
+  const hash = useSyncExternalStore(subscribe, getHash, emptyHash);
   const current = pathname.startsWith("/services/") ? "/#services" : pathname.startsWith("/work") ? "/work" : `/${hash || clickedHash}`;
 
   return <header className="site-header"><nav className="container nav" aria-label="Main navigation" onKeyDown={event => {

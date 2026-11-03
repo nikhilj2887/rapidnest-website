@@ -11,6 +11,7 @@ export interface Service {
   implementation: string;
   integrationConsiderations: string;
   technologies: string[];
+  relatedServices: string[];
   technologyContext: string;
   useCases: string[];
   faqs: { question: string; answer: string }[];
@@ -51,11 +52,15 @@ export const services: Service[] = [
     "implementation": "We map the current process with its users, identify the smallest useful release, and agree how success will be assessed. Design and development proceed through reviews, followed by validation, release planning, and handover.",
     "integrationConsiderations": "Discovery covers system interfaces, data ownership, access requirements, migration needs, and support responsibilities. Dependencies on third-party systems are recorded before delivery milestones are agreed.",
     "technologies": [
+      "C#",
+      ".NET",
+      "ASP.NET Core",
+      "Angular",
       "React",
       "Next.js",
       "TypeScript"
     ],
-    "technologyContext": "Our current frontend toolkit includes React, Next.js, and TypeScript. Backend and infrastructure choices are evaluated separately for each application.",
+    "technologyContext": "C#, .NET and ASP.NET Core support backend applications and APIs. Angular, React, Next.js and TypeScript support frontend implementation; the combination is selected around the agreed application requirements.",
     "faqs": [
       {
         "question": "When is custom software appropriate?",
@@ -65,6 +70,10 @@ export const services: Service[] = [
         "question": "Can delivery be phased?",
         "answer": "The scope can be divided into releases with explicit acceptance criteria, subject to dependencies and business priorities."
       }
+    ],
+    "relatedServices": [
+      "crm-erp-solutions",
+      "web-mobile-development"
     ]
   },
   {
@@ -100,8 +109,10 @@ export const services: Service[] = [
     ],
     "implementation": "We assess the task, available data, and consequences of an incorrect result. A bounded prototype is evaluated with representative examples before deciding whether to extend it into an operational workflow.",
     "integrationConsiderations": "We review data access, provider data-handling requirements, output validation, access permissions, usage costs, and escalation paths. Automation does not remove the need for accountable business owners.",
-    "technologies": [],
-    "technologyContext": "",
+    "technologies": [
+      "Power Automate"
+    ],
+    "technologyContext": "Power Automate can coordinate workflow steps and application handoffs. AI provider selection, output evaluation and human review requirements are assessed separately for the proposed use case.",
     "faqs": [
       {
         "question": "Will AI outputs always be accurate?",
@@ -111,6 +122,10 @@ export const services: Service[] = [
         "question": "Can confidential information be used?",
         "answer": "Data access and provider handling must be assessed before use. The permitted data, security controls, and review responsibilities are agreed during discovery."
       }
+    ],
+    "relatedServices": [
+      "crm-erp-solutions",
+      "technology-consulting-delivery"
     ]
   },
   {
@@ -146,8 +161,13 @@ export const services: Service[] = [
     ],
     "implementation": "We work with process owners to define records, responsibilities, and approval rules. Configuration or custom development is chosen after reviewing existing tools, followed by data validation and a phased rollout plan.",
     "integrationConsiderations": "Existing CRM or finance tools, duplicate records, migration quality, role-based access, and reporting definitions are assessed before implementation. Integration scope depends on the interfaces each system exposes.",
-    "technologies": [],
-    "technologyContext": "",
+    "technologies": [
+      "Power Apps",
+      "Power Automate",
+      ".NET",
+      "SQL Server"
+    ],
+    "technologyContext": "Power Apps and Power Automate can support business applications and approvals. Custom .NET services and SQL Server are considered where the existing systems, business rules and data requirements call for them.",
     "faqs": [
       {
         "question": "Does this require replacing our current CRM or ERP?",
@@ -157,6 +177,10 @@ export const services: Service[] = [
         "question": "Can existing data be migrated?",
         "answer": "Migration depends on source access, record quality, mapping rules, and validation requirements. These are assessed before a migration scope is agreed."
       }
+    ],
+    "relatedServices": [
+      "custom-software-development",
+      "ai-intelligent-automation"
     ]
   },
   {
@@ -205,8 +229,12 @@ export const services: Service[] = [
     ],
     "implementation": "We establish the data contexts and policy ownership first, then define configuration, validation, and authorization steps. Execution and reporting requirements are reviewed with the operational team before release planning.",
     "integrationConsiderations": "Discovery covers data-source interfaces, execution permissions, schedules, legal holds, deletion exceptions, identity controls, and reporting dependencies. Policy decisions and legal interpretations remain with the organization’s legal, privacy, and governance teams.",
-    "technologies": [],
-    "technologyContext": "",
+    "technologies": [
+      ".NET",
+      "SQL Server",
+      "PostgreSQL"
+    ],
+    "technologyContext": "Application and database choices depend on existing platforms, data access and execution controls. .NET, SQL Server and PostgreSQL are available implementation options; retention rules and authorization requirements are defined during discovery.",
     "faqs": [
       {
         "question": "Does this guarantee GDPR compliance?",
@@ -224,6 +252,10 @@ export const services: Service[] = [
         "question": "How are legal holds or exceptions handled?",
         "answer": "Hold and exception requirements need to be defined by policy owners and incorporated into configuration, validation, and execution controls before processing is authorized."
       }
+    ],
+    "relatedServices": [
+      "custom-software-development",
+      "technology-consulting-delivery"
     ]
   },
   {
@@ -259,8 +291,11 @@ export const services: Service[] = [
     ],
     "implementation": "We assess the existing system, establish operational constraints, and compare incremental improvement with replacement options. Work is sequenced around dependencies, with validation and rollback planning for each material change.",
     "integrationConsiderations": "Hosting constraints, identity systems, data residency requirements, deployment access, monitoring, and continuity expectations guide planning. A particular cloud provider or migration pattern is not assumed before assessment.",
-    "technologies": [],
-    "technologyContext": "",
+    "technologies": [
+      "AWS",
+      "Azure"
+    ],
+    "technologyContext": "AWS and Azure are available cloud platforms. The target environment, deployment approach, integration dependencies and migration sequence are selected around the application assessment and operational constraints.",
     "faqs": [
       {
         "question": "Does modernization mean a full rewrite?",
@@ -270,6 +305,10 @@ export const services: Service[] = [
         "question": "Can migration happen without disruption?",
         "answer": "Continuity requirements, cutover windows, validation, and rollback options are planned explicitly. Zero downtime is not guaranteed."
       }
+    ],
+    "relatedServices": [
+      "custom-software-development",
+      "technology-consulting-delivery"
     ]
   },
   {
@@ -306,11 +345,12 @@ export const services: Service[] = [
     "implementation": "We define user journeys and device requirements, validate interface designs, and implement agreed workflows in reviewable increments. Testing covers the supported environments and critical user tasks before launch planning.",
     "integrationConsiderations": "API access, authentication, data permissions, browser support, app distribution requirements, and operational ownership are considered during scoping. Native-app delivery requirements are assessed separately from responsive web scope.",
     "technologies": [
+      "Angular",
       "React",
       "Next.js",
       "TypeScript"
     ],
-    "technologyContext": "React, Next.js, and TypeScript support our current web frontend work. Mobile platform and backend choices follow the agreed requirements and validated delivery capability.",
+    "technologyContext": "Angular, React, Next.js and TypeScript support modern web interfaces. Mobile platform and backend choices follow the agreed requirements, integration needs and validated delivery approach.",
     "faqs": [
       {
         "question": "Do we need a native mobile app or a responsive website?",
@@ -320,6 +360,10 @@ export const services: Service[] = [
         "question": "Is accessibility included in the scope?",
         "answer": "Accessibility requirements and the intended testing standard should be agreed during discovery, with acceptance criteria for the supported user journeys."
       }
+    ],
+    "relatedServices": [
+      "custom-software-development",
+      "cloud-application-modernization"
     ]
   },
   {
@@ -366,6 +410,10 @@ export const services: Service[] = [
         "question": "Will the engagement include development?",
         "answer": "Advisory and implementation work are scoped explicitly. Development is included only where it forms part of the agreed engagement."
       }
+    ],
+    "relatedServices": [
+      "cloud-application-modernization",
+      "custom-software-development"
     ]
   }
 ];

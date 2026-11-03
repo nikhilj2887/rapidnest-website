@@ -11,6 +11,7 @@ function load(file) {
 const { services } = load('app/data/services.ts');
 const { getApprovedCaseStudies } = load('app/data/case-studies.ts');
 const { relationships, getApprovedRelationships } = load('app/data/relationships.ts');
+const { technologyCategories, technologyInventory, getApprovedTechnologyNames } = load('app/data/technology.ts');
 test('seven complete services have unique URL-safe slugs', () => {
   assert.equal(services.length, 7);
   assert.equal(new Set(services.map(s => s.slug)).size, 7);
@@ -65,7 +66,7 @@ function contactHarness(send) {
   }
   global.window = { gtag: (...args) => events.push(args) };
   const form = find(sandboxModule.exports.default());
-  return { submit: form.props.onSubmit, updates, events };
+  return { submit: form.props.onSubmit, updates, events, form };
 }
 function inquiry(overrides = {}) {
   const values = { name: 'Example', email: 'example@example.org', message: 'A project brief', company: 'Example Co', service: 'GDPR & Data Retention Solutions', ...overrides };
@@ -138,6 +139,49 @@ test('each service has distinct, complete engagement content and aligned capabil
     assert.ok(service.challenges.length >= 3 && service.deliverables.length >= 3);
     assert.ok(service.integrationConsiderations && service.faqs.length >= 2);
     assert.ok(service.capabilityDetails.every(detail => !detail.includes('around agreed requirements, integration constraints, and acceptance criteria.')));
-    assert.ok(service.technologies.every(technology => ['React','Next.js','TypeScript'].includes(technology)));
+    assert.ok(service.technologies.every(technology => getApprovedTechnologyNames().includes(technology)));
   }
+});
+
+test('technology names require both verification and publication approval', () => {
+  const fixture = ['verified', 'pending'].flatMap(verification => [true, false].map(publicationApproved => ({name:verification+publicationApproved,verification,publicationApproved})));
+  assert.deepEqual(getApprovedTechnologyNames(fixture), ['verifiedtrue']);
+  assert.equal(new Set(getApprovedTechnologyNames()).size, 14);
+  assert.ok(technologyInventory.every(record => record.verification === 'verified' && record.publicationApproved));
+});
+
+test('six capability categories use only approved product names', () => {
+  assert.equal(technologyCategories.length, 6);
+  assert.equal(new Set(technologyCategories.map(category => category.id)).size, 6);
+  for(const category of technologyCategories) {
+    assert.ok(category.title && category.description);
+    assert.ok(category.technologies.every(name => getApprovedTechnologyNames().includes(name)));
+  }
+});
+
+test('related services point to existing distinct capabilities', () => {
+  for(const service of services) {
+    assert.equal(new Set(service.relatedServices).size, 2);
+    assert.ok(service.relatedServices.every(slug => slug !== service.slug && services.some(item => item.slug === slug)));
+  }
+});
+
+test('contact accepts only required details and omits empty optional payload fields', async () => {
+  const calls=[];
+  const h=contactHarness(async (...args)=>calls.push(args));
+  const i=inquiry({company:'',phone:'',service:'',budget:'',timeline:''});
+  await h.submit(i.event);
+  assert.equal(calls.length,1);
+  assert.deepEqual(calls[0][2],{name:'Example',email:'example@example.org',message:'A project brief'});
+  assert.deepEqual(h.updates,['sending','success']);
+  assert.ok(i.wasReset());
+});
+
+test('the form requires only name, email and project details', () => {
+  const h=contactHarness(async()=>{});
+  const fields=[];
+  function walk(node){if(!node||typeof node!=='object')return;if(node.props?.name)fields.push(node);for(const child of [node.props?.children].flat(Infinity))walk(child);}
+  walk(h.form);
+  assert.deepEqual(fields.filter(field=>field.props.required).map(field=>field.props.name).sort(),['email','message','name']);
+  assert.ok(['company','phone','service','budget','timeline'].every(name=>fields.some(field=>field.props.name===name&&!field.props.required)));
 });

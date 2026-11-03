@@ -24,6 +24,8 @@ export default function FounderSection() {
           <p>His professional background includes managing cross-functional teams, coordinating complex technology initiatives, strengthening delivery governance, and translating business requirements into practical software solutions.</p>
           <p>With experience in Agile and traditional project delivery methodologies, he brings a structured approach to execution, stakeholder collaboration, risk management, and continuous improvement.</p>
           <p>At RapidNest Software Solutions, his leadership philosophy emphasizes understanding business challenges, selecting appropriate technologies, building maintainable solutions, and delivering measurable business value.</p>
+        </div>
+        <div className="founder-details">
           <ul className="founder-highlights">
             {highlights.map(({ title, description, icon: Icon }) => <li key={title}><Icon size={20} aria-hidden="true" /><h3>{title}</h3><p>{description}</p></li>)}
           </ul>

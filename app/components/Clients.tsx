@@ -8,8 +8,9 @@ export default function Clients() {
   return (
     <section id="clients" className="section relationships-section">
       <div className="container">
-        <p className="eyebrow">SHARED BUSINESS CONTEXT</p>
-        <h2>Organizations We&apos;ve Worked With</h2>
+        <p className="eyebrow">OUR CLIENTS</p>
+        <h2>Businesses We&apos;ve Worked With</h2>
+        <p className="clients-intro">RapidNest Software Solutions works with businesses across industries to build practical software solutions, improve operational processes, and support their technology initiatives.</p>
         <div className="logo-grid">
           {approved.map(organization => (
             <div className="logo-card" key={organization.name}>
