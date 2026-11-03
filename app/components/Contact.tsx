@@ -1,8 +1,7 @@
 "use client";
 import emailjs from "@emailjs/browser";
 import { useRef, useState, type FormEvent } from "react";
-import { services } from "../data/services";
-export default function Contact() {
+export default function Contact({ serviceTitles }: { serviceTitles: readonly string[] }) {
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error" | "invalid" | "cooldown">("idle");
     const busy = useRef(false);
     const lastSent = useRef(0);
@@ -46,7 +45,7 @@ export default function Contact() {
  <label htmlFor="email">Email address *<input id="email" name="email" type="email" autoComplete="email" required maxLength={254}/></label>
  <label htmlFor="company">Company (optional)<input id="company" name="company" autoComplete="organization" maxLength={150}/></label>
  <label htmlFor="phone">Phone (optional)<input id="phone" name="phone" type="tel" autoComplete="tel" maxLength={40}/></label>
- <label htmlFor="service" className="full-width">Service of interest (optional)<select id="service" name="service" defaultValue=""><option value="">Select a service (optional)</option>{services.map(s => <option key={s.slug} value={s.title}>{s.title}</option>)}</select></label>
+ <label htmlFor="service" className="full-width">Service of interest (optional)<select id="service" name="service" defaultValue=""><option value="">Select a service (optional)</option>{serviceTitles.map(title => <option key={title} value={title}>{title}</option>)}</select></label>
  <label htmlFor="budget">Estimated budget (optional)<input id="budget" name="budget" placeholder="Amount and currency" maxLength={80}/></label>
  <label htmlFor="timeline">Expected timeline (optional)<input id="timeline" name="timeline" placeholder="Your target date" maxLength={80}/></label>
  <label htmlFor="message" className="full-width">Project details *<textarea aria-describedby="contact-privacy" id="message" name="message" rows={4} required maxLength={5000}/></label>

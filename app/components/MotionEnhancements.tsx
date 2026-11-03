@@ -10,7 +10,7 @@ export default function MotionEnhancements() {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (!window.IntersectionObserver) return;
     const elements = Array.from(document.querySelectorAll<HTMLElement>(
-      ".section-heading, .service-grid, .solution-stories, .values-list, .process, .technology-categories, .founder-portrait, .founder-copy, .contact-form, .logo-grid, .partnership-grid, .detail-hero h1"
+      ".section-heading, .service-grid, .solution-stories, .values-list, .process, .technology-category, .founder-portrait, .founder-copy, .contact-form, .logo-grid, .partnership-grid, .detail-hero h1"
     ));
     let observer: IntersectionObserver | undefined;
     const clear = () => {

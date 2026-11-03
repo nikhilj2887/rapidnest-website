@@ -10,7 +10,7 @@ export default function TechnologyExpertise() {
       <div className="container">
         <p className="eyebrow">TECHNOLOGY EXPERTISE</p>
         <div className="section-heading technology-heading">
-          <h2>Technology Expertise Across the Digital Ecosystem</h2>
+          <h2>Engineering Capabilities</h2>
           <p>Our engineering capabilities cover application development, cloud deployment, workflow automation, and reporting. Technology choices reflect your existing platforms, integration needs, and support requirements.</p>
         </div>
         <div className="technology-categories">

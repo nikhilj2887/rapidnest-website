@@ -17,3 +17,13 @@ Baseline: freshly fetched `origin/main` at `73619b9`, containing all approved co
 Current Our Work is meaningful and nonempty. Service-page copy already explains business context, deliverables and implementation without unsupported outcomes. The approved footer fix works. Existing button arrows, focus styles and navigation interactions are suitable. Global spacing reductions, new animation libraries and case-study work are unnecessary.
 
 Pre-change browser screenshots and measured heights: `premium-ux-polish/before/`. Lighthouse package is not installed; availability of a temporary audit runner will be checked without adding application dependencies. Performance results will be reported only if measured.
+
+## Browser audit follow-up
+
+Measured the desktop brand link at 42.3px and hero “Explore” link at 18.1px high. Their containers already have enough space, so enlarge these hit areas to 44px without changing navigation layout. Service FAQ summaries also need a 44px minimum; reduce surrounding details padding to retain the existing overall row rhythm. These are accessibility corrections rather than navigation or service redesigns.
+
+A temporary Lighthouse 12.8.2 runner was subsequently obtained in `/tmp`, outside application dependencies. Baseline desktop measurement: performance 96, accessibility 100, best practices 100, SEO 100; CLS 0. Results are local lab measurements with external analytics/provider URLs blocked.
+
+## Mobile performance follow-up
+
+The first post-polish mobile Lighthouse run scored 69 with 3,180ms simulated total blocking time. Its largest costs were in existing Next.js/React runtime chunks. A smaller, safe opportunity was confirmed in the 27,540-byte contact client chunk: it imported complete detailed service records only to render seven option titles. Pass the seven serializable title strings from the server page instead, preserving option values and every submission/validation path. Keep both initial and final Lighthouse reports; do not attribute framework costs to the small animation changes or claim production performance from local lab results.

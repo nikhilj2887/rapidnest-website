@@ -7,7 +7,7 @@ const values = [
 ];
 export default function WhyChooseUs() {
   return <section id="why-us" className="section why-section"><div className="container why-layout">
-    <div className="why-intro"><p className="eyebrow">OUR APPROACH</p><h2>Technology Expertise with a Delivery-First Mindset</h2><p>We assess scope, trade-offs, ownership, and support needs before recommending an implementation path.</p><div className="approach-signature"><span>Think clearly.</span><span>Build purposefully.</span></div></div>
+    <div className="why-intro"><p className="eyebrow">OUR APPROACH</p><h2>A Practical Approach to Technology Delivery</h2><p>We assess scope, trade-offs, ownership, and support needs before recommending an implementation path.</p><div className="approach-signature"><span>Think clearly.</span><span>Build purposefully.</span></div></div>
     <div className="values-list">{values.map(({ title, text, icon: Icon }) => <article className="value-row" key={title}><span className="value-icon"><Icon size={22} aria-hidden="true" /></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
   </div></section>;
 }

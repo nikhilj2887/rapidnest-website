@@ -12,7 +12,7 @@ export default function Hero() {
           <h1>Engineering<br className="desktop-break" /> Digital Solutions.<br /><span>Accelerating<br className="desktop-break" /> Business Growth.</span></h1>
           <p className="lead">From custom software and AI automation to CRM, cloud modernization, and data governance, RapidNest builds technology solutions around real business needs.</p>
           <div className="actions">
-            <Link href="/work" className="button primary">Explore Our Work <ArrowUpRight size={17} /></Link>
+            <Link href="/work" className="button primary">Explore Solutions <ArrowUpRight size={17} /></Link>
             <Link href="/#contact" className="button secondary">Discuss Your Project</Link>
           </div>
           <div className="hero-principles"><span><Check size={13} />Clear requirements</span><span><Check size={13} />Reviewable releases</span></div>
