@@ -1,0 +1,34 @@
+[
+  {
+    "phase": "before",
+    "width": 1440,
+    "height": 9216,
+    "hero": 602.125,
+    "founder": 1096.53125,
+    "contact": 998.734375
+  },
+  {
+    "phase": "before",
+    "width": 390,
+    "height": 17009,
+    "hero": 1187.390625,
+    "founder": 2089.5,
+    "contact": 1854.140625
+  },
+  {
+    "phase": "after",
+    "width": 1440,
+    "height": 9062,
+    "hero": 592.125,
+    "founder": 1006.53125,
+    "contact": 944.734375
+  },
+  {
+    "phase": "after",
+    "width": 390,
+    "height": 16706,
+    "hero": 1154.390625,
+    "founder": 1973,
+    "contact": 1766.140625
+  }
+]

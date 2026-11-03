@@ -1,0 +1,137 @@
+{
+  "records": [
+    {
+      "path": "app/components/Services.tsx",
+      "unchangedFromMain": true,
+      "sha256": "b86af057121c7174288ff3e9ba7e1e662902c09f250b9660756329bacf093fae"
+    },
+    {
+      "path": "app/data/services.ts",
+      "unchangedFromMain": true,
+      "sha256": "384e53b572a29b1a609b9bd0a94a77421cff82c8dec47b4ae7bc0fdfdbb102b2"
+    },
+    {
+      "path": "app/components/FounderSection.tsx",
+      "unchangedFromMain": true,
+      "sha256": "32f3a8214bc763bca517eba027cd1e3a9c41b9257af1869004d66bddfc4535d1"
+    },
+    {
+      "path": "app/components/Footer.tsx",
+      "unchangedFromMain": true,
+      "sha256": "3b1b0812363fbe3a46db7414d7ffee98af43adb81079b4de0b72b846bb7de1bf"
+    },
+    {
+      "path": "app/components/Navbar.tsx",
+      "unchangedFromMain": true,
+      "sha256": "92b8ffbfaa2d67bb11219c24297671853a651703fdab22a523779152373dc212"
+    },
+    {
+      "path": "app/components/WhatsAppButton.tsx",
+      "unchangedFromMain": true,
+      "sha256": "b6f1828a2ed839e0ecf2b9c5bf5b2286270a7d9d5e020a3995e6740d4ff29f0d"
+    },
+    {
+      "path": "app/components/Clients.tsx",
+      "unchangedFromMain": true,
+      "sha256": "e5d35459c53b1dfdc47e0552bcade73bc0020984b54968178f887ee8b347f0dd"
+    },
+    {
+      "path": "app/components/Partnerships.tsx",
+      "unchangedFromMain": true,
+      "sha256": "1b79890780d14e8b9228a0eaecba952c2421950badc50b58c5b859863c8ceac0"
+    },
+    {
+      "path": "app/data/relationships.ts",
+      "unchangedFromMain": true,
+      "sha256": "8da0e71dc28fb6707c217fab6a1c8cb5794a1baf7d4c9f2f0c7a024fb679336d"
+    },
+    {
+      "path": "app/data/technology.ts",
+      "unchangedFromMain": true,
+      "sha256": "745a71e2d43d1c075b0174aefb38c469e7f5d0ef3b92e033bae94e5b287c4bea"
+    },
+    {
+      "path": "app/data/case-studies.ts",
+      "unchangedFromMain": true,
+      "sha256": "17593ae9e0e73086f1d273eda92b87c31656be51574ac433a6030638eae2a26d"
+    },
+    {
+      "path": "app/work/page.tsx",
+      "unchangedFromMain": true,
+      "sha256": "57b4e38d36bfe744b7c19b546c2feb5336a44d6de882ea346d76d29f0e204eca"
+    },
+    {
+      "path": "app/work/[slug]/page.tsx",
+      "unchangedFromMain": true,
+      "sha256": "38463aa544133e4cdfed5699b68522959043b5f5a9055518bcaeb7625032ae07"
+    },
+    {
+      "path": "app/layout.tsx",
+      "unchangedFromMain": true,
+      "sha256": "967666062abb2ab5ef1192324d3d01a6a0acfdd96d806cf3dee4ee25010fd35b"
+    },
+    {
+      "path": "package.json",
+      "unchangedFromMain": true,
+      "sha256": "937dd377f2127d802900b8fa512e3afd6e4abd744d06aba9082be43fa026b1fd"
+    },
+    {
+      "path": "package-lock.json",
+      "unchangedFromMain": true,
+      "sha256": "ff9a386460727ff8a6adbb77e1ef160817e7a5d92d6fc63fe7935e1727cc6a60"
+    },
+    {
+      "path": "public/founder.png",
+      "unchangedFromMain": true,
+      "sha256": "c2aae472c16bdb68247a37baf91f8a12f3f144db19df1fc46f1593b844b0cda1"
+    },
+    {
+      "path": "public/clients/Clarion.png",
+      "unchangedFromMain": true,
+      "sha256": "770150b1f96abfc3ca367f240840e6a271e23790451091941fa0df41d82688b7"
+    },
+    {
+      "path": "public/clients/thelyft.png",
+      "unchangedFromMain": true,
+      "sha256": "9313ee25054298ed05bae1848b6bd00b10c400b318ca32129ccc6fdcf409ef98"
+    },
+    {
+      "path": "public/clients/mangomist.png",
+      "unchangedFromMain": true,
+      "sha256": "4e53a72ed25f75864c4ef1cebf8144daf328588913d80adc03f437f004e7ee5c"
+    },
+    {
+      "path": "public/clients/lamara.png",
+      "unchangedFromMain": true,
+      "sha256": "760f54cc3152763114ea4f9dcc4952a1c869cb3703002fc9c13fb7fe955ba30e"
+    },
+    {
+      "path": "public/clients/swadeshi.png",
+      "unchangedFromMain": true,
+      "sha256": "f44c3547e8db638813acf362621fa35d29a6e3e9af08be7a27f7f2ad0ff96042"
+    },
+    {
+      "path": "public/clients/Baseline_logo_Hexcode_ADBABC.png",
+      "unchangedFromMain": true,
+      "sha256": "1eaf12051f1257e30ca7350e84cc915bc6945eda969e752e62e4efbc78aef11f"
+    },
+    {
+      "path": "public/partners/ALL.png",
+      "unchangedFromMain": true,
+      "sha256": "285d4c25be4348c7cd50d01c71a725f8de8f8acfc67daf9acc0254f0090ff947"
+    },
+    {
+      "path": "public/partners/wicci.png",
+      "unchangedFromMain": true,
+      "sha256": "a4bc9f4ac01a0ac7be38c910663aab23e43400b4386bafd14b89146049837221"
+    },
+    {
+      "path": "public/partners/g100.png",
+      "unchangedFromMain": true,
+      "sha256": "c2fab761bc23fd024f515ec28cfbfd0386bff690d5f28f72585cf79b8f75e57b"
+    }
+  ],
+  "contactHandlerUnchanged": true,
+  "applicationChangesInQAPass": false,
+  "caseStudyInventoryEmpty": true
+}
