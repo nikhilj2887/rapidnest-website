@@ -1,49 +1,68 @@
-/* V3 presentation: section-scoped compositions. Shared routes and footer retain their styles. */
+/* Hero V3.1: one connected-system panel, with visible-first, finite activity. */
 .hero.hero-connected .hero-composition { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0; }
 .hero.hero-connected .composition-heading { margin: 0; }
-.hero.hero-connected .integration-note,
-.hero.hero-connected .governance-note { position: static; box-shadow: none; margin: 0; }
-.hero.hero-connected .integration-note { border: 0; border-radius: 0 0 10px 10px; background: transparent; color: white; padding: 0; }
-.hero.hero-connected .integration-note div > span { color: #b9c5d5; }
-.hero.hero-connected .governance-note { justify-self: start; padding: 6px 10px; }
+.hero.hero-connected .hero-system-panel { min-width: 0; border: 1px solid #52677c; border-radius: 12px; background: #122b41; }
+.hero.hero-connected .hero-system-panel.reveal-enter { animation: none; }
+.hero.hero-connected .hero-system-panel > .interface-preview { border: 0; border-radius: 11px 11px 0 0; box-shadow: none; }
+.hero.hero-connected .hero-system-footer { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 12px 16px; }
+.hero.hero-connected .integration-note { display: block; position: static; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: white; padding: 0; margin: 0; min-width: 0; }
+.hero.hero-connected .hero-system-summary { display: flex; align-items: center; gap: 8px; }
+.hero.hero-connected .hero-system-summary strong { font-size: 12px; line-height: 1.4; }
+.hero.hero-connected .hero-system-summary .note-icon { display: flex; padding: 4px; border-radius: 6px; }
+.hero.hero-connected .hero-system-map { position: relative; display: grid; grid-template-columns: 1fr 12px 1fr 12px 1fr; align-items: start; margin-top: 10px; }
+.hero.hero-connected .hero-system-map::before,
+.hero.hero-connected .hero-system-map::after { content: ""; position: absolute; left: 16%; right: 16%; top: 15px; height: 1px; background: #71899f; }
+.hero.hero-connected .hero-system-map::after { opacity: 0; background: #efaa7d; transform-origin: left; }
+.hero.hero-connected .hero-system-node { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 5px; align-items: center; color: #e0e8f1; }
+.hero.hero-connected .hero-system-node > svg { width: 30px; height: 30px; padding: 6px; color: #f3aa7f; background: #19354d; border: 1px solid #61758a; border-radius: 7px; }
+.hero.hero-connected .hero-system-node > span { display: block; font-size: 11px; line-height: 1.5; color: inherit; }
+.hero.hero-connected .hero-system-link { font-size: 0; }
+.hero.hero-connected .governance-note { position: static; justify-self: start; gap: 8px; max-width: 145px; margin: 0; padding: 9px 10px; color: #dce6f1; background: transparent; border: 1px solid #5d7388; box-shadow: none; line-height: 1.5; }
+.hero.hero-connected .hero-governance-symbol { display: flex; flex-shrink: 0; width: 17px; height: 17px; color: #f3aa7f; }
 .hero.hero-connected .hero-copy h1 { animation: none; }
 .hero.hero-connected .hero-phrase { display: block; animation: hero-enter 400ms var(--motion-ease) 60ms backwards; }
 .hero.hero-connected .hero-phrase:first-child { color: white; }
 .hero.hero-connected .hero-phrase:last-child { animation-delay: 140ms; }
 .hero.hero-connected .hero-copy .lead { animation-delay: 180ms; }
 .hero.hero-connected .hero-copy .actions { animation-delay: 220ms; }
-.hero.hero-connected .pipeline-column::after { animation-duration: 1500ms; }
-.hero.hero-connected .pipeline-column:nth-child(1)::after { animation-delay: 400ms; }
-.hero.hero-connected .pipeline-column:nth-child(2)::after { animation-delay: 700ms; }
-.hero.hero-connected .pipeline-column:nth-child(3)::after { animation-delay: 1000ms; }
+/* Only small indicators animate; content, panel dimensions and text never change. */
+.hero.hero-connected .hero-system-panel .pipeline-column::after { animation: none; inset: auto 8px 4px; height: 2px; border: 0; border-radius: 1px; background: #bb451b; opacity: 0; }
+.hero.hero-connected .hero-system-panel.reveal-enter .hero-system-map::after { animation: system-connect 520ms ease 200ms 1 both; }
+.hero.hero-connected .hero-system-panel.reveal-enter .pipeline-column::after { animation: illustrative-stage 650ms ease-in-out 200ms 1 both; }
+.hero.hero-connected .hero-system-panel.reveal-enter .pipeline-column:nth-child(2)::after { animation-delay: 950ms; }
+.hero.hero-connected .hero-system-panel.reveal-enter .pipeline-column:nth-child(3)::after { animation-delay: 1700ms; }
+.hero.hero-connected .hero-system-panel.reveal-enter .hero-governance-symbol { animation: system-review 350ms ease 2350ms 1 backwards; }
+@keyframes system-connect { from { opacity: 0; transform: scaleX(0); } 40%, 75% { opacity: 1; } to { opacity: 0; transform: scaleX(1); } }
+@keyframes system-review { from { opacity: .55; transform: scale(.9); } to { opacity: 1; transform: scale(1); } }
 @media (max-width: 850px) {
   .hero.hero-connected .hero-grid { gap: 24px; }
-  .hero.hero-connected .hero-composition { max-width: 560px; grid-template-columns: 1fr auto; gap: 10px; }
-  .hero.hero-connected .composition-heading,
-  .hero.hero-connected .interface-preview { grid-column: 1 / -1; }
-  .hero.hero-connected .integration-note { grid-column: 1; }
-  .hero.hero-connected .governance-note { grid-column: 2; align-self: center; max-width: 155px; }
+  .hero.hero-connected .hero-composition { max-width: 560px; width: 100%; }
 }
 @media (max-width: 600px) {
-  .hero.hero-connected .hero-composition { grid-template-columns: 1fr; gap: 10px; margin: 0; }
+  .hero.hero-connected .hero-grid { gap: 16px; }
+  .hero.hero-connected .hero-composition { gap: 10px; margin: 0; }
   .hero.hero-connected .hero-phrase { text-wrap: wrap; }
   .hero.hero-connected .composition-heading { display: flex; font-size: 8px; }
-  .hero.hero-connected .app-sidebar { display: none; } /* decorative application navigation */
+  .hero.hero-connected .app-sidebar { display: none; }
   .hero.hero-connected .app-main { padding: 12px; }
   .hero.hero-connected .app-chrome { height: 24px; }
   .hero.hero-connected .app-title { margin-bottom: 8px; }
   .hero.hero-connected .app-tabs { margin-bottom: 10px; }
-  .hero.hero-connected .pipeline-board { gap: 5px; }
-  .hero.hero-connected .pipeline-column { display: grid; grid-template-columns: 76px 1fr; align-items: center; gap: 8px; padding: 5px; }
-  .hero.hero-connected .column-label { margin: 0; font-size: 9px; }
-  .hero.hero-connected .task-card { min-width: 0; padding: 8px; }
-  .hero.hero-connected .task-card > strong { font-size: 10px; min-height: 0; }
-  .hero.hero-connected .task-footer { display: none; } /* decorative avatars and completion ticks */
-  .hero.hero-connected .integration-note { grid-column: 1; gap: 8px; }
-  .hero.hero-connected .integration-note strong { font-size: 11px; }
-  .hero.hero-connected .governance-note { grid-column: 1; max-width: none; padding: 5px 8px; background: transparent; }
-  .hero.hero-connected .integration-note .note-icon { padding: 5px; }
+  .hero.hero-connected .pipeline-board { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .hero.hero-connected .pipeline-column { display: flex; flex-direction: column; align-items: stretch; gap: 9px; padding: 9px 6px 12px; border: 1px solid #dce3eb; border-radius: 7px; }
+  .hero.hero-connected .column-label { margin: 0; font-size: 10px; line-height: 1.5; gap: 4px; }
+  .hero.hero-connected .task-card { min-width: 0; padding: 0; border: 0; background: transparent; box-shadow: none; }
+  .hero.hero-connected .task-card > strong { font-size: 12px; min-height: 0; line-height: 1.4; }
+  .hero.hero-connected .task-footer { display: none; }
+  .hero.hero-connected .hero-system-footer { grid-template-columns: 1fr; padding: 12px; gap: 12px; }
+  .hero.hero-connected .hero-system-summary { justify-content: center; }
+  .hero.hero-connected .hero-system-node > span { font-size: 12px; }
+  .hero.hero-connected .governance-note { justify-self: stretch; justify-content: center; max-width: none; border: 0; border-top: 1px solid #52677c; border-radius: 0; padding: 10px 0 0; font-size: 11px; }
   .hero.hero-connected .hero-bottom .container { padding-block: 8px; }
+}
+@media (max-width: 359px) {
+  .hero.hero-connected .pipeline-board { grid-template-columns: 1fr; gap: 5px; }
+  .hero.hero-connected .pipeline-column { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: center; padding: 8px; }
 }
 
 /* Services: readable content-led cards, compact illustrative panels, genuine links. */

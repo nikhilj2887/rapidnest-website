@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Check, Layers3, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Check, Code2, Database, GitBranch, Layers3, ShieldCheck } from "lucide-react";
 import InterfacePreview from "./InterfacePreview";
 
 export default function Hero() {
@@ -19,9 +19,20 @@ export default function Hero() {
         </div>
         <div className="hero-composition">
           <div className="composition-heading"><span>FROM COMPLEXITY TO CLARITY</span><span className="composition-line" /></div>
-          <InterfacePreview />
-          <div className="integration-note"><span className="note-icon"><Layers3 size={18} /></span><div><strong>Systems that work together</strong><span>Applications · Workflows · Data</span></div></div>
-          <div className="governance-note"><ShieldCheck size={17} /><span>Designed with control in mind</span></div>
+          <div className="hero-system-panel">
+            <InterfacePreview />
+            <div className="hero-system-footer">
+              <div className="integration-note">
+                <div className="hero-system-summary"><span className="note-icon"><Layers3 size={18} aria-hidden="true" /></span><strong>Systems that work together</strong></div>
+                <div className="hero-system-map">
+                  <span className="hero-system-node"><Code2 size={18} aria-hidden="true" /><span>Applications</span></span><span className="hero-system-link" aria-hidden="true"> · </span>
+                  <span className="hero-system-node"><GitBranch size={18} aria-hidden="true" /><span>Workflows</span></span><span className="hero-system-link" aria-hidden="true"> · </span>
+                  <span className="hero-system-node"><Database size={18} aria-hidden="true" /><span>Data</span></span>
+                </div>
+              </div>
+              <div className="governance-note"><span className="hero-governance-symbol"><ShieldCheck size={17} aria-hidden="true" /></span><span>Designed with control in mind</span></div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="hero-bottom"><div className="container"><span>STRATEGY MEETS ENGINEERING</span><span>Custom applications. Connected processes. Governed data.</span><a href="#services" aria-label="Explore services">Explore <span aria-hidden="true">↓</span></a></div></div>

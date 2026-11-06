@@ -49,6 +49,9 @@ try{
   const natural=await evaluate(`({events:window.__natural.events,samples:window.__natural.samples,cls:window.__natural.shifts.reduce((a,b)=>a+b,0),running:document.getAnimations().filter(a=>a.playState==='running').length})`);
   const starts=natural.events.filter(e=>e.type==='animationstart');const ends=natural.events.filter(e=>e.type==='animationend');
   if(!natural.samples.some(s=>s.headlineOpacity<.99)||!natural.samples.some(s=>s.headlineOpacity===1)||!natural.samples.some(s=>s.stageOpacity.some(o=>o>.1))||natural.running!==0||natural.cls>.01||starts.filter(e=>e.name==='hero-enter').length!==3||ends.filter(e=>e.name==='hero-enter').length!==3||ends.filter(e=>e.target==='hero-phrase').length!==2||ends.filter(e=>e.name==='illustrative-stage').length!==3)throw Error('Natural hero motion '+width+' '+JSON.stringify({starts,ends,running:natural.running,cls:natural.cls}));
+  const connectorEnds=ends.filter(e=>e.name==='system-connect'),governanceStarts=starts.filter(e=>e.name==='system-review');
+  const stageStarts=starts.filter(e=>e.name==='illustrative-stage'),stageEnds=ends.filter(e=>e.name==='illustrative-stage');
+  if(connectorEnds.length!==1||governanceStarts.length!==1||ends.filter(e=>e.name==='system-review').length!==1||connectorEnds[0].time>stageStarts[1].time+25||stageEnds[1].time>stageStarts[2].time+25||stageEnds[2].time>governanceStarts[0].time+25)throw Error('Connector/workflow/review sequence order '+width);
   console.log('PASS real-time hero progression and completion '+width);
   await evaluate(`document.documentElement.style.scrollBehavior='auto';document.querySelector('#technology').scrollIntoView({behavior:'instant',block:'start'})`);await sleep(1000);
   for(let i=0;i<6;i++){await evaluate(`document.querySelectorAll('.technology-category')[${i}].scrollIntoView({behavior:'instant',block:'center'})`);await sleep(750);}
@@ -61,6 +64,8 @@ try{
   if(flows.filter(e=>e.type==='animationstart').length!==9||flows.filter(e=>e.type==='animationend').length!==9)throw Error('Solution handoffs did not complete '+width);
   await evaluate(`scrollTo({top:0,behavior:'instant'});document.querySelector('#work').scrollIntoView({behavior:'instant'})`);await sleep(1200);
   if(await evaluate(`window.__natural.events.filter(e=>e.name==='flow-handoff').length`)!==flows.length)throw Error('Solution handoffs replayed '+width);
+  await evaluate(`scrollTo({top:0,behavior:'instant'})`);await sleep(900);
+  if(await evaluate(`window.__natural.events.filter(e=>e.name==='system-connect'&&e.type==='animationstart').length`)!==1)throw Error('Hero activity replayed '+width);
   await navigate(baseUrl+'/');await evaluate(`document.documentElement.style.scrollBehavior='auto';document.querySelector('.service-card').scrollIntoView({behavior:'instant',block:'center'})`);await sleep(800);
   if(mobile){await clickAt('.service-card h3',true);}else{const r=await evaluate(`(()=>{const r=document.querySelector('.service-card').getBoundingClientRect();return{x:r.left+20,y:r.top+20}})()`);await send('Input.dispatchMouseEvent',{type:'mouseMoved',...r});}
   await sleep(350);const hover=await evaluate(`({transform:getComputedStyle(document.querySelector('.service-card')).transform,coarse:matchMedia('(pointer:coarse)').matches,hover:matchMedia('(hover:hover)').matches})`);
