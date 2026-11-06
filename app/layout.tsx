@@ -5,6 +5,7 @@ import MotionEnhancements from "./components/MotionEnhancements";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import "./globals.css";
+import "./mobile-interactive.css";
 const title = "RapidNest Software Solutions | Custom Software & AI Automation";
 const description = "RapidNest Software Solutions develops custom software, AI-enabled applications, CRM platforms, and data retention solutions for businesses.";
 export const metadata: Metadata = {

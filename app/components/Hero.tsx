@@ -4,12 +4,12 @@ import InterfacePreview from "./InterfacePreview";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero hero-connected">
       <div className="hero-grid-texture" aria-hidden="true" />
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="eyebrow"><span className="accent-line" />CUSTOM SOFTWARE · AI AUTOMATION · ENTERPRISE SOLUTIONS</p>
-          <h1>Engineering<br className="desktop-break" /> Digital Solutions.<br /><span>Accelerating<br className="desktop-break" /> Business Growth.</span></h1>
+          <h1><span className="hero-phrase">Engineering<br className="desktop-break" /> Digital Solutions.</span>{" "}<span className="hero-phrase">Accelerating<br className="desktop-break" /> Business Growth.</span></h1>
           <p className="lead">From custom software and AI automation to CRM, cloud modernization, and data governance, RapidNest builds technology solutions around real business needs.</p>
           <div className="actions">
             <Link href="/work" className="button primary">Explore Solutions <ArrowUpRight size={17} /></Link>
