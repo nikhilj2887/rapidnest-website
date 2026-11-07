@@ -17,8 +17,7 @@ export default function Services() {
             return (
               <article className={`service-card service-${index}${visual ? " service-featured" : ""}`} key={service.slug}>
                 <div className="service-copy">
-                  <div className="card-top"><span className="service-icon"><Icon size={22} aria-hidden="true" /></span></div>
-                  <h3>{service.title}</h3>
+                  <div className="service-heading"><span className="service-icon"><Icon size={22} aria-hidden="true" /></span><h3>{service.title}</h3></div>
                   <p>{service.description}</p>
                   <ul className="service-capabilities">{service.capabilities.slice(0, 3).map(capability => <li key={capability}><Check size={12} aria-hidden="true" />{capability}</li>)}</ul>
                   <Link className="text-link" href={`/services/${service.slug}`}>Explore Service <ArrowUpRight size={16} /><span className="sr-only">: {service.title}</span></Link>

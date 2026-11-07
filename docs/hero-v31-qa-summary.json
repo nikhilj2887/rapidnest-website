@@ -1,0 +1,265 @@
+{
+  "baseline": "6d129d1",
+  "branch": "feature/rapidnest-mobile-interactive-v3",
+  "applicationFiles": [
+    "app/components/Hero.tsx",
+    "app/components/MotionEnhancements.tsx",
+    "app/mobile-interactive.css"
+  ],
+  "protectedFiles": 43,
+  "heroCopyJSXByteIdentical": true,
+  "nonHeroStylesByteIdentical": true,
+  "copyAndLinksUnchanged": true,
+  "build": "passed",
+  "lint": "passed",
+  "typescript": "passed",
+  "unitTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "responsive": {
+    "widths": [
+      320,
+      360,
+      375,
+      390,
+      414,
+      430,
+      768,
+      1024,
+      1280,
+      1440,
+      1920
+    ],
+    "serviceChecks": 77,
+    "axeScans": 10,
+    "violations": 0,
+    "allCLSZero": true,
+    "consoleErrors": [],
+    "mockedContactCases": 4
+  },
+  "focusedHeroWidths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    430,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "naturalMotion": [
+    {
+      "width": 1440,
+      "samples": 253,
+      "cls": 0,
+      "remainingAnimations": 0,
+      "connectorEnds": 1,
+      "reviewEnds": 1,
+      "phaseOrder": "passed",
+      "replayProtection": "passed"
+    },
+    {
+      "width": 390,
+      "samples": 255,
+      "cls": 0,
+      "remainingAnimations": 0,
+      "connectorEnds": 1,
+      "reviewEnds": 1,
+      "phaseOrder": "passed",
+      "replayProtection": "passed"
+    }
+  ],
+  "comparison": [
+    {
+      "width": 390,
+      "beforeHeroHeight": 1090.21875,
+      "afterHeroHeight": 1093.171875,
+      "copyGeometryUnchanged": true
+    },
+    {
+      "width": 768,
+      "beforeHeroHeight": 884.890625,
+      "afterHeroHeight": 938.109375,
+      "copyGeometryUnchanged": true
+    },
+    {
+      "width": 1440,
+      "beforeHeroHeight": 592.125,
+      "afterHeroHeight": 592.125,
+      "copyGeometryUnchanged": true
+    }
+  ],
+  "lighthouse": [
+    {
+      "run": "lighthouse-after-desktop",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 717.44245,
+        "largest-contentful-paint": 748.44245,
+        "total-blocking-time": 168,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1251.5
+    },
+    {
+      "run": "lighthouse-after-mobile",
+      "scores": {
+        "performance": 72,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1544.5497,
+        "largest-contentful-paint": 2168.37425,
+        "total-blocking-time": 1546.4999999999998,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1152
+    },
+    {
+      "run": "lighthouse-before-desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 469.0332,
+        "largest-contentful-paint": 671.0664,
+        "total-blocking-time": 20.499999999999943,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1515
+    },
+    {
+      "run": "lighthouse-before-mobile",
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1579.44,
+        "largest-contentful-paint": 2635.88,
+        "total-blocking-time": 192.5,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1652
+    },
+    {
+      "run": "lighthouse-fresh-v3-desktop",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 654.7462,
+        "largest-contentful-paint": 687.2386000000001,
+        "total-blocking-time": 609.5000000000005,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 876.5
+    },
+    {
+      "run": "lighthouse-fresh-v3-mobile",
+      "scores": {
+        "performance": 70,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 2114.6739,
+        "largest-contentful-paint": 2173.6739,
+        "total-blocking-time": 1712.9891499999994,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 326.5
+    },
+    {
+      "run": "lighthouse-fresh-v31-desktop",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 495.4941,
+        "largest-contentful-paint": 509.4941,
+        "total-blocking-time": 126.49999999999994,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 631
+    },
+    {
+      "run": "lighthouse-fresh-v31-mobile",
+      "scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 2144.66375,
+        "largest-contentful-paint": 3536.3275000000003,
+        "total-blocking-time": 1630.5043750000004,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 699.5
+    },
+    {
+      "run": "lighthouse-serial-v3-mobile",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1580.07685,
+        "largest-contentful-paint": 2612.1537000000003,
+        "total-blocking-time": 931.961575,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1556
+    },
+    {
+      "run": "lighthouse-serial-v31-mobile",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1592.6098999999997,
+        "largest-contentful-paint": 2650.2198,
+        "total-blocking-time": 250.5,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1102
+    }
+  ],
+  "evidenceDirectory": "/tmp/rapidnest-v31-evidence",
+  "limitations": [
+    "Resource-constrained lab produced highly variable Lighthouse performance. All ten audits retained.",
+    "Final isolated desktop98, serialized mobile91; initial V3 baseline100/93. Performance confidence limited; recheck on quiet hardware or preview.",
+    "Mobile LCP2.7s remains headroom; no field INP or physical-device keyboard/AT validation.",
+    "Provider success/failure mocked; no live email sent."
+  ]
+}

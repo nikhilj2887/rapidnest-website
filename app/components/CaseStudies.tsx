@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Database, GitBranch, BarChart3, Users, ShieldCheck, SlidersHorizontal, FileText, Workflow } from "lucide-react";
 import { getApprovedCaseStudies } from "../data/case-studies";
+
+const flowIcons = { operations: [Users, GitBranch, BarChart3], retention: [Database, SlidersHorizontal, ShieldCheck], automation: [FileText, Workflow, Users] } as const;
 
 const solutions = [
   { name: "Connected Operations", text: "One workspace for customer relationships, operational processes, and the people who move them forward.", slug: "crm-erp-solutions", kind: "operations", flow: ["Customer information", "Operational workflows", "Reporting"], tag: "CRM & BUSINESS APPLICATIONS" },
@@ -20,7 +22,7 @@ export default function CaseStudies() {
           {approved.length ? approved.map(study => <article className="card" key={study.slug}><p className="eyebrow">{study.industry}</p><h3>{study.projectTitle}</h3><p>{study.challenge}</p><Link className="text-link" href={`/work/${study.slug}`}>Read case study <ArrowUpRight size={16} /></Link></article>) : solutions.map(solution => (
             <article className={`solution-card solution-${solution.kind}`} key={solution.slug}>
               <div className="solution-copy"><p className="eyebrow">{solution.tag}</p><h3>{solution.name}</h3><p>{solution.text}</p><Link className="text-link" href={`/services/${solution.slug}`}>Explore capability <ArrowUpRight size={16} /></Link></div>
-              <ol className="solution-flow" aria-label={`${solution.name}: illustrative flow`}>{solution.flow.map(step => <li key={step}>{step}</li>)}</ol>
+              <ol className="solution-flow" aria-label={`${solution.name}: illustrative flow`}>{solution.flow.map((step, index) => { const Icon = flowIcons[solution.kind][index]; return <li key={step}><span className="flow-node"><Icon size={16} aria-hidden="true" /></span><span>{step}</span></li>; })}</ol>
             </article>
           ))}
         </div>

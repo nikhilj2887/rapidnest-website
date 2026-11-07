@@ -27,7 +27,7 @@ async function navigate(url) {
 }
 // Natural animation and real input audit: never calls finish(), changes animation time,
 // forces :hover, or disables motion except during the explicit reduced-motion check.
-const out=process.cwd()+'/docs/final-qa-completion';fs.mkdirSync(out,{recursive:true});
+const out=process.env.QA_OUTPUT_DIR || process.cwd()+'/docs/final-qa-completion';fs.mkdirSync(out,{recursive:true});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function clickAt(selector,touch=false){
  const r=await evaluate(`(()=>{const e=document.querySelector(${JSON.stringify(selector)}),r=e.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2}})()`);
@@ -40,7 +40,7 @@ let instrumentationId;
 try{
  await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Page.bringToFront');
  await send('Network.setBlockedURLs',{urls:['*googletagmanager.com*','*google-analytics.com*','*emailjs.com*']});
- ({identifier:instrumentationId}=await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.__natural={events:[],samples:[],shifts:[]};new PerformanceObserver(list=>list.getEntries().forEach(e=>{if(!e.hadRecentInput)window.__natural.shifts.push(e.value)})).observe({type:'layout-shift',buffered:true});for(const type of ['animationstart','animationend'])document.addEventListener(type,e=>window.__natural.events.push({type,name:e.animationName,target:e.target.className,time:performance.now()}),true);const timer=setInterval(()=>{const h=document.querySelector('.hero h1');if(!h)return;window.__natural.samples.push({time:performance.now(),headlineOpacity:Number(getComputedStyle(h).opacity),headlineTranslate:getComputedStyle(h).translate,stageOpacity:[...document.querySelectorAll('.hero .pipeline-column')].map(e=>Number(getComputedStyle(e,'::after').opacity))});if(performance.now()>10500)clearInterval(timer)},40);`}));
+ ({identifier:instrumentationId}=await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.__natural={events:[],samples:[],shifts:[]};new PerformanceObserver(list=>list.getEntries().forEach(e=>{if(!e.hadRecentInput)window.__natural.shifts.push(e.value)})).observe({type:'layout-shift',buffered:true});for(const type of ['animationstart','animationend'])document.addEventListener(type,e=>window.__natural.events.push({type,name:e.animationName,target:e.target.className,time:performance.now()}),true);const timer=setInterval(()=>{const h=document.querySelector('.hero-phrase');if(!h)return;window.__natural.samples.push({time:performance.now(),headlineOpacity:Number(getComputedStyle(h).opacity),headlineTranslate:getComputedStyle(h).translate,stageOpacity:[...document.querySelectorAll('.hero .pipeline-column')].map(e=>Number(getComputedStyle(e,'::after').opacity))});if(performance.now()>10500)clearInterval(timer)},40);`}));
  for(const width of [1440,390]){
   const mobile=width===390;await send('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile});await send('Emulation.setTouchEmulationEnabled',{enabled:mobile,maxTouchPoints:mobile?5:1});await send('Emulation.setEmulatedMedia',{features:[]});
   await navigate(baseUrl+'/');await shot('natural-initial-'+width);
@@ -48,7 +48,10 @@ try{
   await sleep(7000);
   const natural=await evaluate(`({events:window.__natural.events,samples:window.__natural.samples,cls:window.__natural.shifts.reduce((a,b)=>a+b,0),running:document.getAnimations().filter(a=>a.playState==='running').length})`);
   const starts=natural.events.filter(e=>e.type==='animationstart');const ends=natural.events.filter(e=>e.type==='animationend');
-  if(!natural.samples.some(s=>s.headlineOpacity<.99)||!natural.samples.some(s=>s.headlineOpacity===1)||!natural.samples.some(s=>s.stageOpacity.some(o=>o>.1))||natural.running!==0||natural.cls>.01||starts.filter(e=>e.name==='hero-enter').length!==2||ends.filter(e=>e.name==='hero-enter').length!==2)throw Error('Natural hero motion '+width+' '+JSON.stringify({starts,ends,running:natural.running,cls:natural.cls}));
+  if(!natural.samples.some(s=>s.headlineOpacity<.99)||!natural.samples.some(s=>s.headlineOpacity===1)||!natural.samples.some(s=>s.stageOpacity.some(o=>o>.1))||natural.running!==0||natural.cls>.01||starts.filter(e=>e.name==='hero-enter').length!==3||ends.filter(e=>e.name==='hero-enter').length!==3||ends.filter(e=>e.target==='hero-phrase').length!==2||ends.filter(e=>e.name==='illustrative-stage').length!==3)throw Error('Natural hero motion '+width+' '+JSON.stringify({starts,ends,running:natural.running,cls:natural.cls}));
+  const connectorEnds=ends.filter(e=>e.name==='system-connect'),governanceStarts=starts.filter(e=>e.name==='system-review');
+  const stageStarts=starts.filter(e=>e.name==='illustrative-stage'),stageEnds=ends.filter(e=>e.name==='illustrative-stage');
+  if(connectorEnds.length!==1||governanceStarts.length!==1||ends.filter(e=>e.name==='system-review').length!==1||connectorEnds[0].time>stageStarts[1].time+25||stageEnds[1].time>stageStarts[2].time+25||stageEnds[2].time>governanceStarts[0].time+25)throw Error('Connector/workflow/review sequence order '+width);
   console.log('PASS real-time hero progression and completion '+width);
   await evaluate(`document.documentElement.style.scrollBehavior='auto';document.querySelector('#technology').scrollIntoView({behavior:'instant',block:'start'})`);await sleep(1000);
   for(let i=0;i<6;i++){await evaluate(`document.querySelectorAll('.technology-category')[${i}].scrollIntoView({behavior:'instant',block:'center'})`);await sleep(750);}
@@ -56,6 +59,13 @@ try{
   await evaluate(`scrollTo({top:0,behavior:'instant'});document.querySelector('#technology').scrollIntoView({behavior:'instant'})`);await sleep(900);
   const after=await evaluate(`window.__natural.events.filter(e=>e.target.includes('technology-category')).length`);
   if(reveal.count!==6||after!==reveal.events.length)throw Error('Reveal replay '+width);
+  for(let i=0;i<3;i++){await evaluate(`document.querySelectorAll('.solution-card')[${i}].scrollIntoView({behavior:'instant',block:'center'})`);await sleep(1300);}
+  const flows=await evaluate(`window.__natural.events.filter(e=>e.name==='flow-handoff')`);
+  if(flows.filter(e=>e.type==='animationstart').length!==9||flows.filter(e=>e.type==='animationend').length!==9)throw Error('Solution handoffs did not complete '+width);
+  await evaluate(`scrollTo({top:0,behavior:'instant'});document.querySelector('#work').scrollIntoView({behavior:'instant'})`);await sleep(1200);
+  if(await evaluate(`window.__natural.events.filter(e=>e.name==='flow-handoff').length`)!==flows.length)throw Error('Solution handoffs replayed '+width);
+  await evaluate(`scrollTo({top:0,behavior:'instant'})`);await sleep(900);
+  if(await evaluate(`window.__natural.events.filter(e=>e.name==='system-connect'&&e.type==='animationstart').length`)!==1)throw Error('Hero activity replayed '+width);
   await navigate(baseUrl+'/');await evaluate(`document.documentElement.style.scrollBehavior='auto';document.querySelector('.service-card').scrollIntoView({behavior:'instant',block:'center'})`);await sleep(800);
   if(mobile){await clickAt('.service-card h3',true);}else{const r=await evaluate(`(()=>{const r=document.querySelector('.service-card').getBoundingClientRect();return{x:r.left+20,y:r.top+20}})()`);await send('Input.dispatchMouseEvent',{type:'mouseMoved',...r});}
   await sleep(350);const hover=await evaluate(`({transform:getComputedStyle(document.querySelector('.service-card')).transform,coarse:matchMedia('(pointer:coarse)').matches,hover:matchMedia('(hover:hover)').matches})`);
@@ -68,7 +78,7 @@ try{
   await evaluate(`document.documentElement.style.scrollBehavior='auto';document.querySelector('#name').scrollIntoView({behavior:'instant',block:'center'})`);await sleep(800);await clickAt('#name',mobile);await sleep(100);if(!await evaluate(`document.activeElement.id==='name'`))throw Error('Actual input focus '+width+' '+JSON.stringify(await evaluate(`({id:document.activeElement.id,scrollY})`)));
   await evaluate(`scrollTo({top:document.documentElement.scrollHeight,behavior:'instant'})`);await sleep(800);await shot('footer-'+width);
   const content=await evaluate(`({services:document.querySelectorAll('.service-card').length,clients:document.querySelectorAll('#clients .logo-card').length,partners:document.querySelectorAll('.partnership-card').length,portrait:document.querySelector('.founder-photo img').getAttribute('src'),caseLinks:[...document.querySelectorAll('main a')].filter(a=>(a.getAttribute('href')||'').startsWith('/work/')).map(a=>a.href),overflow:document.documentElement.scrollWidth>innerWidth})`);if(content.services!==7||content.clients!==6||content.partners!==2||content.caseLinks.length||content.overflow)throw Error('Preservation '+width);
-  results.push({width,mobile,natural,reveal,hover,content});console.log('PASS natural animation and real '+(mobile?'touch':'mouse')+' input '+width);
+  results.push({width,mobile,natural,reveal,flows,hover,content});console.log('PASS natural animation and real '+(mobile?'touch':'mouse')+' input '+width);
  }
  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await navigate(baseUrl+'/');const reduced=await evaluate(`({running:document.getAnimations().filter(a=>a.playState==='running').length,headline:getComputedStyle(document.querySelector('.hero h1')).animationName,scroll:getComputedStyle(document.documentElement).scrollBehavior})`);if(reduced.running||reduced.headline!=='none'||reduced.scroll!=='auto')throw Error('Reduced motion');
  await send('Emulation.setEmulatedMedia',{features:[]});await send('Emulation.setTouchEmulationEnabled',{enabled:false});await send('Page.removeScriptToEvaluateOnNewDocument',{identifier:instrumentationId});

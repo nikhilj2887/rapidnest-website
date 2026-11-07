@@ -1,0 +1,1249 @@
+{
+  "baseline": "9cbfa77",
+  "results": [
+    {
+      "width": 390,
+      "pageHeight": 16706,
+      "scrollWidth": 390,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1154.390625,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 782.25,
+          "top": 1227.390625
+        },
+        {
+          "selector": "#services",
+          "height": 3980.296875,
+          "top": 2009.640625
+        },
+        {
+          "selector": "#work",
+          "height": 1408.6875,
+          "top": 5989.9375
+        },
+        {
+          "selector": "#partnerships",
+          "height": 1014.40625,
+          "top": 7398.625
+        },
+        {
+          "selector": "#why-us",
+          "height": 823.9375,
+          "top": 8413.03125
+        },
+        {
+          "selector": "#methodology",
+          "height": 876.734375,
+          "top": 9236.96875
+        },
+        {
+          "selector": "#technology",
+          "height": 1553.703125,
+          "top": 10113.703125
+        },
+        {
+          "selector": "#about",
+          "height": 601,
+          "top": 11667.40625
+        },
+        {
+          "selector": "#founder",
+          "height": 1973,
+          "top": 12268.40625
+        },
+        {
+          "selector": "#contact",
+          "height": 1766.140625,
+          "top": 14241.40625
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 16007.546875
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 167.1875,
+          "bottom": 323.1875
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 343.1875,
+          "height": 105.5625,
+          "bottom": 448.75
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 470.75,
+          "height": 108,
+          "bottom": 578.75
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 642.890625,
+          "height": 505.5,
+          "bottom": 1148.390625
+        }
+      ],
+      "founderPhoto": {
+        "x": 45,
+        "y": 12304.40625,
+        "width": 300,
+        "height": 375,
+        "top": 12304.40625,
+        "right": 345,
+        "bottom": 12679.40625,
+        "left": 45
+      },
+      "formTop": 14848.34375,
+      "contactTop": 14241.40625,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": 0.265625
+    },
+    {
+      "width": 768,
+      "pageHeight": 11600,
+      "scrollWidth": 768,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 896.609375,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 580,
+          "top": 969.609375
+        },
+        {
+          "selector": "#services",
+          "height": 2459.421875,
+          "top": 1549.609375
+        },
+        {
+          "selector": "#work",
+          "height": 1066.71875,
+          "top": 4009.03125
+        },
+        {
+          "selector": "#partnerships",
+          "height": 592.5,
+          "top": 5075.75
+        },
+        {
+          "selector": "#why-us",
+          "height": 581.625,
+          "top": 5668.25
+        },
+        {
+          "selector": "#methodology",
+          "height": 590.15625,
+          "top": 6249.875
+        },
+        {
+          "selector": "#technology",
+          "height": 1001.859375,
+          "top": 6840.03125
+        },
+        {
+          "selector": "#about",
+          "height": 517.90625,
+          "top": 7841.890625
+        },
+        {
+          "selector": "#founder",
+          "height": 1457.3125,
+          "top": 8359.796875
+        },
+        {
+          "selector": "#contact",
+          "height": 1302.59375,
+          "top": 9817.109375
+        },
+        {
+          "selector": ".site-footer",
+          "height": 479.796875,
+          "top": 11119.703125
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 143.59375,
+          "height": 98.9375,
+          "bottom": 242.53125
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 262.53125,
+          "height": 52.78125,
+          "bottom": 315.3125
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 339.3125,
+          "height": 48,
+          "bottom": 387.3125
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 451.109375,
+          "height": 437.5,
+          "bottom": 888.609375
+        }
+      ],
+      "founderPhoto": {
+        "x": 224,
+        "y": 8407.796875,
+        "width": 320,
+        "height": 400,
+        "top": 8407.796875,
+        "right": 544,
+        "bottom": 8807.796875,
+        "left": 224
+      },
+      "formTop": 10254.96875,
+      "contactTop": 9817.109375,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": 0.5
+    },
+    {
+      "width": 1440,
+      "pageHeight": 9062,
+      "scrollWidth": 1440,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 592.125,
+          "top": 79
+        },
+        {
+          "selector": "#clients",
+          "height": 429.828125,
+          "top": 671.125
+        },
+        {
+          "selector": "#services",
+          "height": 1706.875,
+          "top": 1100.953125
+        },
+        {
+          "selector": "#work",
+          "height": 985.40625,
+          "top": 2807.828125
+        },
+        {
+          "selector": "#partnerships",
+          "height": 621.328125,
+          "top": 3793.234375
+        },
+        {
+          "selector": "#why-us",
+          "height": 580.671875,
+          "top": 4414.5625
+        },
+        {
+          "selector": "#methodology",
+          "height": 463.515625,
+          "top": 4995.234375
+        },
+        {
+          "selector": "#technology",
+          "height": 836.875,
+          "top": 5458.75
+        },
+        {
+          "selector": "#about",
+          "height": 389.84375,
+          "top": 6295.625
+        },
+        {
+          "selector": "#founder",
+          "height": 1006.53125,
+          "top": 6685.46875
+        },
+        {
+          "selector": "#contact",
+          "height": 944.734375,
+          "top": 7692
+        },
+        {
+          "selector": ".site-footer",
+          "height": 424.796875,
+          "top": 8636.734375
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 139.59375,
+          "height": 237.5625,
+          "bottom": 377.15625
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 397.15625,
+          "height": 79.171875,
+          "bottom": 476.328125
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 500.328125,
+          "height": 48,
+          "bottom": 548.328125
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 129.8125,
+          "height": 437.5,
+          "bottom": 567.3125
+        }
+      ],
+      "founderPhoto": {
+        "x": 100,
+        "y": 6741.46875,
+        "width": 340,
+        "height": 425,
+        "top": 6741.46875,
+        "right": 440,
+        "bottom": 7166.46875,
+        "left": 100
+      },
+      "formTop": 7756,
+      "contactTop": 7692,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": 0.46875
+    },
+    {
+      "width": 320,
+      "pageHeight": 17836,
+      "scrollWidth": 320,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1132.71875,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 807,
+          "top": 1205.71875
+        },
+        {
+          "selector": "#services",
+          "height": 4385.421875,
+          "top": 2012.71875
+        },
+        {
+          "selector": "#work",
+          "height": 1454.875,
+          "top": 6398.140625
+        },
+        {
+          "selector": "#partnerships",
+          "height": 1072.1875,
+          "top": 7853.015625
+        },
+        {
+          "selector": "#why-us",
+          "height": 873.4375,
+          "top": 8925.203125
+        },
+        {
+          "selector": "#methodology",
+          "height": 909.765625,
+          "top": 9798.640625
+        },
+        {
+          "selector": "#technology",
+          "height": 1844.078125,
+          "top": 10708.40625
+        },
+        {
+          "selector": "#about",
+          "height": 625.75,
+          "top": 12552.484375
+        },
+        {
+          "selector": "#founder",
+          "height": 2131.25,
+          "top": 13178.234375
+        },
+        {
+          "selector": "#contact",
+          "height": 1828.640625,
+          "top": 15309.484375
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 17138.125
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 149.125,
+          "bottom": 305.125
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 325.125,
+          "height": 131.953125,
+          "bottom": 457.078125
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 479.078125,
+          "height": 108,
+          "bottom": 587.078125
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 651.21875,
+          "height": 475.5,
+          "bottom": 1126.71875
+        }
+      ],
+      "founderPhoto": {
+        "x": 16,
+        "y": 13214.234375,
+        "width": 288,
+        "height": 360,
+        "top": 13214.234375,
+        "right": 304,
+        "bottom": 13574.234375,
+        "left": 16
+      },
+      "formTop": 15978.921875,
+      "contactTop": 15309.484375,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.3125
+    },
+    {
+      "width": 360,
+      "pageHeight": 16948,
+      "scrollWidth": 360,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1106.328125,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 807,
+          "top": 1179.328125
+        },
+        {
+          "selector": "#services",
+          "height": 4097.6875,
+          "top": 1986.328125
+        },
+        {
+          "selector": "#work",
+          "height": 1433.4375,
+          "top": 6084.015625
+        },
+        {
+          "selector": "#partnerships",
+          "height": 1014.40625,
+          "top": 7517.453125
+        },
+        {
+          "selector": "#why-us",
+          "height": 848.6875,
+          "top": 8531.859375
+        },
+        {
+          "selector": "#methodology",
+          "height": 876.734375,
+          "top": 9380.546875
+        },
+        {
+          "selector": "#technology",
+          "height": 1603.203125,
+          "top": 10257.28125
+        },
+        {
+          "selector": "#about",
+          "height": 625.75,
+          "top": 11860.484375
+        },
+        {
+          "selector": "#founder",
+          "height": 1973,
+          "top": 12486.234375
+        },
+        {
+          "selector": "#contact",
+          "height": 1790.890625,
+          "top": 14459.234375
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 16250.125
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 149.125,
+          "bottom": 305.125
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 325.125,
+          "height": 105.5625,
+          "bottom": 430.6875
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 452.6875,
+          "height": 108,
+          "bottom": 560.6875
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 624.828125,
+          "height": 475.5,
+          "bottom": 1100.328125
+        }
+      ],
+      "founderPhoto": {
+        "x": 30,
+        "y": 12522.234375,
+        "width": 300,
+        "height": 375,
+        "top": 12522.234375,
+        "right": 330,
+        "bottom": 12897.234375,
+        "left": 30
+      },
+      "formTop": 15090.921875,
+      "contactTop": 14459.234375,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.3125
+    },
+    {
+      "width": 375,
+      "pageHeight": 16887,
+      "scrollWidth": 375,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1154.390625,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 807,
+          "top": 1227.390625
+        },
+        {
+          "selector": "#services",
+          "height": 4038.09375,
+          "top": 2034.390625
+        },
+        {
+          "selector": "#work",
+          "height": 1433.4375,
+          "top": 6072.484375
+        },
+        {
+          "selector": "#partnerships",
+          "height": 1014.40625,
+          "top": 7505.921875
+        },
+        {
+          "selector": "#why-us",
+          "height": 848.6875,
+          "top": 8520.328125
+        },
+        {
+          "selector": "#methodology",
+          "height": 876.734375,
+          "top": 9369.015625
+        },
+        {
+          "selector": "#technology",
+          "height": 1578.453125,
+          "top": 10245.75
+        },
+        {
+          "selector": "#about",
+          "height": 601,
+          "top": 11824.203125
+        },
+        {
+          "selector": "#founder",
+          "height": 1973,
+          "top": 12425.203125
+        },
+        {
+          "selector": "#contact",
+          "height": 1790.890625,
+          "top": 14398.203125
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 16189.09375
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 167.1875,
+          "bottom": 323.1875
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 343.1875,
+          "height": 105.5625,
+          "bottom": 448.75
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 470.75,
+          "height": 108,
+          "bottom": 578.75
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 642.890625,
+          "height": 505.5,
+          "bottom": 1148.390625
+        }
+      ],
+      "founderPhoto": {
+        "x": 37.5,
+        "y": 12461.203125,
+        "width": 300,
+        "height": 375,
+        "top": 12461.203125,
+        "right": 337.5,
+        "bottom": 12836.203125,
+        "left": 37.5
+      },
+      "formTop": 15029.890625,
+      "contactTop": 14398.203125,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.28125
+    },
+    {
+      "width": 414,
+      "pageHeight": 16258,
+      "scrollWidth": 414,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1154.390625,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 782.25,
+          "top": 1227.390625
+        },
+        {
+          "selector": "#services",
+          "height": 3930.765625,
+          "top": 2009.640625
+        },
+        {
+          "selector": "#work",
+          "height": 1334.4375,
+          "top": 5940.40625
+        },
+        {
+          "selector": "#partnerships",
+          "height": 1014.40625,
+          "top": 7274.84375
+        },
+        {
+          "selector": "#why-us",
+          "height": 799.1875,
+          "top": 8289.25
+        },
+        {
+          "selector": "#methodology",
+          "height": 876.734375,
+          "top": 9088.4375
+        },
+        {
+          "selector": "#technology",
+          "height": 1451.453125,
+          "top": 9965.171875
+        },
+        {
+          "selector": "#about",
+          "height": 504.71875,
+          "top": 11416.625
+        },
+        {
+          "selector": "#founder",
+          "height": 1895.5,
+          "top": 11921.34375
+        },
+        {
+          "selector": "#contact",
+          "height": 1743.046875,
+          "top": 13816.84375
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 15559.890625
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 167.1875,
+          "bottom": 323.1875
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 343.1875,
+          "height": 105.5625,
+          "bottom": 448.75
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 470.75,
+          "height": 108,
+          "bottom": 578.75
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 642.890625,
+          "height": 505.5,
+          "bottom": 1148.390625
+        }
+      ],
+      "founderPhoto": {
+        "x": 57,
+        "y": 11957.34375,
+        "width": 300,
+        "height": 375,
+        "top": 11957.34375,
+        "right": 357,
+        "bottom": 12332.34375,
+        "left": 57
+      },
+      "formTop": 14423.78125,
+      "contactTop": 13816.84375,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.078125
+    },
+    {
+      "width": 430,
+      "pageHeight": 16134,
+      "scrollWidth": 430,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 1154.390625,
+          "top": 73
+        },
+        {
+          "selector": "#clients",
+          "height": 782.25,
+          "top": 1227.390625
+        },
+        {
+          "selector": "#services",
+          "height": 3906,
+          "top": 2009.640625
+        },
+        {
+          "selector": "#work",
+          "height": 1334.4375,
+          "top": 5915.640625
+        },
+        {
+          "selector": "#partnerships",
+          "height": 995.21875,
+          "top": 7250.078125
+        },
+        {
+          "selector": "#why-us",
+          "height": 774.4375,
+          "top": 8245.296875
+        },
+        {
+          "selector": "#methodology",
+          "height": 876.734375,
+          "top": 9019.734375
+        },
+        {
+          "selector": "#technology",
+          "height": 1451.453125,
+          "top": 9896.46875
+        },
+        {
+          "selector": "#about",
+          "height": 504.71875,
+          "top": 11347.921875
+        },
+        {
+          "selector": "#founder",
+          "height": 1862.75,
+          "top": 11852.640625
+        },
+        {
+          "selector": "#contact",
+          "height": 1719.953125,
+          "top": 13715.390625
+        },
+        {
+          "selector": ".site-footer",
+          "height": 698.1875,
+          "top": 15435.34375
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 156,
+          "height": 167.1875,
+          "bottom": 323.1875
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 343.1875,
+          "height": 105.5625,
+          "bottom": 448.75
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 470.75,
+          "height": 108,
+          "bottom": 578.75
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 642.890625,
+          "height": 505.5,
+          "bottom": 1148.390625
+        }
+      ],
+      "founderPhoto": {
+        "x": 65,
+        "y": 11888.640625,
+        "width": 300,
+        "height": 375,
+        "top": 11888.640625,
+        "right": 365,
+        "bottom": 12263.640625,
+        "left": 65
+      },
+      "formTop": 14322.328125,
+      "contactTop": 13715.390625,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": 0.46875
+    },
+    {
+      "width": 1024,
+      "pageHeight": 9981,
+      "scrollWidth": 1024,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 566.46875,
+          "top": 79
+        },
+        {
+          "selector": "#clients",
+          "height": 596,
+          "top": 645.46875
+        },
+        {
+          "selector": "#services",
+          "height": 2409.40625,
+          "top": 1241.46875
+        },
+        {
+          "selector": "#work",
+          "height": 967.6875,
+          "top": 3650.875
+        },
+        {
+          "selector": "#partnerships",
+          "height": 608.5,
+          "top": 4618.5625
+        },
+        {
+          "selector": "#why-us",
+          "height": 607.0625,
+          "top": 5227.0625
+        },
+        {
+          "selector": "#methodology",
+          "height": 431.21875,
+          "top": 5834.125
+        },
+        {
+          "selector": "#technology",
+          "height": 889.65625,
+          "top": 6265.34375
+        },
+        {
+          "selector": "#about",
+          "height": 442.625,
+          "top": 7155
+        },
+        {
+          "selector": "#founder",
+          "height": 1014.03125,
+          "top": 7597.625
+        },
+        {
+          "selector": "#contact",
+          "height": 944.734375,
+          "top": 8611.65625
+        },
+        {
+          "selector": ".site-footer",
+          "height": 424.796875,
+          "top": 9556.390625
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 157.1875,
+          "height": 194.3125,
+          "bottom": 351.5
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 371.5,
+          "height": 79.171875,
+          "bottom": 450.671875
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 474.671875,
+          "height": 48,
+          "bottom": 522.671875
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 116.984375,
+          "height": 437.5,
+          "bottom": 554.484375
+        }
+      ],
+      "founderPhoto": {
+        "x": 32,
+        "y": 7653.625,
+        "width": 300,
+        "height": 375,
+        "top": 7653.625,
+        "right": 332,
+        "bottom": 8028.625,
+        "left": 32
+      },
+      "formTop": 8675.65625,
+      "contactTop": 8611.65625,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.1875
+    },
+    {
+      "width": 1280,
+      "pageHeight": 8996,
+      "scrollWidth": 1280,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 565.6875,
+          "top": 79
+        },
+        {
+          "selector": "#clients",
+          "height": 424.75,
+          "top": 644.6875
+        },
+        {
+          "selector": "#services",
+          "height": 1696.71875,
+          "top": 1069.4375
+        },
+        {
+          "selector": "#work",
+          "height": 976.875,
+          "top": 2766.15625
+        },
+        {
+          "selector": "#partnerships",
+          "height": 616.25,
+          "top": 3743.03125
+        },
+        {
+          "selector": "#why-us",
+          "height": 580.671875,
+          "top": 4359.28125
+        },
+        {
+          "selector": "#methodology",
+          "height": 453.359375,
+          "top": 4939.953125
+        },
+        {
+          "selector": "#technology",
+          "height": 836.875,
+          "top": 5393.3125
+        },
+        {
+          "selector": "#about",
+          "height": 389.84375,
+          "top": 6230.1875
+        },
+        {
+          "selector": "#founder",
+          "height": 1006.53125,
+          "top": 6620.03125
+        },
+        {
+          "selector": "#contact",
+          "height": 944.734375,
+          "top": 7626.5625
+        },
+        {
+          "selector": ".site-footer",
+          "height": 424.796875,
+          "top": 8571.296875
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 139.59375,
+          "height": 211.125,
+          "bottom": 350.71875
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 370.71875,
+          "height": 79.171875,
+          "bottom": 449.890625
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 473.890625,
+          "height": 48,
+          "bottom": 521.890625
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 116.59375,
+          "height": 437.5,
+          "bottom": 554.09375
+        }
+      ],
+      "founderPhoto": {
+        "x": 40,
+        "y": 6676.03125,
+        "width": 340,
+        "height": 425,
+        "top": 6676.03125,
+        "right": 380,
+        "bottom": 7101.03125,
+        "left": 40
+      },
+      "formTop": 7690.5625,
+      "contactTop": 7626.5625,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": -0.09375
+    },
+    {
+      "width": 1920,
+      "pageHeight": 9162,
+      "scrollWidth": 1920,
+      "brokenImages": [],
+      "sections": [
+        {
+          "selector": ".hero",
+          "height": 684.625,
+          "top": 79
+        },
+        {
+          "selector": "#clients",
+          "height": 431.15625,
+          "top": 763.625
+        },
+        {
+          "selector": "#services",
+          "height": 1709.53125,
+          "top": 1194.78125
+        },
+        {
+          "selector": "#work",
+          "height": 985.40625,
+          "top": 2904.3125
+        },
+        {
+          "selector": "#partnerships",
+          "height": 622.65625,
+          "top": 3889.71875
+        },
+        {
+          "selector": "#why-us",
+          "height": 580.671875,
+          "top": 4512.375
+        },
+        {
+          "selector": "#methodology",
+          "height": 466.171875,
+          "top": 5093.046875
+        },
+        {
+          "selector": "#technology",
+          "height": 836.875,
+          "top": 5559.21875
+        },
+        {
+          "selector": "#about",
+          "height": 389.84375,
+          "top": 6396.09375
+        },
+        {
+          "selector": "#founder",
+          "height": 1006.53125,
+          "top": 6785.9375
+        },
+        {
+          "selector": "#contact",
+          "height": 944.734375,
+          "top": 7792.46875
+        },
+        {
+          "selector": ".site-footer",
+          "height": 424.796875,
+          "top": 8737.203125
+        }
+      ],
+      "heroParts": [
+        {
+          "selector": ".hero-copy h1",
+          "top": 178.59375,
+          "height": 244.0625,
+          "bottom": 422.65625
+        },
+        {
+          "selector": ".hero .lead",
+          "top": 442.65625,
+          "height": 79.171875,
+          "bottom": 521.828125
+        },
+        {
+          "selector": ".hero .actions",
+          "top": 545.828125,
+          "height": 48,
+          "bottom": 593.828125
+        },
+        {
+          "selector": ".hero-composition",
+          "top": 172.0625,
+          "height": 437.5,
+          "bottom": 609.5625
+        }
+      ],
+      "founderPhoto": {
+        "x": 340,
+        "y": 6841.9375,
+        "width": 340,
+        "height": 425,
+        "top": 6841.9375,
+        "right": 680,
+        "bottom": 7266.9375,
+        "left": 340
+      },
+      "formTop": 7856.46875,
+      "contactTop": 7792.46875,
+      "counts": {
+        "services": 7,
+        "clients": 6,
+        "partners": 2
+      },
+      "smallLinks": [],
+      "footerGap": 0
+    }
+  ],
+  "consoleErrors": []
+}

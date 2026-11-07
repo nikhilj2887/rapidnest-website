@@ -10,7 +10,7 @@ export default function MotionEnhancements() {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (!window.IntersectionObserver) return;
     const elements = Array.from(document.querySelectorAll<HTMLElement>(
-      ".section-heading, .service-grid, .solution-stories, .values-list, .process, .technology-category, .founder-portrait, .founder-copy, .contact-form, .logo-grid, .partnership-grid, .detail-hero h1"
+      ".hero-system-panel, .section-heading, .service-grid, .solution-card, .values-list, .process, .technology-category, .founder-portrait, .founder-copy, .contact-form, .logo-grid, .partnership-grid, .detail-hero h1"
     ));
     let observer: IntersectionObserver | undefined;
     const clear = () => {
@@ -31,8 +31,10 @@ export default function MotionEnhancements() {
           observer?.unobserve(element);
         });
       }, { threshold: 0.08 });
-      elements.forEach((element, index) => {
-        element.style.setProperty("--reveal-delay", `${(index % 3) * 80}ms`);
+      let groupIndex = 0;
+      elements.forEach(element => {
+        const delay = element.classList.contains("hero-system-panel") ? 0 : (groupIndex++ % 3) * 80;
+        element.style.setProperty("--reveal-delay", `${delay}ms`);
         observer?.observe(element);
       });
     };

@@ -1,0 +1,238 @@
+{
+  "baselineCommit": "9cbfa77f556ca9e225455aa2a4a20cf3463452a8",
+  "branch": "feature/rapidnest-mobile-interactive-v3",
+  "lint": "passed",
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "unitTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "httpPublicRoutes": 9,
+  "responsive": {
+    "widths": [
+      320,
+      360,
+      375,
+      390,
+      414,
+      430,
+      768,
+      1024,
+      1280,
+      1440,
+      1920
+    ],
+    "serviceChecks": 77,
+    "accessibilityScans": 10,
+    "accessibilityViolations": 0,
+    "consoleErrors": [],
+    "allCLSZero": true,
+    "mockedContactCases": 4
+  },
+  "natural": [
+    {
+      "width": 1440,
+      "samples": 258,
+      "cls": 0,
+      "runningAfterCompletion": 0,
+      "technologyReveals": 6,
+      "solutionHandoffEnds": 9,
+      "hoverTransform": "matrix(1, 0, 0, 1, 0, -3)"
+    },
+    {
+      "width": 390,
+      "samples": 252,
+      "cls": 0,
+      "runningAfterCompletion": 0,
+      "technologyReveals": 6,
+      "solutionHandoffEnds": 9,
+      "hoverTransform": "none"
+    }
+  ],
+  "preservation": {
+    "unchangedSourceAndAssetFiles": 24,
+    "contactHandlerByteIdentical": true,
+    "rootLayoutOnlyAddsStylesheet": true,
+    "approvedTextUnchanged": true,
+    "paragraphsAndHeadings": 128,
+    "serviceLinksUnchanged": true,
+    "assetsUnchanged": true,
+    "fieldAttributesUnchanged": true,
+    "metadataUnchanged": true,
+    "tabOrder": [
+      "email",
+      "company",
+      "phone",
+      "service",
+      "budget",
+      "timeline",
+      "message",
+      "submit"
+    ],
+    "keyboard": {
+      "focused": true,
+      "top": 260.4375,
+      "bottom": 390.4375,
+      "headerBottom": 73,
+      "railTop": 414,
+      "hit": true,
+      "value": "Keyboard viewport test; do not send"
+    },
+    "liveEmailSent": false
+  },
+  "layout": [
+    {
+      "width": 390,
+      "pageHeight": 15665,
+      "overflow": false,
+      "broken": 0,
+      "hero": 1090.21875,
+      "founder": 1664.1875,
+      "contact": 1724.921875,
+      "formOffset": 377.3125,
+      "headline": "Engineering Digital Solutions. Accelerating Business Growth.",
+      "clipped": []
+    },
+    {
+      "width": 768,
+      "pageHeight": 11145,
+      "overflow": false,
+      "broken": 0,
+      "hero": 884.890625,
+      "founder": 1069.546875,
+      "contact": 1304.890625,
+      "formOffset": 372.546875,
+      "headline": "Engineering Digital Solutions. Accelerating Business Growth.",
+      "clipped": []
+    },
+    {
+      "width": 1440,
+      "pageHeight": 8752,
+      "overflow": false,
+      "broken": 0,
+      "hero": 592.125,
+      "founder": 936.53125,
+      "contact": 925.34375,
+      "formOffset": 64,
+      "headline": "Engineering Digital Solutions. Accelerating Business Growth.",
+      "clipped": []
+    },
+    {
+      "width": 320,
+      "pageHeight": 17019,
+      "overflow": false,
+      "broken": 0,
+      "hero": 1098.546875,
+      "founder": 1949.78125,
+      "contact": 1787.421875,
+      "formOffset": 439.8125,
+      "headline": "Engineering Digital Solutions. Accelerating Business Growth.",
+      "clipped": []
+    }
+  ],
+  "initialLighthouse": [
+    {
+      "device": "desktop",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "tbtMs": 5.499999999999943,
+      "lcpMs": 752.876875
+    },
+    {
+      "device": "mobile",
+      "scores": {
+        "performance": 83,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "tbtMs": 643.1383000000001,
+      "lcpMs": 1881.7233999999999
+    }
+  ],
+  "controlledLighthouse": [
+    {
+      "version": "baseline",
+      "device": "desktop",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 492.677,
+        "largest-contentful-paint": 830.3539999999999,
+        "total-blocking-time": 230.66150000000005,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1690.5,
+      "fetchTime": "2026-11-06T16:54:43.910Z"
+    },
+    {
+      "version": "baseline",
+      "device": "mobile",
+      "scores": {
+        "performance": 68,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1592.68775,
+        "largest-contentful-paint": 3141.3755,
+        "total-blocking-time": 1343.81225,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1677,
+      "fetchTime": "2026-11-06T16:55:28.020Z"
+    },
+    {
+      "version": "v3",
+      "device": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 477.8506,
+        "largest-contentful-paint": 763.7012,
+        "total-blocking-time": 52.5,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1446,
+      "fetchTime": "2026-11-06T16:55:07.749Z"
+    },
+    {
+      "version": "v3",
+      "device": "mobile",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1561.01795,
+        "largest-contentful-paint": 2571.0359000000003,
+        "total-blocking-time": 247,
+        "cumulative-layout-shift": 0
+      },
+      "benchmarkIndex": 1683.5,
+      "fetchTime": "2026-11-06T16:55:50.799Z"
+    }
+  ],
+  "largeEvidenceOutsideGit": "/tmp/rapidnest-v3-evidence",
+  "remaining": [
+    "Mobile LCP measured 2.57s in final controlled audit; first mobile run scored83, final92; lab variation recorded.",
+    "No physical-device/field-INP, live email delivery or live Analytics ingestion testing.",
+    "Axe contrast checks marked incomplete require manual judgment; automated scans do not establish full accessibility conformance."
+  ]
+}

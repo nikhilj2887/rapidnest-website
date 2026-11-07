@@ -12,14 +12,16 @@ export default function FounderSection() {
   return (
     <section id="founder" className="section founder-section" aria-labelledby="founder-heading">
       <div className="container founder-grid">
+        <div className="founder-heading">
+          <p className="eyebrow">MEET THE FOUNDER</p>
+          <h2 id="founder-heading">Leadership Built on Delivery Excellence</h2>
+          <p className="founder-intro">A business perspective. A delivery mindset.</p>
+        </div>
         <div className="founder-portrait">
           <div className="founder-photo"><Image src="/founder.png" alt="Nikhil Jogiparthy, Founder of RapidNest Software Solutions" width={784} height={1176} sizes="745px" /></div>
           <div className="portrait-caption"><strong>Nikhil Jogiparthy</strong><span>Founder | RapidNest Software Solutions</span></div>
         </div>
         <div className="founder-copy">
-          <p className="eyebrow">MEET THE FOUNDER</p>
-          <h2 id="founder-heading">Leadership Built on Delivery Excellence</h2>
-          <p className="founder-intro">A business perspective. A delivery mindset.</p>
           <p>Nikhil Jogiparthy is a technology delivery and program management professional with over 14 years of experience across FinTech, payments, healthcare, education technology, and IT services. His background includes leading cross-functional teams, managing complex technology initiatives, and translating business requirements into practical software solutions.</p>
           <p>At RapidNest Software Solutions, he brings a structured approach to technology delivery, stakeholder collaboration, risk management, and continuous improvement, with a focus on maintainable solutions and meaningful business outcomes.</p>
         </div>
